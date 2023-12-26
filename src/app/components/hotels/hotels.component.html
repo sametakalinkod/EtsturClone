@@ -23,7 +23,7 @@
     </div>
 
     <div *ngIf="showSearchSection"></div>
-    <app-search-section  [hidden]="showSearchSection" [searchData]="searchData"></app-search-section>
+    <app-search-section [hidden]="showSearchSection" [searchData]="searchData"></app-search-section>
 
     <!-- <div class="col-12">
         <app-search-section [searchData]="searchData"></app-search-section>
@@ -101,12 +101,12 @@
                             <div *ngIf="!filter.displayCount">
                                 <div class="filter-item-wrapper filter-item-body active">
                                     <div class="priceInput">
-                                        <input class="ets-N" type="text" id="minPrice" name="minPrice"
-                                            placeholder="Min">
-                                        <input class="ets-N" type="text" id="maxPrice" name="maxPrice"
+                                        <input clsearchByMinMaxPriceass="priceMin" type="text" class="priceMin" id="minPrice"
+                                            name="minPrice" placeholder="Min">
+                                        <input class="priceMax" type="text" id="maxPrice" name="maxPrice"
                                             placeholder="Max">
                                         <button id="searchByMinMaxPriceBtn" type="button" class="btn btn-primary"
-                                            onclick="searchByMinMaxPrice()">Ara</button>
+                                            (click)="searchByMinMaxPrice()">Ara</button>
                                     </div>
                                 </div>
                             </div>

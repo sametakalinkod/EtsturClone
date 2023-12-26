@@ -772,6 +772,9 @@
         top: 1pc;
     }
 
+    .amenitiesIconSection{
+        bottom:-2pc !important;
+    }
 }
 
 @media screen and (max-width: 428px)and (max-height: 926px) {
@@ -791,7 +794,9 @@
         left: 33px !important;
         top: 1pc;
     }
-  
+    .amenitiesIconSection{
+        bottom:-38px  !important;
+    }
 
 }
 
@@ -811,7 +816,14 @@
         left: 28px !important;
         top: 1pc;
     }
-
+    .amenitiesIconSection{
+        bottom:-2pc !important;
+    }
+}
+@media screen and (max-width: 412px) and (max-height:915px) {
+    .amenitiesIconSection{
+        bottom:1pc !important;
+    }
 }
 
 @media screen and (max-width: 390px) {
@@ -830,10 +842,7 @@
     .hotelName {
         font-size: 20px;
     }
-    .amenitiesIconSection{
-      
-        bottom: -22pc !important;
-    }
+  
     .etsLikeSection,
     .awardIcon,
     .likeIcon,
@@ -915,15 +924,32 @@
         display: block;
     }
 
+    .amenitiesIconSection{
+        bottom:-7pc !important;
+    }
 }
-
+@media screen and (max-width: 390px) {
+    .amenitiesIconSection{
+        bottom: -7pc !important;
+    } 
+}
+@media screen and (max-width: 390px) and (max-height:844px) {
+    .amenitiesIconSection{
+        bottom: -7pc !important;
+    }
+}
 @media screen and (max-width: 375px) {
  
     .mobilAmenities {
         display: block;
     }
-
+    .amenitiesIconSection{
+    bottom: -5pc !important;
+    margin-bottom: -18px;
+    }
 }
+
+
 
 @media screen and (max-width: 375px) and (max-height:812px) {
  
@@ -937,6 +963,9 @@
     .share {
         width: 120px;
         margin-right: 2px;
+    }
+    .amenitiesIconSection{
+        bottom:-7pc !important;
     }
 
 }
@@ -955,7 +984,33 @@
         left: -21px !important;
         top: 1pc;
     }
+    .amenitiesIconSection{
+        bottom:-8pc !important;
+    }
 }
+@media screen and (max-width: 360px) and (max-height:880px) {
+    .amenitiesIconSection{
+        bottom:0pc !important;
+    }
+}
+@media screen and (max-width: 360px)  and (max-height:804px) {
+    .amenitiesIconSection{
+        bottom:-3pc !important;
+    }
+}
+@media screen and (max-width: 360px)  and (max-height:800px) {
+    .amenitiesIconSection{
+        bottom:-5pc !important;
+    }
+}
+@media screen and (max-width: 360px)  and (max-height:780px) {
+    .amenitiesIconSection{
+        bottom:-6pc !important;
+    }
+}
+
+
+
 
 @media screen and (max-width: 320px) {
  
@@ -1012,7 +1067,14 @@
         padding: 5px 5px 4px 5px;
         margin: -2px -3px 6px 39px;
     }
-
+    .amenitiesIconSection{
+        bottom:-20pc !important;
+    }
+    .amenitiesName{
+        padding: 4px;
+        font-size: 10px;
+        width: 74px;
+    }
 }
 
 /* MOBİL RESPONSİVE END */
