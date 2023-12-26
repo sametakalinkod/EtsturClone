@@ -1,0 +1,287 @@
+<div class="hotelFacilityInfo">
+    <div class="container">
+        <button type="button" class="btn-close" aria-label="Close" (click)="activeModal.dismiss('Cross click')">
+            <div class="closeBtn"></div>
+        </button>
+        <div class="captionFacility">
+            <h2 class="captionInfo">Tesis Bilgileri</h2>
+        </div>
+        <img src="../../../../../assets/common/mobil-otel-concept-default.webp" class="hotelMainImage">
+        <div class="col-12" class="mobileWrapper" [ngClass]="{'hotelImg': amenities.isVisible }">
+            <div class="captionSection">
+                <i class="fa-regular fa-building building"></i> <span>KONSEPT</span>
+            </div>
+            <div class="hotelAmenities">
+                <ul class="leftSide">
+                    <li *ngFor="let features of hotel.amenities?.slice(6)" class="features">
+                        <span>
+                            {{ features }}
+                        </span>
+                    </li>
+                </ul>
+                <ul class="leftSide">
+                    <li *ngFor="let summerFeatures of hotel.amenities?.slice(6)" class="features">
+                        <span>
+                            {{ summerFeatures }}
+                        </span>
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="captionAmenities m-3">
+                <h5 class="py-3 captionHotel">Tesis Olanakları</h5>
+            </div>
+            <div class="seasonAmenitiesSection">
+                <div class=" wrapperAmenities">
+                    <button (click)="toggleVisibility(hotel?.amenitiesSummer)" class="showHideButton">
+                        <i *ngIf="hotel?.amenitiesSummer.isVisible" class="fa-solid fa-chevron-down arrowIcon"></i>
+                        <i *ngIf="!hotel?.amenitiesSummer.isVisible" class="fa-solid fa-chevron-down arrowIcon"></i>
+                    </button>
+                    <div class="serviceBell d-flex">
+                        <img src="../../../../assets/common/serviceBell.png" class="serviceBellIcon">
+                        <h6 class="amenityCaption">OTEL OLANAKLARI</h6>
+                    </div>
+                    <div class="hotelAmenitiesInfo">
+                        <ul class="amenityUl" *ngIf="hotel?.amenitiesSummer.isVisible">
+                            <li *ngFor="let amenitiesSum of hotel?.amenitiesSummer" class="amenity">
+                                <span>
+                                    {{amenitiesSum}}
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class=" wrapperAmenities py-2">
+                    <button (click)="toggleVisibility(hotel?.sportSummerAmenities)" class="showHideButton">
+                        <i *ngIf="hotel?.sportSummerAmenities.isVisible"
+                            class="fa-solid fa-chevron-down  arrowIcon"></i>
+                        <i *ngIf="!hotel?.sportSummerAmenities.isVisible"
+                            class="fa-solid fa-chevron-down arrowIcon"></i>
+                    </button>
+                    <div class="sportIcon d-flex">
+                        <i class="fa-solid fa-basketball basketballIcon "></i>
+                        <p class="amenityCaption">SPOR</p>
+                    </div>
+                    <div class="sportAmenities" *ngIf="hotel?.sportSummerAmenities.isVisible">
+                        <ul class="amenityUl">
+                            <li *ngFor="let summerAmenity of hotel?.sportSummerAmenities" class="amenity">
+                                <span>
+                                    {{summerAmenity}}
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class=" wrapperAmenities">
+                    <button (click)="toggleVisibility(hotel?.babySummerAmenities)" class="showHideButton">
+                        <i *ngIf="hotel?.babySummerAmenities.isVisible" class="fa-solid fa-chevron-down arrowIcon"></i>
+                        <i *ngIf="!hotel?.babySummerAmenities.isVisible" class="fa-solid fa-chevron-down arrowIcon"></i>
+                    </button>
+                    <div class="baby d-flex">
+                        <img src="../../../../assets/common/baby.png" class="babyIcon" alt="baby">
+                        <h6 class="amenityCaption">ÇOCUK / BEBEK</h6>
+                    </div>
+                    <div class="babyAmenities" *ngIf="hotel?.babySummerAmenities.isVisible">
+                        <ul class="amenityUl">
+                            <li *ngFor="let babySum of hotel?.babySummerAmenities" class="amenity">
+                                <span>
+                                    {{babySum}}
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class=" wrapperAmenities">
+                    <button (click)="toggleVisibility(hotel?.spaWellnessSummer)" class="showHideButton">
+                        <i *ngIf="hotel?.spaWellnessSummer.isVisible" class="fa-solid fa-chevron-down arrowIcon"></i>
+                        <i *ngIf="!hotel?.spaWellnessSummer.isVisible" class="fa-solid fa-chevron-down arrowIcon"></i>
+
+                    </button>
+                    <div class="spaWellness d-flex">
+                        <img src="../../../../assets/common/spaWellnes.png" class="spaWellnesIcon" alt="spaWellnes">
+                        <h6 class="amenityCaption">SPA / WELLNESS</h6>
+                    </div>
+                    <div class="spaAmenities" *ngIf="hotel?.spaWellnessSummer.isVisible">
+                        <ul class="amenityUl">
+                            <li *ngFor="let spaSum of hotel?.spaWellnessSummer" class="amenity">
+                                <span>
+                                    {{spaSum}}
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Genel Tanıtım Kısmı -->
+            <div class="row m-3" *ngFor="let selected of amenitiesArray">
+                <div class="generalInfoWrapper">
+                    <h4 class="generalInfoTitle mt-3">
+                        <strong>Genel Tanıtım</strong>
+                    </h4>
+                    <div class="content-container" [ngClass]="{'expanded': selected.hotelInfo.showMore}">
+                        <ul class="generalInfo">
+                            <span [ngClass]="{'wrapperGeneralInfo': !selected.hotelInfo.showMore}">
+                                <li *ngFor="let selectedGeneralInfo of selected.hotelInfo" class="selectedGeneralInfo"
+                                [ngClass]="{'wrapperGeneralInfo': !selected.hotelInfo.showMore}">
+                                    <p class="contentInfo" [ngClass]="{'expanded': selected.hotelInfo.showMore}">
+                                        {{ selectedGeneralInfo }}
+                                    </p>
+                                </li>
+                            </span>
+                        </ul>
+                    </div>
+                    <button (click)="toggleContentSingle(selected.hotelInfo)" class="toggleButton">
+                        <i class="fa-solid {{ selected.hotelInfo.showMore ? 'fa-minus' : 'fa-plus plusButton' }}"></i>
+                        {{ selected.hotelInfo.showMore ? 'Daha Az Görüntüle' : 'Daha Fazla Görüntüle' }}
+                    </button>
+                </div>
+                <!-- Yeme İçme Kısmı-->
+                <div class="foodDrinkWrapper">
+                    <h4 class="generalInfoTitle mt-3">
+                        <strong>Yeme / İçme</strong>
+                    </h4>
+                    <div>
+                        <div class="content-container" [ngClass]="{'expanded': selected.foodDrinkSummer.showMore}">
+                            <ul class="generalInfo">
+                                <li *ngFor="let foodDrinkSum of selected.foodDrinkSummer"[ngClass]="{'wrapperGeneralInfo': !selected.foodDrinkSummer.showMore}"
+                                    class="selectedGeneralInfo">
+                                    <p class="contentInfo" [ngClass]="{'expanded': selected.foodDrinkSummer.showMore}">
+                                        {{ foodDrinkSum }}
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <button (click)="toggleContentSingle( selected.foodDrinkSummer)" class="toggleButton">
+                        <i
+                            class="fa-solid {{ (selected.foodDrinkSummer.showMore) ? 'fa-minus' : 'fa-plus plusButton' }}"></i>
+                        {{ (selected.foodDrinkSummer.showMore) ? 'Daha Az Görüntüle ' : 'Daha Fazla Görüntüle' }}
+                    </button>
+                </div>
+
+                <!-- Konum Kısmı-->
+                <div class="location">
+                    <h4 class="generalInfoTitle mt-3">
+                        <strong>Konum</strong>
+                    </h4>
+                    <div class="content-container" [ngClass]="{'expanded': selected.hotelLocation.showMore}">
+                        <ul class="generalInfo">
+                            <span [ngClass]="{'wrapperGeneralInfo': !selected.hotelLocation.showMore}">
+                                <li class="selectedGeneralInfo" *ngFor="let locationHotel of selected.hotelLocation"
+                                [ngClass]="{'wrapperGeneralInfo': !selected.hotelLocation.showMore}">
+                                    <p class="contentInfo" [ngClass]="{'expanded': selected.hotelLocation.showMore}">
+                                        {{ locationHotel }}
+                                    </p>
+                                </li>
+                            </span>
+                        </ul>
+                    </div>
+                    <button (click)="toggleContentSingle(selected.hotelLocation)" class="toggleButton">
+                        <i
+                            class="fa-solid {{ selected.hotelLocation.showMore ? 'fa-minus' : 'fa-plus plusButton' }}"></i>
+                        {{ selected.showMore ? 'Daha Az Görüntüle' : 'Daha Fazla Görüntüle' }}
+                    </button>
+                </div>
+
+
+                <!-- Diğer Olanaklar Kısmı-->
+
+                <div class="otherAmenitiesWrapper">
+                    <h4 class="generalInfoTitle mt-3">
+                        <strong>Diğer Olanaklar</strong>
+                    </h4>
+                    <div class="content-container" [ngClass]="{'expanded': selected.otherAmenitiesSummer.showMore}">
+                        <ul class="generalInfo">
+                            <span>
+                                <li *ngFor="let amenitiesSummerSection of selected.otherAmenitiesSummer"
+                                    [ngClass]="{'wrapperGeneralInfo': !selected.otherAmenitiesSummer.showMore}"
+                                    class="selectedGeneralInfo">
+                                    <p class="contentInfo"
+                                        [ngClass]="{'expanded': selected.otherAmenitiesSummer.showMore}">
+                                        {{ amenitiesSummerSection }}
+                                    </p>
+                                </li>
+                            </span>
+
+                        </ul>
+                    </div>
+                    <button (click)="toggleContentSingle( selected.otherAmenitiesSummer)" class="toggleButton">
+                        <i
+                            class="fa-solid {{  (selected.otherAmenitiesSummer.showMore) ? 'fa-minus' : 'fa-plus plusButton' }}"></i>
+                        {{selected.otherAmenitiesSummer.showMore ? 'Daha Az Görüntüle' : 'Daha Fazla Görüntüle' }}
+                    </button>
+                </div>
+
+                <!-- Balayı Kısmı-->
+
+                <div class="eventWrapper">
+                    <h4 class="generalInfoTitle mt-3">
+                        <strong>Balayı</strong>
+                    </h4>
+
+                    <div class="content-container" [ngClass]="{'expanded': selected.hotelHoneymoonSummer.showMore}">
+                        <ul class="generalInfo">
+                            <span [ngClass]="{'wrapperGeneralInfo': !selected.hotelHoneymoonSummer.showMore}">
+                                <li *ngFor="let honeymoonSum of selected.hotelHoneymoonSummer"
+                                [ngClass]="{'wrapperGeneralInfo': !selected.hotelHoneymoonSummer.showMore}"
+                                    class="selectedGeneralInfo">
+                                    <p class="contentInfo"
+                                        [ngClass]="{'expanded': selected.hotelHoneymoonSummer.showMore}">
+                                        {{ honeymoonSum }}
+                                    </p>
+                                </li>
+                            </span>
+                        </ul>
+                    </div>
+                    <button (click)="toggleContentSingle( selected.hotelHoneymoonSummer)" class="toggleButton">
+                        <i
+                            class="fa-solid {{  (selected.hotelHoneymoonSummer.showMore) ? 'fa-minus' : 'fa-plus plusButton' }}"></i>
+                        {{ selected.hotelHoneymoonSummer.showMore ? 'Daha Az Görüntüle' : 'Daha Fazla Görüntüle' }}
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="importanInformationSection">
+                <h4 class="titleİmportantInfo">Önemli Bilgiler</h4>
+                <div class="row">
+                    <div class="col-12" *ngFor="let hotel of amenitiesArray">
+                        <div class="wrapperInfo">
+                            <div class="checkinTime ">
+                                <p>Giriş Saati</p>
+                                <span>
+                                    {{ hotel.mainHotelInfo.checkInTime }}
+                                </span>
+                            </div>
+                            <div class="checkoutTime ">
+                                <p>Çıkış Saati</p>
+                                <span>
+                                    {{ hotel.mainHotelInfo.checkOutTime }}
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="importantInfoContent">
+                            <div class="" *ngFor="let hotel of amenitiesArray">
+                                <ul *ngFor="let winterInfo of hotel.importtanHotelInfoWinter ">
+                                    <li class="info"> {{winterInfo}}</li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+

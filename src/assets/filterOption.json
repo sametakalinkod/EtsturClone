@@ -1,0 +1,169 @@
+[
+    {
+        "name": "En Çok Tercih Edilen Filtreler",
+        "displayCount": 5,
+        "options": [
+            {
+                "name": "8 ve Üstü",
+                "filterArea": "rate"
+            },
+            {
+                "name": "Ultra Her Şey Dahil",
+                "filterArea": "accommodationType"
+            },
+            {
+                "name": "Denize Sıfır",
+                "filterArea": "amenities"
+            },
+            {
+                "name": "Tatil Köyü & Resort",
+                "filterArea": "propType"
+            },
+            {
+                "name": "Aquapark",
+                "filterArea": "amenities"
+            }
+        ]
+    },
+    {
+        "name": "Misafir Puanı",
+        "areadef": "rate",
+        "displayCount": 3,
+        "options": [
+            "9 ve Üstü",
+            "8 ve Üstü",
+            "7 ve Üstü",
+            "6 ve Üstü"
+        ]
+    },
+    {
+        "name": "Konaklama Tipi",
+        "areadef": "accommodationType",
+        "displayCount": 3,
+        "options": [
+            "Oda Kahvaltı",
+            "Sadece Oda",
+            "Her Şey Dahil",
+            "Ultra Her Şey Dahil",
+            "Self Servis"
+        ]
+    },
+    {
+        "name": "Fiyat Aralığı",
+        "options": []
+    },
+    {
+        "name": "Bölge",
+        "areadef": "location",
+        "displayCount": 3,
+        "options": [
+            "Akdeniz Bölgesi",
+            "Antalya",
+            "Ege Bölgesi Türkiye",
+            "Muğla",
+            "Belek",
+            "Side",
+            "Alanya",
+            "Manavgat",
+            "Kemer",
+            "Bodrum",
+            "Antalya Merkez",
+            "Lara-Kundu",
+            "Fethiye",
+            "İzmir",
+            "Marmaris",
+            "Aydın",
+            "Kadriye",
+            "Okurcalar",
+            "Çeşme",
+            "Üç Kum Tepesi Mevkii",
+            "Didim",
+            "Kumköy",
+            "İleribaşı Mevkii",
+            "Beldibi",
+            "Belek Boğazkent",
+            "Kiriş",
+            "Türkler",
+            "İskele Mevkii",
+            "Torba",
+            "Tekirova",
+            "Kemer Merkez"
+        ]
+    },
+    {
+        "name": "Temalar",
+        "areadef": "amenities",
+        "displayCount": 3,
+        "options": [
+            "Denize Sıfır",
+            "Plajı Kum",
+            "Aquapark",
+            "Çocuk Dostu",
+            "Balayı Oteli",
+            "Bebek Dostu",
+            "Spa Tesisi"
+        ]
+    },
+    {
+        "name": "Olanaklar",
+        "areadef": "amenities",
+        "displayCount": 3,
+        "options": [
+            "Kablosuz İnternet",
+            "Restorant",
+            "Bar",
+            "lobi",
+            "Otopark",
+            "Oda Servisi"
+        ]
+    },
+    {
+        "name": "Sports-Wellness-Entertainment",
+        "areadef": "amenities",
+        "displayCount": 3,
+        "options": [
+            "Açık Yüzme Havuzu",
+            "Kapalı Yüzme Havuzu",
+            "Masaj, Kese ve Cilt Bakımları",
+            "Spa Merkezi",
+            "Aquapark",
+            "Sauna",
+            "Hamam"
+        ]
+    },
+    {
+        "name": "Çocuk",
+        "areadef": "amenities",
+        "displayCount": 3,
+        "options": [
+            "Çocuk Havuzu",
+            "Çocuk Oyun Alanı",
+            "Mini Klüp",
+            "Çocuk büfesi",
+            "Çocuk Bakıcısı"
+        ]
+    },
+    {
+        "name": "Oda Tipi",
+        "displayCount": 3,
+        "areadef": "propType",
+        "options": [
+            "Tatil Köyü & Resort",
+            "Otel",
+            "Hotel",
+            "Küçük Oteller"
+        ]
+    },
+    {
+        "name": "Zincir Oteller",
+        "areadef": "name",
+        "displayCount": 3,
+        "options": [
+            "Maxx Royal",
+            "Voyage Otelleri",
+            "Crystal Otelleri",
+            "Rixos Otelleri",
+            "Sherwood Otelleri"
+        ]
+    }
+]

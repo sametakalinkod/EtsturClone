@@ -1,0 +1,32 @@
+<div class="container modalWrapper">
+    <div class="modal-header">
+        <h5 class="modal-title"><b>
+                Tüm Kampanyalar
+            </b></h5>
+        <button type="button" class="btn-close" aria-label="Close" (click)="activeModal.dismiss('Cross click')">
+            <div class="closeBtn">x</div>
+        </button>
+    </div>
+    <div class="modal-body">
+        <div class="wrapper">
+            <div class="openClose">
+                <div class="openCloseSection">
+                    <div class="modal-caption" (click)="openCloseBtn()">
+                        <b class="caption">
+                            {{hotel?.longTermAccDiscount ? "Uzun Dönem Konaklamalara Özel İndirim" : ""}}
+                        </b>
+                        <span *ngIf="!openClose" class="decrease">
+                            <i class="fa-solid fa-minus"></i>
+                        </span>
+                        <span *ngIf="openClose" class="increase">
+                            <i class="fa-solid fa-plus"></i>
+                        </span>
+                    </div>
+                    <div class="modal-body">
+                        <p class="mt-3 p-3" *ngIf="!openClose"> {{hotel?.longTermAccDiscount}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

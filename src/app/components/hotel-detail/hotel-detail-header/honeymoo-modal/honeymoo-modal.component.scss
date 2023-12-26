@@ -1,0 +1,74 @@
+
+.modal-body p{
+    font-size: 14px;
+}
+.modal-header{
+    border-bottom:none;
+    padding: 3px 19px 15px!important
+}
+.modal-header .btn-close {
+    padding: calc(var(--bs-modal-header-padding-y) * 0.5) calc(var(--bs-modal-header-padding-x) * 0.5);
+    margin: calc(-2.5 * var(--bs-modal-header-padding-y)) calc(-2.5 * var(--bs-modal-header-padding-x)) calc(0.5 * var(--bs-modal-header-padding-y)) auto;
+    border: 2px transparent solid;
+    background-color: #eaf1fa;
+    color: #61656e;
+    padding: 0!important;
+    width: 24px;
+    height: 24px;
+    background: #eaf1fa;
+    border-radius: 20px;
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 28px;
+}
+.closeBtn{
+    font-size: 30px;
+    margin: -7px -1px -3px 1px;
+    display: block;
+    color: #61656e;
+}
+.openCloseSection{
+    background: #f6f9fd;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    border: 0;
+}
+.modal-caption{
+    background: 0 0;
+    border: 0;
+    padding: 18px;
+}
+.modal-body{
+    padding: 0 18px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #1f2126;
+    transition: ease-in 0.6;
+}
+.caption{
+    font-family: bolder;
+}
+.decrease,.increase{
+    margin: 23px;
+}
+.modalWrapper{
+    padding: 13px;
+
+}
+@media screen and (max-width: 550px) {
+    ::ng-deep.modal-content {
+        width: 102%;
+        left: -1%;
+        margin-top: 2%;
+    }
+
+    .closeBtn {
+        margin: 0px;
+        margin-top: -4px;
+    }
+
+    .modal-header .btn-close {
+        margin: -13px -19px 0px 0px !important; 
+    }
+}

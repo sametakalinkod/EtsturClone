@@ -1,0 +1,30 @@
+<div class="serachDatas">
+  <div class="wrapperSearchSetion m-3" >
+    <div class="wrapperBtn">
+      <button class="btnToggle" (click)="toggleSearchSection()">
+        Değiştir
+  
+      </button>
+      <i *ngIf="!showSearchSection" class="fas fa-arrow-up iconArrow"></i>
+      <i *ngIf="showSearchSection" class="fas fa-arrow-down iconArrow"></i>
+    </div>
+  
+      <p class="searchTextCaption">{{searchText}}</p>
+      <div >
+          <p>
+              {{ ngbDateToDate(fromDate) | date:'dd MMM' }}- {{ ngbDateToDate(toDate) | date:'dd MMM'
+              }}({{nightCount}} Gece ),{{counter +counterChild}} Kişi
+          </p>
+          
+      </div>
+  </div>
+</div>
+
+<div class="m-5" *ngIf="!showSearchSection" ></div>
+  <app-search-section  [hidden]="!showSearchSection"   [searchData]="searchData"></app-search-section>
+
+<app-hotel-detail-header [hotel]="hotel"  [searchData]="searchData"></app-hotel-detail-header>
+<app-hotel-detail-room [hotelId]="hotelId"  [searchData]="searchData"></app-hotel-detail-room>
+<app-hotel-detail-information [hotel]="hotel"></app-hotel-detail-information>
+<app-hotel-detail-locaiton [hotel]="hotel"></app-hotel-detail-locaiton>
+<app-hotel-detail-user-review [hotel]="hotel"></app-hotel-detail-user-review>

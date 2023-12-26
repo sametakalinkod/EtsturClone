@@ -1,0 +1,48 @@
+
+<div class="wrapperContainer">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="captionHoliday">
+              <h1>
+                Tatil Temaları
+              </h1> 
+            </div>
+            <p class="lineCaption"></p>
+        </div>
+    </div>
+    
+    <div class="wrapperHolidayThemeSection row">
+        <div class="holidaySection">
+            <div class="row wrapperHoliday">
+                <div class="leftArrow"(click)="leftArrow()" >
+                 <img class="leftArrowIcon" src="../../../../assets/common/iconsback.png">
+                </div>
+                <div id="carouselExampleControls" class="scrollMobile">
+                    <div *ngFor="let theme of getVisibleThemes(); let i = index" class="carouselWrapper ">
+                        <div class="wrapper">
+                            <div class="imgWrapper">
+                                <img [src]="theme.images" class="img" alt="image slide">
+                              
+                            </div>
+                            <div class="carouselCaption">
+                                {{ theme.text }}
+                            </div>
+                            <div class="lineSection"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rightArrow" (click)="rightArrow()">
+                    <img class="rightArrowIcon" src="../../../../assets/common/iconsforward.png">
+                </div>
+            </div>
+        </div>       <div class="themeHoliday">
+            <div class="showAllTheme">
+                Tüm Temaları Gör
+            </div>
+        </div>
+  
+    
+    </div>
+
+ 
+</div>

@@ -1,0 +1,67 @@
+[
+    {
+        "name": "Keşfet!",
+        "options": [
+            "Otel",
+            "Tur",
+            "Uçak Bileti",
+            "2024 Resmi Tatiller"
+        ]
+    },
+    {
+        "name": "Kampanyalar",
+        "options": [
+            "Erken Rezervasyon Otelleri",
+            "Kampanyalar",
+            "İptal ve İade Paketi",
+            "Tatil Fırsatları",
+            "Hediye Kart",
+            "Transfer ve Ulaşım Avantajı"
+        ]
+    },
+    {
+        "name": "Otel Temaları",
+        "options": [
+            "Bayram Otelleri",
+            "Balayı Otelleri",
+            "İki Çocuk Ücretsiz Oteller",
+            "Villa Oteller",
+            "Spa Otelleri",
+            "Bungalov Oteller",
+            "İş Otelleri"
+        ]
+    },
+    {
+        "name": "ETS Group",
+        "options": [
+            "Etstur",
+            "Odamax",
+            "Ucuzabilet",
+            "HotelAgent",
+            "Didimtur",
+            "ETSMICE",
+            "Maxx Royal",
+            "Voyage Hotel",
+            "OtelPuan",
+            "Jetset"
+        ]
+    },
+    {
+        "name": "Kurumsal",
+        "options": [
+            "İletişim",
+            "Haberler",
+            "Satış Acentelerimiz",
+            "Şirketlere Özel",
+            "Kurumsal",
+            "İnsan Kaynakları",
+            "Bilgi Toplumu Hizmetleri",
+            "Gizlilik Politikası",
+            "İşlem Rehberi",
+            "Satış Kanalları",
+            "Misafir Deneyimi ve İlişki Yönetimi",
+            "ISO 9001 Belgesi",
+            "ISO 100002 Belgesi"
+        ]
+    }
+]

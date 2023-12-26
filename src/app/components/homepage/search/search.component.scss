@@ -1,0 +1,50 @@
+.homeImg {
+    background: url("../../../../assets/homepage/main-background.webp");
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center !important;
+    object-fit: cover;
+}
+
+.searchSection {
+    position: relative;
+}
+
+.searchSection .inputSearch {
+    position: absolute;
+    top: 11px;
+    left: 22px;
+    height: 25px;
+    z-index: 1;
+}
+
+.navPills {
+    padding: 60px 0 0 30px;
+}
+
+.navPillsBottom {
+    padding: 0px 34px 25px 17px
+}
+
+
+.captionEts {
+    text-align: center;
+    color: #fff;
+    text-shadow: 4px 4px 0px rgba(0, 0, 0, 0.16);
+    font-size: 40px;
+    font-weight: 700;
+    max-width: 665px;
+    margin: 0px auto auto auto;
+}
+
+@media (min-weight:600px) {
+    .mobile-wave {
+        visibility: visible;
+    }
+}
+@media (max-width:990px){
+    .captionEts{
+        display: none
+    }
+ 
+}

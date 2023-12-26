@@ -1,0 +1,608 @@
+::ng-deep.modal-content {
+    width: 105%;
+    left: -2%;
+    margin-top: -2%;
+}
+
+.btn-close {
+    position: absolute;
+    left: 21em;
+    top: 9px;
+    border: 1px black solid;
+    border-radius: 50%;
+    padding: 6px;
+}
+
+.closeBtn {
+    font-size: 30px;
+    margin: -7px -1px -3px 1px;
+    display: block;
+    color: #61656e;
+}
+
+.carousel-control-next {
+    position: absolute;
+    top: 50%;
+    outline: none;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, .3);
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 6px 12px;
+    border: none;
+    z-index: 1;
+    margin-top: -16px;
+}
+
+
+
+.captionFacility {
+    font-family: bolder;
+    line-height: 15px;
+
+}
+
+.captionInfo {
+    margin: 15px;
+    margin-top: 45px;
+    font-weight: 700;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    font-size: 32px;
+}
+
+.seasonalInfoWrapper {
+    border-bottom: 1px solid #050506;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.seasonalInfo {
+    text-align: center;
+
+    display: flex;
+}
+
+.winterSeason,
+.summerSeason {
+    font-weight: 300;
+    display: grid;
+    margin-left: 160px;
+    cursor: pointer;
+}
+
+.captionWinter,
+.captionSummer {
+    font-weight: 400;
+    font-family: Montserrat;
+    font-size: 15px;
+}
+
+.seasonWinter,
+.seasonSummer {
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #61656e;
+    margin-bottom: 17px;
+}
+
+.wrapper {
+    position: relative;
+    height: 100%;
+
+}
+
+.hotelMainImage {
+    height: 350px;
+    border-radius: 6px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-left: 0;
+    margin-right: 0;
+    width: 100%;
+}
+
+.hotelMainImage::before {
+    content: '';
+    position: absolute;
+    width: 112%;
+    height: 100%;
+    bottom: 0;
+    left: -33px;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, 0.77) 35%, #ffffff 84%);
+}
+
+.hotelAmenities {
+    position: absolute;
+    top: 42px;
+    left: 16px;
+}
+
+.mobileWrapper {
+    position: relative;
+}
+
+.mobileWrapper {
+    position: absolute;
+    height: 345px;
+    width: 94%;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background-color: rgba(18, 5, 41, .7);
+    color: #fff;
+    z-index: 1;
+    top: 107px;
+    left: 9px;
+    font-size: 14px;
+    border-left: 6px;
+    border-radius: 6px;
+
+}
+
+.hotelImg {
+    height: 340px !important;
+}
+
+.building {
+    color: #17cec4;
+    font-size: 15px;
+    margin-right: 10px;
+}
+
+.hotelAmenities {
+    display: flex;
+    justify-content: space-between;
+    align-content: flex-start;
+    margin: 0;
+    height: 300px;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.leftSide {
+    margin-left: -32px;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 15px;
+}
+
+.features {
+    list-style: none;
+    line-height: 37px;
+}
+
+.award {
+    border-radius: 6px;
+}
+
+.captionHotel {
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.wrapperAmenities {
+    border: 1px solid #eaebec;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    padding: 21px;
+}
+
+
+.amenityCaption {
+    color: #61656e;
+    width: 100%;
+    text-align: left;
+    display: flex;
+    font-size: 14px;
+    font-weight: 700;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 1px;
+    color: #1f2126;
+    margin-bottom: 0;
+    cursor: default;
+    text-transform: uppercase;
+    align-items: center;
+    padding: 4px
+}
+
+.showHideButton {
+    width: 100px;
+    border: none;
+    background: transparent;
+    float: right;
+}
+
+.amenityUl {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 15px;
+    font-weight: 400;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #1f2126;
+    padding-left: 33px;
+}
+
+.amenity {
+    list-style: none;
+    margin: 7px 10px 7px 0;
+    border-right: 1px solid #c4cbd5;
+    padding-right: 10px;
+}
+
+.amenity:last-child {
+    border-right: none
+}
+
+.serviceBellIcon {
+    width: 21px;
+    margin: 2px;
+}
+
+.basketballIcon {
+    padding: 5px
+}
+
+.babyIcon {
+    width: 22px;
+    height: 24px;
+    margin: 2px;
+}
+
+.spaWellnesIcon {
+    height: 27px;
+    width: 25px;
+    margin: 2px;
+}
+
+.generalInfoTitle {
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #1f2126;
+}
+
+.selectedGeneralInfo {
+    list-style: none;
+
+
+}
+
+
+.wrapperGeneralInfo {
+    position: relative;
+
+}
+
+
+.wrapperGeneralInfo {
+    position: relative;
+
+}
+
+.wrapperGeneralInfo::after {
+    content: '';
+    position: absolute;
+    width: 112%;
+    height: 100%;
+    bottom: 0;
+    left: -33px;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, 0.77) 35%, #ffffff 84%);
+}
+
+
+.foodDrinkWrapper,
+.location,
+.otherAmenitiesWrapper,
+.eventWrapper,
+.generalInfoWrapper,
+.importanInformationSection {
+    width: 100%;
+    height: auto;
+    display: inline-flex;
+    flex-direction: column;
+    padding: 20px 0;
+    border-bottom: 1px solid #d4d5d7;
+    border-left: none;
+    border-right: none;
+}
+
+.contentInfo {
+    font-size: 13px;
+    line-height: 20px;
+    margin-left: -28px;
+    width: 316px;
+}
+
+.generalInfo {
+    max-height: 231px;
+    max-height: fit-content;
+}
+
+.content-container {
+    max-height: 77px;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+}
+
+.content-container.expanded {
+    max-height: none;
+}
+
+.plusButton {
+    color: #056bfd;
+    margin-right: 8px;
+    font-size: 18px;
+}
+
+.winterActive,
+.summerActive {
+    font-weight: 700;
+    position: relative;
+
+}
+
+.winterActive ::before,
+.summerActive ::before {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 5px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    border-radius: 3px;
+    background: #17cec4;
+    position: absolute;
+    left: 46%;
+    bottom: -3px;
+}
+
+.toggleButton {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    outline: none;
+    color: #056bfd;
+    text-decoration: none;
+    font-size: 14px;
+    margin-left: 9px;
+    margin-top: 8px;
+}
+
+.titleİmportantInfo {
+    font-size: 20px;
+    color: #1f2126;
+    padding: 36px 12px 8px 0px;
+    margin-left: 3px;
+    font-weight: 700;
+}
+
+.checkinTime,
+.checkoutTime {
+    border-radius: 6px;
+    border: solid 1px #eaebec;
+    background-color: #fff;
+    margin-bottom: 10px;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 80px;
+    min-height: 80px;
+    max-height: 80px;
+}
+
+.checkinTime>span,
+.checkoutTime>span {
+    font-size: 24px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #1f2126;
+    margin-top: 4px;
+}
+
+.checkinTime>p,
+.checkoutTime>p {
+    font-size: 15px;
+    font-weight: 400;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 1px;
+    color: #9ca1ae;
+    text-transform: uppercase;
+    margin-top: 8px
+}
+
+.info {
+    font-size: 14px;
+    font-weight: 400;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #1f2126;
+    list-style: none;
+
+}
+
+@media screen and (max-width: 430px) {
+    .importantInfoContent {
+        width: 25em;
+    }
+
+    .titleİmportantInfo {
+
+        margin-left: 35px;
+    }
+
+    .checkinTime>p,
+    .checkoutTime>p {
+        font-size: 12px;
+        width: 9em !important;
+        flex: none;
+        flex-direction: column;
+    }
+
+    .checkinTime>span,
+    .checkoutTime>span {
+        font-size: 21px !important;
+
+    }
+
+    .wrapperInfo {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .btn-close {
+        left: 23em;
+    }
+    .wrapperInfo{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-left: -15px;
+    }
+}
+
+
+@media screen and (max-width: 390px) {
+    ::ng-deep.modal-content {
+        width: 105%;
+        left: -2%;
+        margin-top: -2%;
+    }
+
+    .titleİmportantInfo {
+        padding: 23px 27px 8px 28px;
+    }
+
+    .checkoutTime,
+    .checkinTime {
+        margin-right: 25px !important;
+    }
+
+    .wrapperInfo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .importantInfoContent {
+        width: 350px;
+    }
+    .btn-close {
+        left: 22em;
+    }
+    .titleİmportantInfo{
+        margin-left: 1px;
+    }
+    .checkoutTime, .checkinTime {
+        margin-right: 11px !important;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .btn-close {
+        left: 21em;
+    }
+
+    .titleİmportantInfo {
+        margin-left: 2px;
+    }
+
+    .wrapperInfo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 29px;
+    }
+
+}
+
+@media screen and (max-width: 360px) {
+    .btn-close {
+        left: 20em;
+    }
+}
+
+@media screen and (max-width: 320px) {
+
+    ::ng-deep.modal-content {
+        width: 105%;
+        left: -7px !important;
+        margin-top: -3%;
+    }
+
+    .btn-close {
+        left: 17em;
+    }
+
+    .foodDrinkWrapper,
+    .location,
+    .otherAmenitiesWrapper,
+    .eventWrapper,
+    .generalInfoWrapper,
+    .importanInformationSection {
+        width: 89%;
+    }
+
+    .checkoutTime,
+    .checkinTime {
+        margin-left: 27px;
+        margin-right: -5px !important;
+        padding: 0px
+    }
+
+    .contentInfo {
+        width: 262px;
+    }
+
+    .importantInfoContent {
+        width: 300px;
+    }
+
+    .info {
+        font-size: 13px;
+    }
+
+    .checkinTime>p,
+    .checkoutTime>p {
+        font-size: 13px;
+        padding: 3px;
+        margin-top: none
+    }
+
+    .checkinTime>span,
+    .checkoutTime>span {
+        font-size: 19px;
+        padding: 3px
+    }
+    .wrapperInfo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 7px;
+    }
+}

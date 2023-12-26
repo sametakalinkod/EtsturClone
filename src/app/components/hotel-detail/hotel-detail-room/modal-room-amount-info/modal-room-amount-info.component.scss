@@ -1,0 +1,18 @@
+.installment {
+    font-size: 12px;
+}
+
+:host ::ng-deep .modal-content {
+    width: 152%;
+    left: -30%;
+    margin-top: 58%;
+
+}
+
+@media screen and (max-width: 500px) {
+    :host  ::ng-deep .modal-content {
+        width: 92%;
+        left: 5%;
+        margin-top: 62%;
+    }
+}

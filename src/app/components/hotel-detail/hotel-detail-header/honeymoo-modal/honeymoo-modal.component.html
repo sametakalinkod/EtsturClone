@@ -1,0 +1,31 @@
+<div class="container modalWrapper">
+    <div class="modal-header">
+        <h5 class="modal-title"><b>
+               Balayı Fırsatları
+            </b></h5>
+        <button type="button" class="btn-close" aria-label="Close" (click)="activeModal.dismiss('Cross click')">
+            <div class="closeBtn">x</div>
+        </button>
+    </div>
+    <div class="modal-body">
+        <div class="wrapper">
+            <div class="openClose">
+                <div class="openCloseSection">
+                    <div class="modal-caption">
+                        <b class="caption">
+                            {{hotel?.honeymoonDiscount ? "Balayı" : ""}}
+                        </b>
+                    </div>
+                    <div class="modal-body p-3">
+                        <ul *ngIf="hotel?.honeymoonDiscount">
+                            <li *ngFor="let item of hotel.honeymoonDiscount.split('.')">
+                              {{ item }}
+                            </li>
+                          </ul>
+                          
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

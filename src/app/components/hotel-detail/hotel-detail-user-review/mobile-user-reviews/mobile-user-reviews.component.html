@@ -1,0 +1,256 @@
+<div class="container">
+    <div class="">
+        <div class="closeModal d-flex mt-3">
+            <i class="fa-solid fa-arrow-left p-2" (click)="activeModal.dismiss('Cross click')"></i>
+            <div class="comments">
+                <h2 class="commentCaption">
+                    Yorumlar
+                </h2>
+            </div>
+        </div>
+
+
+
+        <div class="reviewsWrapper">
+            <div class="row">
+
+                <div class="reviews col-6">
+
+                    <div class="reviewsArange">
+                        <span *ngIf="selectedCategory === 'Tüm Yorumlar' || !selectedCategory">
+                            {{ calculateAverageRatingForCategory(selectedHotels[0]?.reviews) | number:'1.2-2' }}
+                        </span>
+                        <span *ngIf="selectedCategory === 'Aileler'">
+                            {{ calculateAverageRatingForCategory(selectedHotels[0]?.familyReviews) | number:'1.2-2'
+                            }}
+                        </span>
+                        <span *ngIf="selectedCategory === 'Çiftler'">
+                            {{ calculateAverageRatingForCategory(selectedHotels[0]?.couplesReviews) | number:'1.2-2'
+                            }}
+                        </span>
+                        <span *ngIf="selectedCategory === 'Tek Misafirler'">
+                            {{ calculateAverageRatingForCategory(selectedHotels[0]?.oneGuestReviews) |
+                            number:'1.2-2' }}
+                        </span>
+                        <span *ngIf="selectedCategory === 'Arkadaşlar'">
+                            {{ calculateAverageRatingForCategory(selectedHotels[0]?.friendsRevies) | number:'1.2-2'
+                            }}
+                        </span>
+                    </div>
+
+
+                    <div class="reviewName">
+                        {{ getEvaluationText(calculateAverageRatingForCategory(selectedHotels[0]?.reviews)) }}
+                    </div>
+                </div>
+                <div class="totalReview col-6">
+                    <p>
+                        Tesise ait Toplam {{hotel?.comments}} görüş mevcut
+                    </p>
+
+                </div>
+
+                <div class="col-12">
+                    <div class="guestReviewsSection">
+                        <div class="buttonSection">
+                            <button (click)="showReview('Tüm Yorumlar')"
+                                [class.active]="selectedCategory === 'Tüm Yorumlar'" class="reviewButton">Tüm
+                                Yorumlar
+                            </button>
+                            <button (click)="showReview('Aileler')" [class.active]="selectedCategory === 'Aileler'"
+                                class="reviewButton">Aileler
+                            </button>
+                            <button (click)="showReview('Çiftler')" [class.active]="selectedCategory === 'Çiftler'"
+                                class="reviewButton">Çiftler
+                            </button>
+                            <button (click)="showReview('Tek Misafirler')"
+                                [class.active]="selectedCategory === 'Tek Misafirler'" class="reviewButton">Tek
+                                Misafirler
+                            </button>
+                            <button (click)="showReview('Arkadaşlar')"
+                                [class.active]="selectedCategory === 'Arkadaşlar'" class="reviewButton">Arkadaşlar
+                            </button>
+                        </div>
+                        <div class="rateSection">
+                            <div class="allReviewsWrapper"
+                                *ngIf="selectedCategory === 'Tüm Yorumlar' || !selectedCategory">
+
+                                <ul *ngFor="let review of hotelReviews">
+                                    <span *ngFor="let allReview of review.reviews" class="reviewSpan">
+
+                                        <li>
+                                            <span class="d-flex align-items-center justify-content-between">
+                                                <p class="categoryName">
+                                                    {{ allReview.category }}
+                                                </p>
+                                                <p class="rate">
+                                                    {{ allReview.rating }}
+                                                </p>
+                                            </span>
+
+                                            <div class="progress">
+
+                                                <span class="progressBar"
+                                                    [style.width.%]="allReview.rating * 10"></span>
+
+                                            </div>
+
+                                        </li>
+
+                                    </span>
+                                </ul>
+                            </div>
+                            <div class="familyReviewWrapper" *ngIf="selectedCategory === 'Aileler'">
+
+                                <ul *ngFor="let review of hotelReviews">
+
+                                    <span *ngFor="let familyReview of review.familyReviews">
+                                        <li>
+                                            <span class="d-flex align-items-center justify-content-between">
+                                                <p class="categoryName">
+                                                    {{ familyReview.category }}
+                                                </p>
+                                                <p class="rate">
+
+                                                    {{ familyReview.rating }}
+                                                </p>
+                                            </span>
+
+                                            <div class="progress">
+
+                                                <span class="progressBar"
+                                                    [style.width.%]="familyReview.rating * 10"></span>
+
+                                            </div>
+                                        </li>
+                                    </span>
+
+                                </ul>
+                            </div>
+                            <div class="couplesReviewsWrapper" *ngIf="selectedCategory === 'Çiftler'">
+
+                                <ul *ngFor="let review of hotelReviews">
+                                    <span *ngFor="let reviewCuples of review.couplesReviews">
+                                        <li>
+                                            <span class="d-flex align-items-center justify-content-between">
+                                                <p class="categoryName">
+                                                    {{ reviewCuples.category }}
+                                                </p>
+                                                <p class="rate">
+
+                                                    {{ reviewCuples.rating }}
+                                                </p>
+                                            </span>
+
+                                            <div class="progress">
+
+                                                <span class="progressBar"
+                                                    [style.width.%]="reviewCuples.rating * 10"></span>
+
+                                            </div>
+                                        </li>
+                                    </span>
+                                </ul>
+                            </div>
+                            <div class="oneGuestReviewsWrapper" *ngIf="selectedCategory === 'Tek Misafirler'">
+
+                                <ul *ngFor="let review of hotelReviews">
+                                    <span *ngFor="let oneGuest of review.oneGuestReviews">
+                                        <li>
+                                            <span class="d-flex align-items-center justify-content-between">
+                                                <p class="categoryName">
+                                                    {{ oneGuest.category }}
+                                                </p>
+                                                <p class="rate">
+
+                                                    {{ oneGuest.rating }}
+                                                </p>
+                                            </span>
+
+
+                                            <div class="progress">
+
+                                                <span class="progressBar" [style.width.%]="oneGuest.rating * 10"></span>
+
+                                            </div>
+                                        </li>
+                                    </span>
+                                </ul>
+                            </div>
+                            <div class="oneGuestReviewsWrapper" *ngIf="selectedCategory === 'Arkadaşlar'">
+
+                                <ul *ngFor="let review of hotelReviews">
+                                    <span *ngFor="let friendReview of review.friendsRevies">
+                                        <li>
+                                            <span class="d-flex align-items-center justify-content-between">
+                                                <p class="categoryName">
+                                                    {{ friendReview.category }}
+                                                </p>
+                                                <p class="rate">
+
+                                                    {{ friendReview.rating }}
+                                                </p>
+                                            </span>
+
+                                            <div class="progress">
+
+                                                <span class="progressBar"
+                                                    [style.width.%]="friendReview.rating * 10"></span>
+
+                                            </div>
+                                        </li>
+                                    </span>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <p class="generalInfotmation">
+                    Yorumlar Otelpuan web sitesinden alınır. Kullanım Sözleşmesi’ni buradan inceleyebilirsiniz.
+                    Gösterilen yorumlar, Etstur veya Odamax üzerinden rezervasyon yapmış misafirlere aittir.
+                </p>
+            </div>
+
+            <div *ngFor="let reviews of hotelReviews">
+
+                <div *ngFor="let guest of reviews.guestReview" class="row">
+                    <div class="col-12 guestSection">
+
+                        <div class="guestAvatar">
+                            <div class="avatar">
+                                <img src="../../../../assets/common/icon.png">
+
+                            </div>
+                            <p class="guestP">Misafir</p>
+                        </div>
+
+                        <div class="wrapperGuestNum">
+                            <span class="guestReviewNum">9.3 Mükemmel</span>
+                        </div>
+                    </div>
+
+                    <div class="col-12 guestReviewSection">
+                        <p>9.3 Mükemmel</p>
+                        {{guest.comment}}
+                        <div *ngFor="let rateGuest of guest.ratings">
+                            <div *ngIf="guest.ratings.isVisible" class="reviewRateing">
+                                {{rateGuest.category}}:
+                                <span class="ratingSpan">
+                                    {{rateGuest.rating}}
+                                </span>
+                            </div>
+                        </div>
+                        <button (click)="toggleVisibility(guest.ratings)" class="showHideButton">
+                            {{ guest.ratings.isVisible ? 'Detayları Gizle' : 'Detayları Göster' }}
+                            <i *ngIf="guest.ratings.isVisible" class="fas fa-arrow-up iconArrow"></i>
+                            <i *ngIf="!guest.ratings.isVisible" class="fas fa-arrow-down iconArrow"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,106 @@
+.modal-body p {
+    font-size: 14px;
+}
+
+.modal-header {
+    border-bottom: none
+}
+
+.modal-header .btn-close {
+    padding: calc(var(--bs-modal-header-padding-y) * 0.5) calc(var(--bs-modal-header-padding-x) * 0.5);
+    margin: calc(-2.5 * var(--bs-modal-header-padding-y)) calc(-2.5 * var(--bs-modal-header-padding-x)) calc(0.5 * var(--bs-modal-header-padding-y)) auto;
+    border: 2px transparent solid;
+    background-color: #eaf1fa;
+    color: #61656e;
+    padding: 0 !important;
+    width: 24px;
+    height: 24px;
+    background: #eaf1fa;
+    border-radius: 20px;
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 28px;
+}
+
+.closeBtn {
+    font-size: 30px;
+    margin: -7px -1px -3px 1px;
+    display: block;
+    color: #61656e;
+}
+
+:host ::ng-deep.modal-content {
+    width: 128%;
+    left: -22%;
+    margin-top: 7%;
+    font-size: 13px;
+}
+
+.roomFeatures {
+    display: flex;
+    font-size: 14px;
+    line-height: 18px;
+    padding-left: 10px;
+
+}
+
+.roomImg {
+    width: 100%;
+    height: 350px;
+    max-height: 350px;
+    object-fit: contain;
+    object-position: center;
+}
+
+.features {
+    padding: 0px 31px 2px 14px;
+    line-height: 18px;
+}
+
+.leftSideRoomFeaturesMobile {
+    display: none;
+    visibility: hidden;
+}
+
+@media screen and (max-width: 500px) {
+
+   :host ::ng-deep.modal-content {
+        width: 106%;
+        left: -2%;
+        margin-top: -4%;
+        font-size: 13px;
+    }
+
+    .closeBtn {
+        font-size: 22px;
+        font-weight: bolder;
+        display: block;
+        color: #61656e;
+        height: 30px;
+    }
+
+    .modal-header,
+    .btn-close {
+
+        font-size: 30px !important;
+        line-height: 28px !important;
+        margin: 2px !important;
+    }
+
+    .roomImg {
+        height: 214px;
+    }
+
+    .leftSideRoomFeaturesMobile {
+        display: inline;
+        visibility: visible !important;
+        line-height: 26px;
+       
+    }
+
+    .leftSideRoomFeatures,
+    .rightSideRoomFeatures {
+        display: none;
+        visibility: hidden;
+    }
+}

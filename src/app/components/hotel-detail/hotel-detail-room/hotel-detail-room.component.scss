@@ -1,0 +1,484 @@
+.container {
+    width: 75%;
+}
+
+.roomCard {
+    width: 100%;
+    margin-top: 25px;
+    padding: 10px 10px 0;
+    border-radius: 6px;
+    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .15);
+    background-color: #fff;
+    color: #1f2126;
+}
+
+.roomMainImg {
+    max-width: 266px !important;
+    width: 266px !important;
+    border-radius: 6px;
+    margin: 0 3px 3px 0;
+    object-fit: cover;
+    height: calc(100% - 10px);
+    cursor: pointer;
+}
+
+.roomName {
+    color: #1f2126;
+    font-size: 18px;
+    margin-left: 20px;
+
+}
+
+.roomInfo {
+    margin-top: 35px;
+    margin-left: 17px;
+    font-size: 14px;
+    height: fit-content;
+}
+
+.roomInfoModal:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.specialWrapper {
+    border-radius: 6px;
+    background-color: #f6f9fd;
+
+}
+
+.hotelType {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    background-color: #e5e9f1;
+    margin-right: 5px;
+}
+
+.iconFork,
+.amountTable {
+    color: #61656e;
+}
+
+.hotelAccommodationType {
+    font-size: 12px;
+    color: #61656e;
+    margin-top: 3px;
+    margin-left: 4px;
+
+}
+
+.modalAmountTable {
+    margin-top: 7pc
+}
+
+.amountTable:hover {
+    cursor: pointer;
+}
+
+.amountTable {
+    font-size: 12px;
+    align-self: end;
+    color: #1f2126;
+    text-decoration: underline;
+}
+
+.roomSelection {
+    border-radius: 6px;
+    background-color: #f6f9fd;
+    margin-left: 7px;
+    width: 40%;
+}
+
+
+/* otel odaları fiyat kısmı */
+
+.discountBadge {
+    background: url("../../../../assets/common/ic-etiket.webp");
+    background-repeat: no-repeat;
+    background-position: right;
+    font-size: 16px;
+    color: #ff8308;
+    padding: 2px 9px;
+    margin: 10px 0;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.discount {
+    margin-left: 7pc;
+}
+
+.normalPrices {
+    font-weight: 500;
+    font-size: 12px;
+    text-align: right;
+    text-decoration-line: line-through;
+    color: #61656e;
+    margin-bottom: unset;
+}
+
+.hotelAmount .hotelCardPriceContainer {
+    position: relative;
+    width: 170px;
+    height: 160px;
+    min-height: 70px;
+    background-color: #f6f9fd;
+    padding: 0 10px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    float: right;
+    margin-top: 10px;
+    border-radius: 6px;
+}
+
+.totalStay,
+.amount,
+.hotelDetailLink {
+
+    color: #1F2126;
+    font-weight: 700;
+    text-align: right;
+    margin: unset;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.amount {
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: unset;
+}
+
+.hotelDetailLink {
+    font-size: 13px;
+    float: right;
+    margin: unset;
+    text-decoration: none;
+    display: block;
+    font-weight: 700;
+    text-align: right;
+    margin-bottom: 0;
+    font-style: normal;
+
+}
+
+.hotelDetailLink>b {
+    color: #17cec4;
+}
+
+.hotelDetailLink:hover {
+    cursor: pointer;
+}
+
+.arrowRight {
+    border: 1px solid #17cec4;
+    border-radius: 100%;
+    color: #17cec4;
+    width: 28px;
+    height: 28px;
+    font-size: 10px;
+    margin-left: 5px;
+    margin-right: -5px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: -7px;
+}
+
+.mobilRoomSection {
+    display: none;
+    visibility: hidden;
+}
+
+@media screen and (min-width: 1920px) {
+    .container {
+        width: 58%;
+    }
+}
+@media screen and (max-width: 900px){
+    .container {
+        display: none !important;
+        visibility: hidden !important;
+        background: #f6f9fd;
+    }
+
+    .mobilRoomSection {
+        display: grid;
+        visibility: visible !important;
+        background: #fff;
+        box-shadow: 0 1px 4px rgba(18, 5, 41, .15);
+        border-radius:6px;
+        padding: 0px 1px 5px 4px !important;
+        margin: 15px 14px !important;
+    }
+
+    .modalRoom {
+        padding: 0;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        color: #4a4a4a;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0;
+        text-transform: uppercase;
+    }
+
+    .modalRoom>em {
+        font-weight: 400;
+        font-size: 12px;
+        color: #056bfd;
+        display: flex;
+        align-items: center;
+        font-style: normal;
+    }
+
+    .roomMobileContent {
+        display: flex;
+        background: #f6f9fd;
+        border-radius: 6px;
+        overflow: hidden;
+    }
+
+    .roomMobileText {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding: 7px 10px;
+        align-items: flex-start;
+        color: #1f2126;
+    }
+
+    .mobilRoomSection {
+        background: #fff;
+        box-shadow: 0 1px 4px rgba(18, 5, 41, .15);
+        border-radius: 5.76px;
+        padding: 10px;
+        margin: 15px 0;
+    }
+
+    .mobilLinkSection {
+        padding: 0;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        color: #4a4a4a;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 10px 0;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+
+    .roomMobileContent {
+        display: flex;
+        background: #f6f9fd;
+        border-radius: 6px;
+        overflow: hidden;
+        padding: 9px 5px 9px 16px;
+    }
+
+    .roomMobileImg {
+        width: 120px;
+        position: relative;
+    }
+
+    .roomMobileText {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding: 7px 10px;
+        align-items: flex-start;
+        color: #1f2126;
+    }
+
+    .roomName {
+        margin-bottom: auto;
+        font-size: 12px;
+        font-weight: 700;
+        margin-left: 0px;
+    }
+
+    .priceText {
+        font-weight: 500;
+        font-size: 12px;
+        font-style: normal;
+        margin-bottom: 5px;
+    }
+
+    .roomAmountMobile {
+        font-weight: 500;
+        font-size: 18px;
+        font-style: normal;
+
+    }
+
+    .img {
+        object-fit: cover;
+        width: 100%;
+    }
+    .roomMenu{
+        color: #056bfd;
+        font-size: 14px;
+        margin-top: 12px;
+    }
+    .arrowRightMobile{
+        margin-left: 3px;
+    }
+    .roomsMobile{
+        font-weight: 700;
+        font-stretch: normal;
+        line-height: normal;
+        font-style: normal;
+    }
+}
+@media screen and (max-width: 600px) {
+    .container {
+        display: none !important;
+        visibility: hidden !important;
+        background: #f6f9fd;
+    }
+
+    .mobilRoomSection {
+        display: grid;
+        visibility: visible !important;
+        background: #fff;
+        box-shadow: 0 1px 4px rgba(18, 5, 41, .15);
+        border-radius:6px;
+        padding: 0px 1px 5px 4px !important;
+        margin: 15px 14px !important;
+    }
+
+    .modalRoom {
+        padding: 0;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        color: #4a4a4a;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0;
+        text-transform: uppercase;
+    }
+
+    .modalRoom>em {
+        font-weight: 400;
+        font-size: 12px;
+        color: #056bfd;
+        display: flex;
+        align-items: center;
+        font-style: normal;
+    }
+
+    .roomMobileContent {
+        display: flex;
+        background: #f6f9fd;
+        border-radius: 6px;
+        overflow: hidden;
+    }
+
+    .roomMobileText {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding: 7px 10px;
+        align-items: flex-start;
+        color: #1f2126;
+    }
+
+    .mobilRoomSection {
+        background: #fff;
+        box-shadow: 0 1px 4px rgba(18, 5, 41, .15);
+        border-radius: 5.76px;
+        padding: 10px;
+        margin: 15px 0;
+    }
+
+    .mobilLinkSection {
+        padding: 0;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        color: #4a4a4a;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 10px 0;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+
+    .roomMobileContent {
+        display: flex;
+        background: #f6f9fd;
+        border-radius: 6px;
+        overflow: hidden;
+        padding: 9px 5px 9px 16px;
+    }
+
+    .roomMobileImg {
+        width: 120px;
+        position: relative;
+    }
+
+    .roomMobileText {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding: 7px 10px;
+        align-items: flex-start;
+        color: #1f2126;
+    }
+
+    .roomName {
+        margin-bottom: auto;
+        font-size: 12px;
+        font-weight: 700;
+        margin-left: 0px;
+    }
+
+    .priceText {
+        font-weight: 500;
+        font-size: 12px;
+        font-style: normal;
+        margin-bottom: 5px;
+    }
+
+    .roomAmountMobile {
+        font-weight: 500;
+        font-size: 18px;
+        font-style: normal;
+
+    }
+
+    .img {
+        object-fit: cover;
+        width: 100%;
+    }
+    .roomMenu{
+        color: #056bfd;
+        font-size: 14px;
+        margin-top: 12px;
+    }
+    .arrowRightMobile{
+        margin-left: 3px;
+    }
+    .roomsMobile{
+        font-weight: 700;
+        font-stretch: normal;
+        line-height: normal;
+        font-style: normal;
+    }
+  
+}

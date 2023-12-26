@@ -1,0 +1,106 @@
+<div class="header">
+    <div class="navbar-container ">
+        <div class="nav navbar-desktop">
+            
+            <a class="etsLogo" [routerLink]="'/homepage'">
+                <img class="logo" src="../../../assets/homepage/ets-logo2.webp" alt="ets-logo2">
+            </a>
+
+            <div class="navbar-left">
+                <ul class="navbar">
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> OTEL
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Erken Rezervasyon</a>
+                            <a class="dropdown-item" href="#">Son Dakika Fırsatları</a>
+                            <a class="dropdown-item" href="#">Balayı Asistanı</a>
+                            <a class="dropdown-item" href="#">Termal Oteller</a>
+                            <a class="dropdown-item" href="#">Villalar</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">KIBRIS</a>
+                    </li>
+                    <li class="nav-item">
+
+                        <a class="nav-link" href="#">VİLLA</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="" role="button">
+                            TUR
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">CRUISE GEMİ TURLARI</a>
+                            <a class="dropdown-item" href="#">Yurt Dışı Turları</a>
+                            <a class="dropdown-item" href="#">Balayı Asistanı</a>
+                            <a class="dropdown-item" href="#">Size Özel Turlar</a>
+                            <a class="dropdown-item" href="#">Kampanyalar</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">UÇAK</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link earlyReservation " href="#">ERKEN <br> REZERVASYON</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link etsPlus">
+                            <span>Etsplus</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+
+            <div class="navbar-right">
+                <div class="wrapper">
+                    <div class="signinContainer">
+                        <div class="singIn">
+                            <img src="../../../assets/homepage/checked-user.png" class="checkedUser">
+                            <span>Giriş Yap</span>
+                        </div>
+                        <div class="addUser">
+                            <img src="../../../assets/homepage/add-user.png" class="userAdd">
+                            <span>Üye Ol</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="helpSection">
+                    <div class="helpWrapper">
+                        <span>Yardım</span>
+                        <i class="fa-solid fa-chevron-down arrowIcon"></i>
+                    </div>
+                    <div class="agencySection">
+                        <span>Acenteler</span>
+                    </div>
+                    <div class="helpWrapper">
+                        <img src="../../../assets/homepage/phone.png" class="phoneIcon">
+                        <span>444 0 387</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="navbar-mobile">
+    <div class="hamburgerSection" (click)="openHamburgerMennu()">
+        <i class="fa-solid fa-bars iconBarsMobile"></i>
+    </div>
+    <a class="etsLogo" [routerLink]="'/homepage'">
+        <img class="logo" src="../../../assets/homepage/ets-logo2.webp" alt="ets-logo2">
+    </a>
+
+    <div class="wrapperAccountMobile">
+        <div class="wrapperMobile">
+            <div class="signinContainerMobile">
+                <img src="../../../assets/common/accountMobile.png" class="checkedUserMobile">
+                <span class="account">Hesabım</span>
+            </div>
+        </div>
+    </div>
+</div>

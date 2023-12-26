@@ -1,0 +1,612 @@
+/*APP SECİTON START*/
+.app {
+
+    height: 440px;
+
+}
+
+.app>.container {
+    background: url(../../../../assets/common/appImg.webp);
+
+    height: 440px;
+    width: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    margin-left: 155px;
+
+}
+
+li,
+a {
+    text-decoration: none;
+    list-style: none;
+}
+
+.imgPhone {
+    vertical-align: middle;
+    border-style: none;
+    margin-top: 17px;
+}
+
+.appImgContainer {
+    margin-top: 1px;
+
+}
+
+::ng-deep.carousel-indicators {
+
+    bottom: -40px !important;
+}
+
+::ng-deep.carousel-indicators>button {
+    background-color: #1111117c !important;
+}
+
+// .wrapperCaption {
+
+//     display: flex;
+//     align-items: center;
+//     justify-content: flex-end;
+//     width: 33pc;
+//     margin-left: 20pc;
+//     margin-bottom: 22px;
+
+// }
+
+.appTitle,
+.appDesc {
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+}
+
+.appTitle {
+    font-size: 30px;
+    font-weight: normal;
+    color: #1f2126;
+    padding-bottom: 30px;
+
+}
+
+
+.appDesc {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: Montserrat, Proxima Nova, sans-serif;
+    line-height: 1.4;
+    color: #808494;
+}
+
+.appLinkApple,
+.appLinkGoogle {
+    height: 33px;
+    margin: 2px;
+}
+
+/*APP SECTİON END*/
+
+/* WRAPPER DOC. SECTİON START */
+
+.wrapperDoc {
+    width: 77%;
+    margin-bottom: 40px;
+}
+
+.docDesc {
+    font-size: 11px;
+    font-weight: 400;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.45;
+    letter-spacing: normal;
+    color: #61656e;
+    text-align: center;
+}
+
+// .btnDoc {
+//     background-color: #F2F8FF;
+//     color: #056BFD;
+//     border-radius: 8px;
+//     padding: 12px 24px;
+//     font-size: 16px;
+//     line-height: 24px;
+//     text-transform: none;
+//     padding: 8px 16px;
+//     font-size: 14px;
+//     -webkit-box-flex: 1;
+//     -webkit-flex-grow: 1;
+//     -ms-flex-positive: 1;
+//     flex-grow: 1;
+//     width: 100%;
+//     white-space: nowrap;
+//     border: none;
+// }
+.wrapperCaption {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 22px;
+}
+
+.btnDoc {
+    background-color: #F2F8FF;
+    color: #056BFD;
+    border-radius: 8px;
+    padding: 12px 24px;
+    font-size: 14px;
+    line-height: 24px;
+    text-transform: none;
+    padding: 8px 21px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    border: none;
+    margin: 3px;
+}
+
+.btnDoc:first-child {
+    margin-right: 12px;
+}
+
+.btnIcon {
+    width: 100%;
+    max-width: 24px;
+    margin-right: 15px;
+}
+
+/* WRAPPER DOC. SECTİON END */
+
+/*SOCİAL LİNKS SECTİON START*/
+.socialLinks {
+    border: 1px #9c9a9a29 solid;
+    background-color: #333A54;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.numberCallCenter {
+    font-size: 24px;
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 8px 44px 8px 0px;
+}
+
+.google {
+    margin-left: 4px;
+}
+
+.iconSocial {
+    color: #fff;
+    fill: #fff;
+    display: block;
+    margin-right: 15px;
+    text-decoration: none;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    border: 1px solid #fff;
+    ;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.callCenterandAgency {
+    display: flex;
+    margin-left: 6%;
+}
+
+.callCenterandAgency li a {
+    display: block;
+    position: relative;
+    padding: 0 0 0 40px;
+    text-decoration: none;
+    margin: 12px;
+}
+
+.technicalsupport .agency {
+    font-size: 32px;
+    position: absolute;
+    top: 2px;
+    left: 0;
+    color: #9ca1ae;
+}
+
+.technicalsupport {
+    position: absolute;
+    left: -20px;
+    width: 51px;
+}
+
+.agency {
+    position: absolute;
+    left: -2px;
+    top: 3px;
+    width: 34px;
+}
+
+.callCenterandAgency li a strong {
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: left;
+    letter-spacing: 1.1px;
+    color: #fff
+}
+
+.callCenterandAgency li a span {
+    display: block;
+    font-size: 12px;
+    line-height: 1.54;
+    color: #9c9a9a;
+}
+
+.applinks {
+    margin-left: 24px;
+    margin-bottom: 15px;
+}
+
+/*SOCİAL LİNKS SECTİON END*/
+
+/*POPULER REGİON SECTİON START*/
+
+.populerRegions {
+    width: 100%;
+    background-color: #f6f9fd;
+    border: 1px solid #ebf1fa;
+}
+
+.regions {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 76%;
+}
+
+.title {
+    margin-bottom: 22px;
+    margin-left: -5px;
+}
+
+.hotelsList {
+    line-height: 22px;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hotelsList ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.hotelsList ul li {
+    padding: 2px;
+}
+
+.hotelsList ul li a {
+    font-size: 12px;
+    font-weight: 400;
+    color: #989ba2;
+}
+
+@media (max-width:1920px) {
+    .app>.container {
+        margin-left: 16%;
+    }
+}
+
+@media (max-width:1520px) {
+    .app>.container {
+        margin-left: 11%;
+    }
+
+}
+
+@media (max-width:1000px) {
+    .appDesc {
+        display: none;
+    }
+
+    .app {
+        height: 530px;
+        border-bottom: 1px solid #d4d5d7;
+    }
+
+    .app>.container {
+        margin-left: 50px;
+        position: relative;
+        top: 35px;
+    }
+
+    .appTitle {
+        font-size: 20px;
+        font-weight: normal;
+        color: #1f2126;
+        padding-bottom: 30px;
+        position: absolute;
+        top: 31px;
+        left: 97px;
+        text-align: center;
+    }
+
+    .imgPhone {
+        vertical-align: middle;
+        border-style: none;
+        margin-top: 17px;
+        width: 238px;
+        position: absolute;
+        top: 62px;
+        left: 220px;
+    }
+
+    .appLinkWraper {
+        position: absolute;
+        left: 223px;
+        bottom: 46px;
+    }
+
+    .app>.container {
+        margin-left: 18px;
+        position: relative;
+        top: 35px;
+        width: 95%;
+    }
+
+    .wrapperCaption {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 22px;
+    }
+
+    // .wrapperCaption {
+    //     display: contents;
+
+    // }
+
+    // .btnMobile1 {
+    //     margin-bottom: 10px;
+    //     width: fit-content;
+    // }
+
+    .btnMobile2 {
+        text-align: center;
+        width: fit-content;
+    }
+
+    .wrapper {
+        display: block
+    }
+
+    .social {
+        display: flex
+    }
+}
+
+// @media (max-width:768px){
+//     .appDesc {
+//         display: none;
+//     }
+
+//     .app {
+//         height: 530px;
+//         border-bottom: 1px solid #d4d5d7;
+//     }
+
+//     .app>.container {
+//         margin-left: 50px;
+//         position: relative;
+//         top: 35px;
+//     }
+
+//     .appTitle {
+//         font-size: 20px;
+//         font-weight: normal;
+//         color: #1f2126;
+//         padding-bottom: 30px;
+//         position: absolute;
+//         top: 31px;
+//         left: 21px;
+//         text-align: center;
+//     }
+
+//     .imgPhone {
+//         vertical-align: middle;
+//         border-style: none;
+//         margin-top: 17px;
+//         width: 238px;
+//         position: absolute;
+//         top: 62px;
+//         left: 205px;
+//     }
+//     .appLinkWraper {
+//         position: absolute;
+//         left: 205px;
+//         bottom: 46px;
+//     }
+
+//     .app>.container {
+//         margin-left: 15px;
+//         position: relative;
+//         top: 35px;
+//         width: 93%;
+//     }
+
+//     .wrapperCaption {
+//         display: contents;
+
+//     }
+
+//     .btnMobile1 {
+//         margin-bottom: 10px;
+//         width: fit-content;
+//     }
+
+//     .btnMobile2 {
+//         text-align: center;
+//         width: fit-content;
+//     }
+
+//     .wrapper {
+//         display: block
+//     }
+
+//     .social {
+//         display: flex
+//     }
+
+
+// }
+@media (max-width:500px) {
+
+    .appDesc {
+        display: none;
+    }
+
+    .app {
+        height: 530px;
+        border-bottom: 1px solid #d4d5d7;
+    }
+
+    .app>.container {
+        margin-left: 50px;
+        position: relative;
+        top: 35px;
+    }
+
+    .appTitle {
+        font-size: 20px;
+        font-weight: normal;
+        color: #1f2126;
+        padding-bottom: 30px;
+        position: absolute;
+        top: 31px;
+        left: 21px;
+        text-align: center;
+    }
+
+    .imgPhone {
+        vertical-align: middle;
+        border-style: none;
+        margin-top: 17px;
+        width: 238px;
+        position: absolute;
+        top: 62px;
+        left: 21px;
+    }
+
+    .appLinkWraper {
+        position: absolute;
+        left: 26px;
+        bottom: 46px;
+    }
+
+    .app>.container {
+        margin-left: 15px;
+        position: relative;
+        top: 35px;
+        width: 93%;
+    }
+
+    // .wrapperCaption {
+    //     display: flex;
+    //     align-items: center;
+    //     justify-content: center;
+
+    //     margin-left: 0;
+    //     margin-bottom: 22px;
+    //     flex-direction: column;
+    // }
+
+    // .btnMobile1 {
+    //     margin-bottom: 10px;
+    //     width: fit-content;
+    // }
+    .wrapperCaption {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 22px;
+    }
+
+    .btnMobile2 {
+        text-align: center;
+        width: fit-content;
+    }
+
+    .wrapper {
+        display: block
+    }
+
+    .social {
+        display: flex
+    }
+    .app > .container{
+
+        width: 90%;
+    }
+}
+
+@media (max-width:375px) {
+    .app>.container {
+        margin-left: 6px;
+        width: 98%;
+    }
+
+    .wrapperCaption {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 22px;
+    }
+
+    .app>.container {
+        margin-left: 3px;
+        width: 105%;
+    }
+
+}
+
+@media (max-width:320px) {
+    .app>.container {
+        margin-left: -23px;
+        top: 35px;
+        width: 123%;
+    }
+
+    .iconSocial {
+        padding: 3px;
+        margin-right: 9px;
+    }
+
+    .callCenterandAgency {
+        margin-left: 0;
+    }
+
+    .wrapperCaption {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 22px;
+    }
+
+}

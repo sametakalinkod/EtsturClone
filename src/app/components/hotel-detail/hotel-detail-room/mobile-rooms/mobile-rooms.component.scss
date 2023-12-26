@@ -1,0 +1,382 @@
+@media screen and (max-width: 900px) {
+
+     ::ng-deep.modal-content {
+        width: 105%;
+        margin-top: -17px;
+        left: -8px;
+        background-color: #f6f9fd;
+    }
+
+    .container {
+        width: 100%;
+        background-color: #f6f9fd;
+    }
+
+    .closeModal {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: 19px;
+        float: left;
+        border-bottom: 1px solid #eaebec;
+        width: 100%;
+        margin-left: -5pc;
+     
+        padding: auto;
+    }
+
+    .choseRoom {
+        margin-bottom: -2px;
+        margin-left: 0px;
+        font-weight: bolder;
+    }
+
+    .roomCard {
+        width: 94%;
+        margin-top: 30px;
+        border-radius: 6px;
+        box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .15);
+        background-color: #fff;
+        color: #1f2126;
+        margin-left: 10px;
+    }
+
+    .roomMainImg {
+        max-width: 391px !important;
+        width: 345px !important;
+        border-radius: 6px 6px 0px 0px;
+        margin: -1px 6px 11px -12px;
+        object-fit: cover;
+        height: calc(100% - 10px);
+    }
+
+    .roomName {
+        color: #1f2126;
+        font-size: 16px;
+        margin-left: -2px;
+
+    }
+
+    .roomInfo {
+        margin-top: 35px;
+        margin-left: 17px;
+        font-size: 14px;
+        height: fit-content;
+        position: relative;
+    }
+
+    .roomInfoModal:hover {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
+    .roomInfoModal {
+        position: absolute;
+        top: -7pc;
+        border-radius: 3px;
+        background: #f6f9fd;
+        font-size: 12px;
+        padding: 5px;
+        left: -20px;
+        box-shadow: 2px 1px 5px -1px rgba(97, 101, 110, .68);
+    }
+
+    .specialWrapper {
+        border-radius: 6px;
+        background-color: #f6f9fd;
+        margin: 8px;
+        width: 96%;
+        margin-top: -7px
+    }
+
+    .hotelType {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 25px;
+        height: 25px;
+        border-radius: 100%;
+        background-color: #e5e9f1;
+        margin-right: 5px;
+    }
+
+    .iconFork,
+    .amountTable {
+        color: #61656e;
+    }
+
+    .hotelAccommodationType {
+        font-size: 12px;
+        color: #61656e;
+        margin-top: 3px;
+        margin-left: 4px;
+
+    }
+
+    .modalAmountTable {
+        margin-top: 2pc
+    }
+
+    .amountTable:hover {
+        cursor: pointer;
+    }
+
+    .amountTable {
+        font-size: 12px;
+        align-self: end;
+        color: #1f2126;
+        text-decoration: underline;
+    }
+
+    .roomSelection {
+        border-radius: 6px;
+        background-color: #f6f9fd;
+        margin-left: 7px;
+        width: 96%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+
+    /* otel odaları fiyat kısmı */
+
+    .discountBadge {
+        background: url("../../../../../assets/common/ic-etiket.webp");
+        background-repeat: no-repeat;
+        background-position: left;
+        font-size: 16px;
+        color: #ff8308;
+        padding: 2px 9px;
+        margin: 10px 0;
+        font-weight: 700;
+        white-space: nowrap;
+        width: 86px;
+        margin-left: -3px;
+        margin-top: -20px;
+    }
+
+    .discount {
+        margin-left: 15px;
+    }
+
+    .prices-container {
+        margin-top: -52px;
+        font-size: 12px;
+    }
+
+    .normalPrices {
+        font-weight: 500;
+        font-size: 12px;
+        text-align: right;
+        text-decoration-line: line-through;
+        color: #61656e;
+        margin-bottom: unset;
+        margin-right: 10px;
+    }
+
+    .hotelAmount .hotelCardPriceContainer {
+        position: relative;
+        width: 325px;
+        height: 40px;
+        min-height: 70px;
+        background-color: #f6f9fd;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        float: right;
+        border-radius: 6px;
+
+    }
+
+    .totalStayNight {
+        color: #1F2126;
+        font-weight: 700;
+        text-align: center;
+        margin: unset;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        text-transform: uppercase;
+        font-size: 14px;
+        margin-top: 25px;
+    }
+
+    .totalStay,
+    .amount,
+    .hotelDetailLink {
+
+        color: #1F2126;
+        font-weight: 700;
+        text-align: right;
+        margin: unset;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        text-transform: uppercase;
+        font-size: 14px;
+    }
+
+    .amount {
+        font-size: 20px;
+        font-weight: 500;
+        margin-bottom: unset;
+        margin-right: -25px;
+    }
+
+    .hotelDetailLink {
+        font-size: 13px;
+        float: right;
+        margin: unset;
+        text-decoration: none;
+        display: block;
+        font-weight: 700;
+        text-align: right;
+        margin-bottom: 0;
+        font-style: normal;
+
+        margin-right: -20px;
+    }
+
+    .hotelDetailLink>b {
+        color: #17cec4;
+    }
+
+    .hotelDetailLink:hover {
+        cursor: pointer;
+    }
+
+    .arrowRight {
+        border: 1px solid #17cec4;
+        border-radius: 100%;
+        color: #17cec4;
+        width: 28px;
+        height: 28px;
+        font-size: 10px;
+        margin-left: 5px;
+        margin-right: -5px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: -7px;
+    }
+}
+@media screen and (max-width: 428px){
+    .roomMainImg {
+        width: 381px !important;
+     
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .roomMainImg {
+        width: 370px !important;
+    }
+
+    .hotelAmount .hotelCardPriceContainer {
+        width: 307px !important;
+    }
+}
+@media screen and (max-width: 390px) {
+    .roomMainImg {
+        width: 345px !important;
+    }
+
+    .hotelAmount .hotelCardPriceContainer {
+        width: 307px !important;
+    }
+
+    .hotelDetailLink {
+
+        margin-right: -4px;
+    }
+
+    .amount {
+
+        margin-right: -9px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .roomMainImg {
+        width: 330px !important;
+    }
+
+    .hotelAmount .hotelCardPriceContainer {
+        width: 307px !important;
+    }
+
+    .hotelDetailLink {
+
+        margin-right: 11px;
+    }
+
+    .amount {
+
+        margin-right: 6px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .roomMainImg {
+        width: 316px !important;
+    }
+
+    .hotelAmount .hotelCardPriceContainer {
+        width: 288px !important;
+    }
+
+}
+
+@media screen and (max-width: 320px) {
+     ::ng-deep.modal-content {
+        width: 106%;
+        margin-top: -9px;
+        left: -8px;
+        background-color: #f6f9fd;
+    }
+
+    .roomMainImg {
+        width: 280px !important;
+    }
+
+    .hotelAmount .hotelCardPriceContainer {
+
+        width: 254px !important;
+
+    }
+
+    .hotelDetailLink,
+    .totalStayNight {
+        font-size: 12px !important;
+    }
+
+    .closeModal {
+        margin-left: -3pc !important;
+        background-color: transparent;
+    }
+
+    .roomSelection {
+        margin-left: 5px;
+        width: 92%;
+    }
+
+    .amount {
+        font-size: 18px;
+        margin-right: 22px;
+    }
+
+    .hotelDetailLink {
+
+        margin-right: 3px;
+    }
+
+    .arrowRight {
+
+        width: 22px;
+        height: 22px;
+
+        margin-right: 0px;
+        margin-top: 13px;
+    }
+}

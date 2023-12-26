@@ -1,0 +1,769 @@
+.container {
+    width: 75%;
+}
+
+.carousel-control-next {
+    position: absolute;
+    top: 50%;
+    outline: none;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, .3);
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 6px 12px;
+    border: none;
+    z-index: 1;
+    margin-top: -16px;
+}
+
+::ng-deep.carousel-control-prev {
+    left: -1%;
+    z-index: 999;
+    color: black;
+}
+
+::ng-deep.carousel-control-next-icon {
+    background: url(../../../../assets/common/iconsforward.png);
+
+}
+
+::ng-deep.carousel-control-prev-icon {
+    background: url(../../../../assets/common/iconsback.png);
+}
+
+::ng-deep .carousel-control-prev,
+.carousel-control-next {
+    top: 50%;
+    border-radius: 50%;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, .3);
+    background-color: #fff;
+    height: 32px;
+    width: 32px;
+    opacity: 1;
+}
+
+::ng-deep.carousel-control-next,
+.carousel-control-next {
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, .3);
+    background-color: #fff;
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    top: 50%;
+    opacity: 1;
+    right: -1%;
+}
+
+.captionFacility {
+    font-family: bolder;
+    line-height: 15px;
+
+}
+
+.captionInfo {
+    margin: 15px;
+    margin-top: 45px;
+    font-weight: 700;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    font-size: 32px;
+}
+
+.seasonalInfoWrapper {
+    border-bottom: 1px solid #d4d5d7;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.seasonalInfo {
+    text-align: center;
+
+    display: flex;
+}
+
+.winterSeason,
+.summerSeason {
+    font-weight: 300;
+    display: grid;
+    margin-left: 160px;
+    cursor: pointer;
+}
+
+.captionWinter,
+.captionSummer {
+    font-weight: 400;
+    font-family: Montserrat;
+    font-size: 15px;
+}
+
+.seasonWinter,
+.seasonSummer {
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #61656e;
+    margin-bottom: 17px;
+}
+
+.wrapper {
+    position: relative;
+    height: 100%;
+
+}
+
+.hotelMainImage {
+    height: 350px;
+    border-radius: 6px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-left: 0;
+    margin-right: 0;
+    width: 100%;
+
+}
+
+.captionSection {
+    padding: auto;
+
+}
+
+.amenitiesSection {
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background-color: rgba(18, 5, 41, .7);
+    color: #fff;
+    z-index: 1;
+    top: 1px;
+    left: -1px;
+    font-size: 14px;
+    border-left: 6px;
+    border-radius: 6px 0px 0 6px;
+
+}
+
+.building {
+    color: #17cec4;
+    font-size: 15px;
+    margin-right: 10px;
+}
+
+.hotelAmenities {
+    display: flex;
+    justify-content: space-between;
+    align-content: flex-start;
+    margin: 0;
+    height: 300px;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.leftSide {
+    margin-left: -32px;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 15px;
+}
+
+.features {
+    list-style: none;
+    line-height: 37px;
+}
+
+.award {
+    border-radius: 6px;
+}
+
+.captionHotel {
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.wrapperAmenities {
+    border: 1px solid #eaebec;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    padding: 21px;
+}
+
+.amenityCaption {
+    color: #61656e;
+    width: 100%;
+    text-align: left;
+    display: flex;
+    font-size: 14px;
+    font-weight: 700;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 1px;
+    color: #1f2126;
+    margin-bottom: 0;
+    cursor: default;
+    text-transform: uppercase;
+    align-items: center;
+    padding: 4px
+}
+
+.amenityUl {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 15px;
+    font-weight: 400;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #1f2126;
+    padding-left: 33px;
+}
+
+.amenity {
+    list-style: none;
+    margin: 7px 10px 7px 0;
+    border-right: 1px solid #c4cbd5;
+    padding-right: 10px;
+}
+
+.amenity:last-child {
+    border-right: none
+}
+
+.serviceBellIcon {
+    width: 21px;
+    margin: 2px;
+}
+
+.basketballIcon {
+    padding: 5px
+}
+
+.babyIcon {
+    width: 22px;
+    height: 24px;
+    margin: 2px;
+}
+
+.spaWellnesIcon {
+    height: 27px;
+    width: 25px;
+    margin: 2px;
+}
+
+.generalInfoTitle {
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #1f2126;
+}
+
+.selectedGeneralInfo {
+    list-style: none;
+
+
+}
+
+
+.wrapperGeneralInfo {
+    position: relative;
+
+}
+
+.wrapperGeneralInfo::after {
+    content: '';
+    position: absolute;
+    width: 112%;
+    height: 100%;
+    bottom: 0;
+    left: -33px;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, 0.77) 35%, #ffffff 84%);
+}
+
+.foodDrinkWrapper,
+.location,
+.otherAmenitiesWrapper,
+.eventWrapper,
+.generalInfoWrapper,
+.importanInformationSection {
+    width: 100%;
+    height: auto;
+    display: inline-flex;
+    flex-direction: column;
+    padding: 20px 0;
+    border-bottom: 1px solid #d4d5d7;
+    border-left: none;
+    border-right: none;
+}
+
+.contentInfo {
+    font-size: 14px;
+    line-height: 20px;
+    margin-left: -32px;
+}
+
+.generalInfo {
+    max-height: 231px;
+    max-height: fit-content;
+}
+
+.content-container {
+
+    max-height: 77px;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+}
+
+.content-container.expanded {
+    max-height: none;
+}
+
+.plusButton {
+    color: #056bfd;
+    margin-right: 8px;
+    font-size: 18px;
+}
+
+.winterActive,
+.summerActive {
+    font-weight: 700;
+    position: relative;
+
+}
+
+.winterActive ::before,
+.summerActive ::before {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 5px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    border-radius: 3px;
+    background: #17cec4;
+    position: absolute;
+    left: 46%;
+    bottom: -3px;
+}
+
+.toggleButton {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    outline: none;
+    color: #056bfd;
+    text-decoration: none;
+    font-size: 14px;
+    margin-left: 9px;
+    margin-top: 8px;
+}
+
+.titleİmportantInfo {
+    font-size: 20px;
+    color: #1f2126;
+    padding: 36px 12px 8px 0px;
+    margin-left: 3px;
+    font-weight: 700;
+}
+
+.checkinTime,
+.checkoutTime {
+    border-radius: 6px;
+    border: solid 1px #eaebec;
+    background-color: #fff;
+    margin-bottom: 10px;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 80px;
+    min-height: 80px;
+    max-height: 80px;
+}
+
+.checkinTime>span,
+.checkoutTime>span {
+    font-size: 24px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #1f2126;
+    margin-top: 4px;
+}
+
+.checkinTime>p,
+.checkoutTime>p {
+    font-size: 15px;
+    font-weight: 400;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 1px;
+    color: #9ca1ae;
+    text-transform: uppercase;
+    margin-top: 8px
+}
+
+.info {
+    font-size: 14px;
+    font-weight: 400;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #1f2126;
+    list-style: none;
+
+}
+
+.mobilAmenitiesWrapper {
+    display: none !important;
+    visibility: hidden !important;
+}
+
+@media screen and (min-width: 1920px) {
+
+    .container {
+        width: 58%;
+    }
+
+    .mobilAmenitiesWrapper {
+        display: none !important;
+        visibility: hidden !important;
+    }
+
+}
+
+/* @media screen and (max-width: 500px) {
+    .mobilAmenitiesWrapper {
+        display: grid !important;
+        visibility: visible !important;
+    }
+
+    .container {
+        display: none;
+        visibility: hidden;
+    }
+
+    .allAmenities {
+        color: #056bfd;
+        font-size: 14px;
+        margin-top: 12px;
+    }
+} */
+
+
+@media screen and (max-width: 890px){
+    .container {
+        display: none;
+        visibility: hidden;
+    }
+
+    .mobileAmenitiesContainer {
+        display: flex !important;
+    }
+
+    .mobileContainer {
+        display: grid !important;
+        visibility: visible !important;
+    }
+
+    .mobileContainer {
+        background: #f6f9fd;
+    }
+
+    .mobilReviewCaption {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 5px 18px 3px 2px;
+    }
+
+    .mobileWrappreReview {
+        display: grid;
+        visibility: visible !important;
+        background: #fff;
+        box-shadow: 0 1px 4px rgba(18, 5, 41, .15);
+        border-radius: 6px;
+        padding: 0px 1px 5px 4px !important;
+        margin: 15px 14px !important;
+    }
+
+    .mobilAmenitiesWrapper {
+        display: grid !important;
+        visibility: visible !important;
+    }
+
+    .mobilAmenitiesWrapper {
+        background: #f6f9fd;
+    }
+
+    .mobilAmenitiesCaption {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 5px 18px 3px 2px;
+    }
+
+    .mobilAmenity {
+        display: grid;
+        visibility: visible !important;
+        background: #fff;
+        box-shadow: 0 1px 4px rgba(18, 5, 41, .15);
+        border-radius: 6px;
+        padding: 0px 1px 5px 4px !important;
+        margin: 15px 14px !important;
+    }
+
+    .caption {
+        padding-top: 13px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        color: #4a4a4a;
+        margin: 0;
+        text-transform: uppercase;
+        margin-top: 2px;
+        font-weight: 700;
+    }
+
+    .allAmenities {
+        color: #056bfd;
+        font-size: 14px;
+        margin-top: 12px;
+    }
+
+    .arrowRightMobile {
+        width: 1px;
+    }
+
+    .mobilHotelAmenities,
+    .mobileSports,
+    .mobileBaby,
+    .mobileSpaWellness {
+        background: #fff;
+        border: 1px solid #eaebec;
+        border-radius: 6px;
+        padding: 3px 5px 2px 3px;
+        font-weight: 500;
+        font-size: 12px;
+        color: #1f2126;
+        margin: 3px 3px 3px 0;
+        display: flex;
+        align-items: center;
+        width: fit-content;
+    }
+
+    .mobileAmenityCaption {
+        color: #61656e;
+        width: 100%;
+        text-align: left;
+        display: flex;
+        font-size: 12px;
+        font-weight: 700;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: 1px;
+        color: #1f2126;
+        margin-bottom: 0;
+        cursor: default;
+        text-transform: uppercase;
+        align-items: center;
+        padding: 4px
+    }
+
+    .mobileServiceBellIcon {
+        width: 21px;
+        margin: 2px;
+    }
+
+    .mobileBasketballIcon {
+        padding: 5px;
+        font-size: 16px;
+    }
+
+    .mobileBabyIcon {
+        width: 22px;
+        height: 24px;
+        margin: 2px;
+    }
+
+    .mobileSpaWellnesIcon {
+        height: 27px;
+        width: 25px;
+        margin: 2px;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    .mobileAmenitiesContainer {
+        display: grid !important;
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+    .container {
+        display: none;
+        visibility: hidden;
+    }
+
+    .mobileContainer {
+        display: grid !important;
+        visibility: visible !important;
+    }
+
+    .mobileContainer {
+        background: #f6f9fd;
+    }
+
+    .mobilReviewCaption {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 5px 18px 3px 2px;
+    }
+
+    .mobileWrappreReview {
+        display: grid;
+        visibility: visible !important;
+        background: #fff;
+        box-shadow: 0 1px 4px rgba(18, 5, 41, .15);
+        border-radius: 6px;
+        padding: 0px 1px 5px 4px !important;
+        margin: 15px 14px !important;
+    }
+
+    .mobilAmenitiesWrapper {
+        display: grid !important;
+        visibility: visible !important;
+    }
+
+    .mobilAmenitiesWrapper {
+        background: #f6f9fd;
+    }
+
+    .mobilAmenitiesCaption {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 5px 18px 3px 2px;
+    }
+
+    .mobilAmenity {
+        display: grid;
+        visibility: visible !important;
+        background: #fff;
+        box-shadow: 0 1px 4px rgba(18, 5, 41, .15);
+        border-radius: 6px;
+        padding: 0px 1px 5px 4px !important;
+        margin: 15px 14px !important;
+    }
+
+    .caption {
+        padding-top: 13px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        color: #4a4a4a;
+        margin: 0;
+        text-transform: uppercase;
+        margin-top: 2px;
+        font-weight: 700;
+    }
+
+    .allAmenities {
+        color: #056bfd;
+        font-size: 14px;
+        margin-top: 12px;
+    }
+
+    .arrowRightMobile {
+        width: 1px;
+    }
+
+    .mobilHotelAmenities,
+    .mobileSports,
+    .mobileBaby,
+    .mobileSpaWellness {
+        background: #fff;
+        border: 1px solid #eaebec;
+        border-radius: 6px;
+        padding: 3px 5px 2px 3px;
+        font-weight: 500;
+        font-size: 12px;
+        color: #1f2126;
+        margin: 3px 3px 3px 0;
+        display: flex;
+        align-items: center;
+        width: fit-content;
+    }
+
+    .mobileAmenityCaption {
+        color: #61656e;
+        width: 100%;
+        text-align: left;
+        display: flex;
+        font-size: 12px;
+        font-weight: 700;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: 1px;
+        color: #1f2126;
+        margin-bottom: 0;
+        cursor: default;
+        text-transform: uppercase;
+        align-items: center;
+        padding: 4px
+    }
+
+    .mobileServiceBellIcon {
+        width: 21px;
+        margin: 2px;
+    }
+
+    .mobileBasketballIcon {
+        padding: 5px;
+        font-size: 16px;
+    }
+
+    .mobileBabyIcon {
+        width: 22px;
+        height: 24px;
+        margin: 2px;
+    }
+
+    .mobileSpaWellnesIcon {
+        height: 27px;
+        width: 25px;
+        margin: 2px;
+    }
+
+    .carousel-control-next-icon {
+
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .carousel-control-prev-icon {
+
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+} 

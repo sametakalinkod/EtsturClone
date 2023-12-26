@@ -1,0 +1,46 @@
+<div class="container modalWrapper">
+    <div class="modal-header">
+        <h5 class="modal-title"><b>
+                {{room?.roomName}}
+            </b></h5>
+        <button type="button" class="btn-close" aria-label="Close" (click)="activeModal.dismiss('Cross click')">
+            <div class="closeBtn">x</div>
+        </button>
+    </div>
+    <div class="modal-body">
+        <div class="roomInfo">
+            <div class="roomImages">
+                <carousel [itemsPerSlide]="1" [showIndicators]="true" [interval]="244500" >
+                    <slide  *ngFor="let roomImg of room.roomImages;">
+                        <div>
+                            <img [src]="roomImg" class="roomImg" alt="image slide">
+                        </div>
+                    </slide>
+                </carousel>
+            </div>
+            <p class="mt-2">{{room?.roomDescription}}</p>
+            <div class="roomFeatures w-100">
+
+                <ul *ngIf="room?.roomFeatures " class="leftSideRoomFeatures" >
+                    <li *ngFor="let features of room.roomFeatures.slice(0,15)" class="features" >
+                        {{features}}
+                    </li>
+                </ul>
+                <ul *ngIf="room?.roomFeatures"  class="rightSideRoomFeatures">
+                    <li *ngFor="let features of room.roomFeatures.slice(15)" class="features" >
+                        {{features}}
+                    </li>
+                </ul>
+                <ul  *ngIf="room?.roomFeatures"  class="leftSideRoomFeaturesMobile">
+                    <li *ngFor="let features of room.roomFeatures" class="featuresMobile" >
+                        {{features}}
+                    </li>
+                </ul>
+              
+            </div>
+            <span>* ile işaretli özellikler ücretlidir.</span>
+        </div>
+    </div>
+
+</div>
+

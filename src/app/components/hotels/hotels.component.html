@@ -1,0 +1,283 @@
+<section>
+
+    <div class="serachDatas">
+        <div class="wrapperSearchSetion m-3">
+            <div class="wrapperBtn">
+                <button class="btnToggle" (click)="toggleSearchSection()">
+                    Değiştir
+
+                </button>
+                <i *ngIf="!showSearchSection" class="fas fa-arrow-up iconArrow"></i>
+                <i *ngIf="showSearchSection" class="fas fa-arrow-down iconArrow"></i>
+            </div>
+
+            <p class="searchTextCaption">{{searchText}}</p>
+            <div>
+                <p>
+                    {{ ngbDateToDate(fromDate) | date:'dd MMM' }}- {{ ngbDateToDate(toDate) | date:'dd MMM'
+                    }}({{nightCount}} Gece ),{{counter +counterChild}} Kişi
+                </p>
+
+            </div>
+        </div>
+    </div>
+
+    <div *ngIf="showSearchSection"></div>
+    <app-search-section  [hidden]="showSearchSection" [searchData]="searchData"></app-search-section>
+
+    <!-- <div class="col-12">
+        <app-search-section [searchData]="searchData"></app-search-section>
+    </div> -->
+
+    <div class="container">
+
+
+        <div class="row d-flex  mobilWrapper desktopWrapper ">
+
+            <div class="mobilButonSection m-2" (click)="showMobilFilters()">
+                <div class="buttonsMobil">
+                    <img src="../../../assets/common/filter.png" class="filterIcon">
+                    <button (click)="openFilter()" class="mobilFiltersButton">
+                        Filtrele
+                    </button>
+                    <img src="../../../assets/common/sort.png" class="filterIcon">
+
+                    <button class="mobilSortingButton" (click)="openSort()">
+                        Sırlama
+                    </button>
+                </div>
+            </div>
+            <div class="col-3 mobilLeftSide " [ngClass]="{'mobilFilter': showFilters}">
+
+                <div class="map">
+                    <div class="mapViewSection">
+                        <img src="https://images.etstur.com/assets/web/static-pages/listmapImg.png" class="mapView">
+                    </div>
+                    <div class="mapImg d-flex align-items-center justify-content-center px-2">
+                        <!-- <img src="../../../assets/common/iconsmap.png" class="mapIcon"> -->
+                        <span class="m-2">Haritada Göster</span>
+                    </div>
+                </div>
+
+                <div class="compareHotels mt-3">
+                    <div class="checkBoxHotels p-1">
+                        <input type="checkbox" class="compare m-2" name="Tesisleri Karşılaştır">
+                        <span class="text">Tesisleri Karşılaştır</span>
+                    </div>
+                </div>
+
+                <!--Filtelerin olduğu kısım-->
+                <div class="filtersSection mt-4">
+                    <div class="captionSectionAllFilters m-2">
+                        <h5><b>Sonuçları Filtrele</b></h5>
+                    </div>
+                    <div class="commonFilters" *ngFor="let filter of filters; let i = index;">
+
+                        <div [ngClass]="{'filterCaptionFirst': i === 0, 'filterCaption m-2': i !== 0}">
+                            <h6><b>{{ filter.name }}</b></h6>
+                        </div>
+                        <div [ngClass]="{'mostPreferredFilters': i === 0, 'allFilters': i !== 0}">
+                            <div class="p-2 m-1" *ngIf="filter.displayCount">
+                                <div class="checkBoxHotels"
+                                    *ngFor="let option of getFilteredOptions(filter.options, filter.showAllOptions, filter.displayCount); let j = index">
+                                    <input type="checkbox" class="m-2 optionFilter checkbox-custom"
+                                        (change)="onCheckboxChange($event, option, filter.areadef)" />
+                                    <span class="m-1 optionFilter checkbox-custom-label">{{ option.name }}</span>
+                                </div>
+                                <div *ngIf="i!== 0 && filter.options.length > 3">
+                                    <span *ngIf="!filter.showAllOptions" (click)="filter.showAllOptions = true"
+                                        class="showMore">Daha Fazla Görüntüle
+                                        <span><img class="showMoreBottomIcon"
+                                                src="../../../assets/common/iconsbottom.png"></span>
+                                    </span>
+                                    <span *ngIf="filter.showAllOptions" (click)="filter.showAllOptions = false"
+                                        class="showLess">Daha Az Görüntüle
+                                        <span><img class="showLessTopIcon"
+                                                src="../../../assets/common/iconstop.png"></span>
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div *ngIf="!filter.displayCount">
+                                <div class="filter-item-wrapper filter-item-body active">
+                                    <div class="priceInput">
+                                        <input class="ets-N" type="text" id="minPrice" name="minPrice"
+                                            placeholder="Min">
+                                        <input class="ets-N" type="text" id="maxPrice" name="maxPrice"
+                                            placeholder="Max">
+                                        <button id="searchByMinMaxPriceBtn" type="button" class="btn btn-primary"
+                                            onclick="searchByMinMaxPrice()">Ara</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--otellerin olduğu kısım-->
+
+            <div class="col-12 col-lg-9 mobilHotels">
+
+                <div>
+                    <div class="captionHotels mobilCaptionHotel">
+                        <div class="selectedHotels">
+                            {{searchText}} için toplam
+                            <span>
+                                {{filteredHotels.length}}
+                            </span> tesis bulduk!
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="breadcrumb">
+                        <small>Etstur> {{searchText}}</small>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div class="aboutDiscount">
+
+                            <button class="discountModal text-primary text-sm" (click)="open()">
+                                Fiyat ve İndirimler Hakkında
+                            </button>
+
+                        </div>
+
+                        <div class="mobilSort">
+                            <div class="hotelsSorting">
+
+                                <div class="sortingWrapper">
+
+                                    <select class="col-12 p-1 hotelSorting " (change)="sortHotels($event.target)">
+                                        <option value="defaulSorting">Etstur Sıralaması</option>
+                                        <option value="priceAsc">Fiyata Göre Artan</option>
+                                        <option value="priceDesc">Fiyata Göre Azalan</option>
+                                        <option value="scoreDesc">Puana Göre </option>
+                                    </select>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="hotelsWrapper">
+                    <div class="hotelsSection">
+                        <div class="row hotel" *ngFor="let hotel of filteredHotels">
+                            <div class="col-4 hotelImg">
+                                <div class="earlyReservation " *ngIf="hotel?.earlyReservation">
+                                    <img src="../../../assets/common/discount.png">
+                                    <span>{{hotel?.earlyReservation}}</span>
+                                </div>
+
+                                <img [src]="hotel.img" class="hotelimage">
+                                <div class="etsLikeSection " *ngIf="hotel?.etsRecommend">
+                                    <i class="fa-solid fa-shield-halved"></i>
+                                    <span>{{hotel?.etsRecommend}}</span>
+                                </div>
+
+                            </div>
+                            <div class="col-5 hotelInfos">
+                                <div class="hotelConentWrapper">
+                                    <h6 class="hotelNames">
+                                        {{hotel.name}}
+                                    </h6>
+                                    <div class="d-flex align-items-center justify-content-between hotelInfo">
+                                        <div class="location">
+                                            <span>
+                                                <img src="../../../assets/common/iconslocation.png"
+                                                    class="locationIcon">
+                                            </span>
+                                            <span class="locationName">{{hotel.location}}</span>
+                                        </div>
+                                        <div class="rateandComment d-flex ">
+                                            <span>
+                                                <img src="../../../assets/common/iconstar.png" class="iconStar">
+                                            </span>
+                                            <div class="wrapperRateandComment">
+                                                <div>{{hotel.rate}} (<span>{{hotel.comments}}</span>)</div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accommodationHotelType">
+                                        <ul>
+                                            <li class="accommodationTypeHotel">{{hotel.accommodationType}}</li>
+                                        </ul>
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <div class="hotelTheme">
+                                                <div class="theme">
+                                                    <ul class="d-flex">
+                                                        <li class="themeAmenities"
+                                                            *ngFor="let amenity of hotel.amenities.slice(0, 2)">
+                                                            {{amenity}}
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-3 hotelAmount">
+                                <a class="wrapperHotel" [queryParams]="{ searchData: searchData }"
+                                    [routerLink]="'/hotel-detail/' + hotel.hotelId">
+
+                                    <div class="hotelCardPriceContainer">
+
+
+                                        <div class="mobilPriceContainer">
+                                            <div class="discountsWrapper">
+                                                <div class="earlyBookingDiscountBadge">
+                                                    <span class="discountBadge" *ngIf="hotel.discount">
+                                                        %{{hotel.discount}} İndirim
+                                                    </span>
+                                                </div>
+                                            </div>
+
+                                            <div class="priceContent">
+                                                <div class="mobilePriceContent">
+                                                    <div class="totalStaySingleContainer">
+
+                                                        <p class="totalStay" id="mobilTotelStay">{{ nightCount }} Gece
+                                                        </p>
+                                                        <p class="normalPrices" *ngIf="hotel.discount">
+                                                            {{ calculateTotalAmount(hotel) | number: '1.0-0' }} TL
+                                                        </p>
+                                                    </div>
+
+                                                    <div class="prices-container">
+
+                                                        <p class="amount">{{ hotel.discount ?
+                                                            (calculeDiscountPrices(hotel)
+                                                            |
+                                                            number: '1.0-0') : (calculateTotalAmount(hotel) | number:
+                                                            '1.0-0') }} TL
+                                                        </p>
+
+                                                    </div>
+                                                </div>
+                                                <div class="mobileLink">
+                                                    <a class="hotelDetailLink text-primary text-sm"
+                                                        [queryParams]="{ searchData: searchData }"
+                                                        [routerLink]="'/hotel-detail/' + hotel.hotelId">
+                                                        <b>
+                                                            Oteli İncele
+                                                        </b>
+                                                        <img src="../../../assets/common/iconsright.png"
+                                                            alt="arrowRight" class="arrowRight">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

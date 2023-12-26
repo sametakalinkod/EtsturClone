@@ -1,0 +1,396 @@
+[
+    {
+        "hotelId": "55315ab8-1e14-48b3-8830-9fa4efba7621",
+        "img": "https://images.etstur.com/files/images/hotelImages/TR/95763/m/Granada-Luxury-Belek-Genel-376868.jpg",
+        "name": "Granada Luxury Belek",
+        "location": "Kadriye, Antalya, Türkiye",
+        "rate": "8.2",
+        "recommendation": "Çok İyi",
+        "comments": "5 Yorum",
+        "accommodationType": "Her Şey Dahil",
+        "amenities": [
+            "Çocuk Dostu",
+            "Spa",
+            "Wi-Fi",
+            "Ücretsiz Otopark",
+            "Açık Havuz",
+            "Plajı Kum"
+        ],
+        "amount": "8000",
+        "discount": "10",
+        "earlyReservation": "Erken Rezervasyon",
+        "etsRecommend": "Ets Öneriyor"
+    },
+    {
+        "hotelId": "76378e54-e7e0-48ab-8935-1a07b2b5ac15",
+        "img": "https://images.etstur.com/files/images/hotelImages/TR/50292/m/Voyage-Belek-Golf---Spa-Genel-366453.jpg",
+        "name": "Voyage Belek Golf & Spa",
+        "location": "Belek, Antalya, Türkiye",
+        "rate": "9.4",
+        "recommendation": "Mükemmel",
+        "comments": "3 Yorum",
+        "accommodationType": "Ultra Her Şey Dahil",
+        "amenities": [
+            "Denize Sıfır",
+            "Fitness Merkezi",
+            "Restoran",
+            "Aquapark",
+            "Çocuk Dostu",
+            "Plajı Kum",
+            "Bebek Dostu",
+            "Özel Sağlık Talebi",
+            "Spa Tesisi",
+            "Balayı Oteli",
+            "Golf Oteli",
+            "Plajı Kum",
+            "T.Sandalyeye Uygun"
+        ],
+        "summerAmenities": [
+            "Bebek Dostu",
+            "Çocuk Dostu",
+            "Özel Sağlık Talebi",
+            "Spa Tesisi",
+            "Genç Dostu Oteli",
+            "İleri Yaş Dostu Otel",
+            "Aquapark",
+            "Denize Sıfır",
+            "Mavi Bayrak",
+            "Çevre Dostu",
+            "Golf Oteli"
+        ],
+        "sportSummerAmenities": [
+            "Sauna ",
+            "Hamam",
+            "Plaj Voleybolu",
+            "Fitness Merkezi",
+            "Dart",
+            "Bilardo(Kredili Sistemli)",
+            "Animasyon",
+            "Su Jimmnastiği",
+            "Kano",
+            "Okçuluk",
+            "Açık Havuz"
+        ],
+        "amenitiesSummer": [
+            "Yoga",
+            "Futbol",
+            "Kapalı Restorant",
+            "Disko",
+            "Oyun Salonu",
+            "Lunapark",
+            "Bar",
+            "Kablosuz İnternet",
+            "Otopark",
+            "Kuaför",
+            "Kuru Temizleme",
+            "Toplantı Salonu",
+            "Çamaşırhane",
+            "Doktor",
+            "Telefon ve Faks Hİzmeti"
+        ],
+        "babySummerAmenities": [
+            "Çocuk Büfesi",
+            "Mini Kulüp",
+            "Çocuk Kulübü",
+            "Çocuk Oyun Parkı",
+            "Çocuk Animasyonu",
+            "Çocuk Havuzu",
+            "Çocuk Bakıcısı"
+        ],
+        "plajSummerAmenities": [
+            "Özel Plaj"
+        ],
+        "mealDrinkSummerAmenities": [
+            "Carino Steak House A la Carte Restoran",
+            "Vista A la Carte Restoran",
+            "Wen Teppanyaki A la Carte Restoran",
+            "Cuisine 24 Uluslararası A la Carte Restoran",
+            "Buzuki A la Carte Restoran Rum-Balık Restoranı ",
+            "Kebappa A la Carte Restoran ",
+            "Gracias A la Carte Restoran",
+            "Wen A la Carte Restoran "
+        ],
+        "hotelAmenitiesWinter": [
+            "Buhar Odası",
+            "Bar",
+            "Kapalı Restorant",
+            "Emanet Kasası",
+            "Kablosuz İnternet",
+            "Açık Otopark",
+            "Çamaşırhane",
+            "Kuaför",
+            "Toplantı Salonu",
+            "Dükkanlar",
+            "Kuru Temizleme",
+            "Doktor"
+        ],
+        "sportWinter": [
+            "Sauna",
+            "Hamam",
+            "Fitness Merkezi",
+            "Masa Tenisi",
+            "Bilardo",
+            "Kapalı Havuz",
+            "Bovling",
+            "Isırmalı Açık Havuz",
+            "Dart",
+            "Golf Sahası"
+        ],
+        "babyWinterAmenities": [
+            "Mini Kulüp",
+            "Kapalı Çocuk Havuzu",
+            "Çocuk Büfesi"
+        ],
+        "spaWellnessSummer": [
+            "Buhar Odası",
+            "Masaj"
+        ],
+        "spaWellnessWinter": [
+            "Buhar Odası",
+            "Masaj"
+        ],
+        "amount": "8140",
+        "discount": "5",
+        "earlyReservation": "Erken Rezervasyon",
+        "etsRecommend": "Ets Öneriyor",
+        "awardWinningFacility": "Ödüllü Tesis",
+        "longTermAccDiscount": "01.04.2024-31.10.2024 Min.16 gece ve üzeri konaklamalarda %5 indirim uygulanmaktadır. Sistemdeki fiyatlar indirim düşülmüş fiyatlardır. Başka bir promosyon ile birleştirilemez.\n06.11.2023-31.03.2024 Tarihleri arasında yapılacak min. 16 gece ve üzeri konaklamalarda %5 indirim uygulanır. Gösterilen ham fiyatlardan indirim uygulanmış halidir.",
+        "honeymoonDiscount": "Girişte odaya meyve tabağı ve köpüklü şarap ikramı, giriş günü odada çiçek buketi.\nOdada süsleme, yatakta 1 adet gül.\nKonaklama sırasında uygun olan bir gün için odaya kahvaltı ikramı (Voyage Asistan balayı çiftleri ile temasa geçerek gün belirlenir)\nA la Carte Restoranlardan birinde bir defaya mahsus ücretsiz akşam yemeği (Carino Restoran hariç)\nBalayı çiftleri için spa merkezinde alacakları bir masaj için % 30 indirim\nTesis fotoğrafçısından bir adet hediye fotoğraf",
+        "locationIFrame": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d51084.08039310261!2d31.0314588720746!3d36.84834267689138!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14c37b4ec179c55f%3A0x515cbdb47fff4f91!2sVoyage%20Belek%20Golf%20%26%20Spa!5e0!3m2!1str!2str!4v1701272892895!5m2!1str!2str",
+        "awardImages": [
+            "https://images.etstur.com/files/images/site/images/cmsRoot/hotelBanner/otel-puan-2023-350x350-3.jpg",
+            "https://images.etstur.com/files/images/site/images/cmsRoot/hotelBanner/Voyage-Belek-Golf-Spa-350x350.jpg",
+            "https://images.etstur.com/files/images/site/images/cmsRoot/hotelBanner/Voyage-Belek.jpg"
+        ]
+    },
+    {
+        "hotelId": "eeb8ab4b-0ab4-4145-a866-2ae2d01bc85c",
+        "img": "https://images.etstur.com/files/images/hotelImages/TR/50340/m/Maxx-Royal-Belek-Golf-Resort-Genel-372667.jpg",
+        "name": "Maxx Royal Belek Golf Resort",
+        "location": "Belek, Antalya, Türkiye",
+        "rate": "8.7",
+        "recommendation": "Çok İyi",
+        "comments": "6 Yorum",
+        "accommodationType": "Ultra Her Şey Dahil",
+        "amenities": [
+            "Kablosuz İnternet",
+            "Restorant",
+            "Bar",
+            "Çocuk Kulübü",
+            "Aquapark",
+            "Plajı Kum"
+        ],
+        "amount": "14000",
+        "discount": "15",
+        "earlyReservation": "Erken Rezervasyon",
+        "etsRecommend": "Ets Öneriyor"
+    },
+    {
+        "hotelId": "aa0b2e36-cfd9-4761-a843-22579df5042e",
+        "img": "https://images.etstur.com/files/images/hotelImages/TR/209282/m/Asteria-Kremlin-Palace-Genel-324904.jpg",
+        "name": "Kremlin Palaca",
+        "location": "Lara-Kundu, Antalya, Türkiye",
+        "rate": "8.7",
+        "recommendation": "Çok İyi",
+        "comments": "6 Yorum",
+        "accommodationType": "Ultra Her Şey Dahil",
+        "amenities": [
+            "Çocuk Dostu",
+            "Spa",
+            "Wi-Fi",
+            "Ücretsiz Otopark",
+            "Açık Havuz",
+            "Denize Sıfır"
+        ],
+        "amount": "6904",
+        "discount": "25",
+        "earlyReservation": "Erken Rezervasyon",
+        "etsRecommend": "Ets Öneriyor"
+    },
+    {
+        "hotelId": "2f06c317-65f1-4b29-b5e1-67d8cecf2760",
+        "img": "https://images.etstur.com/files/images/hotelImages/TR/218073/m/Rixos-Park-Belek-Hotel-Genel-376920.jpg",
+        "name": "Rixos Park Belek Hotel - The land of Legends Access ",
+        "location": "İleribaşı Mevkii, Antalya, Türkiye",
+        "rate": "8.4",
+        "recommendation": "Çok İyi",
+        "comments": "2 Yorum",
+        "accommodationType": "Ultra Her Şey Dahil",
+        "amenities": [
+            "Kablosuz İnternet",
+            "Restorant",
+            "Bar",
+            "lobi",
+            "Otopark",
+            "Oda Servisi",
+            "Aquapark"
+        ],
+        "amount": "6980",
+        "discount": "3",
+        "earlyReservation": "Erken Rezervasyon",
+        "etsRecommend": "Ets Öneriyor"
+    },
+    {
+        "hotelId": "0b1af43c-c691-418c-a89d-9a95c4847cf1",
+        "img": "https://images.etstur.com/files/images/hotelImages/TR/209878/m/Titanic-Mardan-Palace-Genel-280380.jpg",
+        "name": "Titanic Mardan Palace",
+        "location": "Lara-Kundu, Antalya, Türkiye",
+        "rate": "6.5",
+        "recommendation": "İyi",
+        "comments": "4 Yorum",
+        "accommodationType": "High Class Her Şey Dahil",
+        "amenities": [
+            "Denize Sıfır",
+            "Fitness Merkezi",
+            "Restoran",
+            "lobi",
+            "Otopark",
+            "Oda Servisi",
+            "Aquapark"
+        ],
+        "amount": "6980",
+        "discount": "5",
+        "earlyReservation": "Erken Rezervasyon",
+        "etsRecommend": "Ets Öneriyor"
+    },
+    {
+        "hotelId": "ec5a97d8-474f-452f-be9a-b63bd81de9a1",
+        "img": "https://images.etstur.com/files/images/hotelImages/TR/50656/m/Calista-Luxury-Resort-Genel-316345.jpg",
+        "name": "Calista Luxury Resort",
+        "location": "Kadriye, Antalya, Türkiye",
+        "rate": "7.7",
+        "recommendation": "İyi",
+        "comments": "3 Yorum",
+        "accommodationType": "ULtra Her Şey Dahil",
+        "amenities": [
+            "Denize Sıfır",
+            "Fitness Merkezi",
+            "Restoran",
+            "lobi",
+            "Otopark",
+            "Oda Servisi"
+        ],
+        "amount": "13750",
+        "discount": "5",
+        "earlyReservation": "Erken Rezervasyon",
+        "etsRecommend": "Ets Öneriyor"
+    },
+    {
+        "hotelId": "1d2ac9d3-4470-4d75-9c8b-c93d035a0fb1",
+        "img": "https://images.etstur.com/files/images/hotelImages/TR/212501/m/Amara-Centro-Resort-Genel-351100.jpg",
+        "name": "Crystal Centro",
+        "location": "Lara-Kundu, Antalya, Türkiye",
+        "rate": "8.8",
+        "recommendation": "Çok İyi",
+        "comments": "6 Yorum",
+        "accommodationType": "Ultra Her Şey Dahil",
+        "amenities": [
+            "Denize Sıfır",
+            "Fitness Merkezi",
+            "Restoran",
+            "Çocuk Kulübü",
+            "Aquapark"
+        ],
+        "amount": "5458",
+        "discount": "5",
+        "earlyReservation": "Erken Rezervasyon",
+        "etsRecommend": "Ets Öneriyor"
+    },
+    {
+        "hotelId": "d49509cc-3987-4b66-86e1-b73ed218f0f6",
+        "img": "https://images.etstur.com/files/images/hotelImages/TR/50545/m/Alba-Royal-Hotel-Genel-353026.jpg",
+        "name": "Alba Royal Hotel",
+        "location": "Çolaklı, Antalya, Türkiye",
+        "rate": "9.5",
+        "recommendation": "Mükemmel",
+        "comments": "8 Yorum",
+        "accommodationType": "Oda Kahvaltı",
+        "amenities": [
+            "Denize Sıfır",
+            "Fitness Merkezi",
+            "Restoran",
+            "Çocuk Kulübü",
+            "Plajı Kum"
+        ],
+        "amount": "8568",
+        "discount": "15",
+        "earlyReservation": "Erken Rezervasyon",
+        "etsRecommend": "Ets Öneriyor"
+    },
+    {
+        "hotelId": "c2e81c0f-6ebd-484c-a1e6-04dfcfebf234",
+        "img": "https://images.etstur.com/files/images/hotelImages/TR/50633/m/Rixos-Premium-Belek-Genel-350245.jpg",
+        "name": "Rixos Premium Belek Hotel - The land of Legends Access ",
+        "location": "İleribaşı Mevkii, Antalya, Türkiye",
+        "rate": "9.5",
+        "recommendation": "Mükemmel",
+        "comments": "12 Yorum",
+        "accommodationType": "Ultra Her Şey Dahil",
+        "amenities": [
+            "Denize Sıfır",
+            "Fitness Merkezi",
+            "Restoran",
+            "Çocuk Kulübü",
+            "Plajı Kum"
+        ],
+        "amount": "11020",
+        "discount": "15",
+        "earlyReservation": "Erken Rezervasyon",
+        "etsRecommend": "Ets Öneriyor"
+    },
+    {
+        "hotelId": "70754899-a16e-42ca-9128-df2fbbe9249f",
+        "img": "https://images.etstur.com/files/images/hotelImages/TR/215680/m/Cullinan-Belek-Genel-347763.jpg",
+        "name": "Cullinan Belek",
+        "location": "Belek, Antalya, Türkiye",
+        "rate": "9.7",
+        "recommendation": "Mükemmel",
+        "comments": "5 Yorum",
+        "accommodationType": "Her Şey Dahil",
+        "amenities": [
+            "Fitness Merkezi",
+            "Restoran",
+            "Çocuk Kulübü",
+            "Aquapark"
+        ],
+        "amount": "13590",
+
+        "etsRecommend": "Ets Öneriyor"
+    },
+    {
+        "hotelId": "2ddc6145-1a77-4b10-bf3c-475981553a61",
+        "img": "https://images.etstur.com/files/images/hotelImages/TR/209269/m/Sherwood-Exclusive-Lara-Genel-353396.jpg",
+        "name": "Sherwood Exclusive Lara",
+        "location": "Lara-Kundu, Antalya, Türkiye",
+        "rate": "8.4",
+        "recommendation": "Çok İyi",
+        "comments": "4 Yorum",
+        "accommodationType": "Her Şey Dahil",
+        "amenities": [
+            "Denize Sıfır",
+            "Fitness Merkezi",
+            "Restoran",
+            "Çocuk Kulübü"
+        ],
+        "amount": "4800"
+    },
+    {
+        "hotelId": "b28eb1e7-b80b-40b7-8ca5-0cf1dc7f583d",
+        "img": "https://images.etstur.com/files/images/hotelImages/TR/55716/m/The-Land-of-Legends-Kingdom-Otel-Genel-337861.jpg",
+        "name": "The Land of Legends",
+        "location": "Kadriye, Antalya, Türkiye",
+        "rate": "7.1",
+        "recommendation": "Çok İyi",
+        "comments": "8 Yorum",
+        "accommodationType": "Her Şey Dahil",
+        "amenities": [
+            "Denize Sıfır",
+            "Fitness Merkezi",
+            "Restoran",
+            "Çocuk Kulübü",
+            "Aquapark"
+        ],
+        "amount": "9120"
+       
+    }
+]

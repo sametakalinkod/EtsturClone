@@ -1,0 +1,42 @@
+.modal-body p{
+    font-size: 14px;
+}
+.modal-header{
+    border-bottom:none
+}
+.modal-header .btn-close {
+    padding: calc(var(--bs-modal-header-padding-y) * 0.5) calc(var(--bs-modal-header-padding-x) * 0.5);
+    margin: calc(-2.5 * var(--bs-modal-header-padding-y)) calc(-2.5 * var(--bs-modal-header-padding-x)) calc(0.5 * var(--bs-modal-header-padding-y)) auto;
+    border: 2px transparent solid;
+    background-color: #eaf1fa;
+    color: #61656e;
+    padding: 0!important;
+    width: 24px;
+    height: 24px;
+    background: #eaf1fa;
+    border-radius: 20px;
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 28px;
+}
+.closeBtn,.btnApply{
+    font-size: 30px;
+    margin: -7px -1px -3px 1px;
+    display: block;
+    color: #61656e;
+}
+::ng-deep .modal-content 
+{
+    @media (max-width:428px){
+        width: 100%;
+        left: 0%;  
+    }
+}
+@media (max-width:428px){
+    .modal-header.btn-close{
+        margin-top: -73px !important; 
+    }
+    .btn-close{
+        margin-top: -79px !important;
+    }
+}

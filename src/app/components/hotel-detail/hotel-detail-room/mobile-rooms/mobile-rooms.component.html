@@ -1,0 +1,80 @@
+<div class="container">
+    <div class="roomWrapper">
+
+        <div class="closeModal">
+            <i class="fa-solid fa-arrow-left p-2" (click)="activeModal.dismiss('Cross click')"></i>
+            <p class="choseRoom">Oda Seç</p>
+        </div>
+
+        <div class="row roomCard" *ngFor="let room of this.rooms">
+            <div class="col-12">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="roomImg">
+                            <img class="roomMainImg" [src]="room?.roomImages">
+                        </div>
+                    </div>
+                    <div class="col-12 ">
+                        <div class="roomNameWrapper">
+                            <b class="roomName">{{room.roomName}}</b>
+                        </div>
+                        <div class="roomInfo" (click)="roomInfoModal(room)">
+                            <p class="text-primary text-sm roomInfoModal">Tüm Özellikler ve Fotoğraflar</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="row">
+                    <div class="col-12 d-block specialWrapper">
+                        <div class="hotelTyoeWrapper d-flex">
+                            <div class="hotelType">
+                                <i class="fa-solid fa-utensils iconFork"></i>
+                            </div>
+                            <span class="hotelAccommodationType">{{hotel?.accommodationType}}</span>
+                        </div>
+
+                        <div class="modalAmountTable" (click)="modalAmountTable(room)">
+                            <p class="amountTable">Kartlara Göre Fiyat Tablosu</p>
+                        </div>
+                    </div>
+                    <div class="col-12 roomSelection">
+                        <div class="hotelAmount">
+
+                            <div class="hotelCardPriceContainer">
+
+
+                                <div class="priceContent">
+                                    <p class="totalStayNight">{{ nightCount }} Gece</p>
+                                    <p class="discountBadge" *ngIf="room.discount">
+                                        <span class="discount">
+                                            %{{room.discount}}
+                                        </span>
+
+                                    </p>
+
+                                    <div class="prices-container">
+                                        <p class="normalPrices" *ngIf="room.discount">
+                                        </p>
+
+                                        <p class="amount">{{ room.discount ? (calculeDiscountPrices(room) |
+                                            number: '1.0-0') : (calculateTotalAmount(room) | number: '1.0-0') }} TL
+                                        </p>
+
+                                        <a class="hotelDetailLink text-primary text-sm">
+                                            <b>
+                                                Odayı Seç
+                                            </b>
+                                            <i class="fa-solid fa-arrow-right arrowRight"></i>
+
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

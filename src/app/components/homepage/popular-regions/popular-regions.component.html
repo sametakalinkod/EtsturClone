@@ -1,0 +1,49 @@
+<section class="container">
+
+    <div class="sectionWrapper">
+        <div class="populerRegion">
+            <h1>Popüler Bölgeler</h1>
+        </div>
+        <p class="lineCaption"></p>
+    </div>
+
+    <div class="btnRegionWrapper scrollMobile">
+        <div *ngFor="let regionname of regionName">
+            <div class="btnRegion">
+                {{ regionname }}
+            </div>
+        </div>
+    </div>
+
+    <div class="wrapperRegions" *ngFor="let region of regions; let i = index">
+        <div class="regionsWrapper">
+            <div class="regionsImg" [ngClass]="'regionsImg-' + (i + 1)">
+                <img [src]="region.img" class="imgRegion" [ngClass]="'imgRegion-' + (i + 1)">
+                <div class="wrapperText" [ngClass]="'wrapperText-' + (i + 1)">
+                    <strong>
+                        {{region.text}}
+                    </strong>
+                    <small>
+                        {{region.count}}
+                    </small>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="wrapperRegionsMobile" *ngFor="let region of regions.slice(0,3)">
+        <div class="regionSectionMobile">
+            <img [src]="region.img" class="imgRegionMobile">
+            <div class="wrapperTextMobile" >
+                <strong>
+                    {{region.text}}
+                </strong>
+                <small>
+                    {{region.count}}
+                </small>
+            </div>
+        </div>
+    </div>
+    <div class="showAllPopulerRegions">
+        <p>Tüm Popüler Bölgeleri Gör</p>
+    </div>
+</section>

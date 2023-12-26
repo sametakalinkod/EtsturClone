@@ -1,0 +1,1627 @@
+section {
+
+    background: #f6f9fd !important;
+}
+
+.mobilButonSection,
+.serachDatas {
+    display: none;
+    visibility: hidden;
+}
+
+.desktopWrapper {
+    margin: 3rem;
+}
+
+/* FILTERS SECTİON START*/
+
+.map {
+    width: 100%;
+    height: auto;
+    display: block;
+    overflow: hidden;
+    color: #056bfd;
+    border-radius: 6px;
+    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .15);
+    background-color: #fff;
+    margin: 0px
+}
+
+.mapImg {
+    font-family: Montserrat;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.mapView {
+    height: 60px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.mapIcon {
+    height: 15px;
+    width: 20px;
+    margin-right: 12px;
+}
+
+
+.compareHotels {
+    margin-top: 12px;
+    border-radius: 6px;
+    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .15);
+    background-color: #fff;
+    width: 100%;
+    height: auto;
+}
+
+.checkBoxHotels .text {
+    font-size: 13px;
+}
+
+.breadcrumb {
+    font-size: 17px;
+}
+
+
+.hotelsWrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+
+}
+
+.filtersSection {
+    margin-top: 12px;
+    border-radius: 6px;
+    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .15);
+    padding: 10px;
+    font-size: 13px;
+    background-color: #fff;
+
+}
+
+
+.allFilters {
+    margin-left: 8px;
+}
+
+.filterCaptionFirst {
+    background: #ebf1fa;
+    width: 101%;
+    margin: -2px;
+    height: 5vh;
+    padding: 7px;
+}
+
+.mostPreferredFilters {
+    background: #ebf1fa;
+    width: 101%;
+    margin: -4px;
+}
+
+.discountModal {
+    border: none;
+    border-bottom: #056bfd solid 1px;
+    padding: 2px;
+    background-color: transparent;
+    margin-bottom: 6px;
+    font-size: 14px;
+}
+
+.hotelsSorting {
+    font-size: 14px;
+}
+
+.hotelSorting {
+    text-align: center;
+    font-size: 13px;
+    background: #fff;
+    border: 1px solid #ebf1fa;
+    color: #056bfd;
+    border-radius: 6px;
+    margin-left: 1px;
+    height: unset;
+}
+
+.hotelSorting:focus {
+    border: transparent;
+}
+
+.hotelSorting:focus-visible {
+    border: transparent;
+}
+
+.hotelSorting:focus-within {
+    border: transparent;
+}
+
+.hotelSorting::after {
+    content: '';
+    border: transparent;
+}
+
+.hotelSorting:active {
+
+    border: transparent;
+}
+
+.optionFilter {
+    cursor: pointer;
+}
+
+.commonFilters {
+    border-bottom: 1px solid #ebf1fa;
+    width: 108%;
+    margin-left: -8px;
+}
+
+.showMore,
+.showLess {
+    outline: none;
+    color: #056bfd;
+    font-size: 12px;
+    font-weight: 300;
+    padding: 0;
+    background: 0 0;
+    margin-top: 6px;
+    cursor: pointer;
+}
+
+.showMoreBottomIcon,
+.showLessTopIcon {
+    height: 22px;
+    margin-left: -2px;
+    margin-top: 3px;
+    cursor: pointer;
+
+}
+
+/* .checkbox-custom {
+    opacity: 0;
+    position: absolute;
+}
+
+.checkbox-custom,
+.checkbox-custom-label {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.checkbox-custom-label {
+    position: relative;
+}
+
+.checkbox-custom+.checkbox-custom-label:before {
+    content: ' ';
+    background: #f6f9fd !important;
+    border: 1px solid #66666675;
+    display: inline-block;
+    vertical-align: middle;
+    width: 18px;
+    height: 18px;
+    padding: 2px;
+    margin-right: 10px;
+    margin-left: -8px;
+    text-align: center;
+    border-radius: 3px;
+}
+
+.checkbox-custom:checked+.checkbox-custom-label:before {
+    background: transparent;
+    border: 1px solid #66666675;
+    content: 'X';
+} */
+
+/* FILTERS SECTİON END*/
+
+
+/* HOTELS SECTİON START*/
+
+.hotelsSection {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+}
+
+.hotelsSection>.hotel {
+    background: #fff;
+    border: 1px solid #ebf1fa;
+    padding: 5px 10px;
+    display: flex;
+    border-radius: 6px;
+}
+
+.hotelimage {
+    object-fit: cover;
+    width: 240px;
+    height: 240px;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-left: -11px;
+    padding: 5px;
+    cursor: pointer;
+
+}
+
+.hotelImg {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    width: 31%;
+    cursor: pointer;
+
+}
+
+.hotelImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 89%;
+    margin-left: 5px;
+    margin-top: 5px;
+    height: 96%;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.3) 100%);
+    transition: opacity .5s;
+    opacity: 0;
+    pointer-events: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.hotelImg:hover .hotelImage {
+    opacity: 1;
+    cursor: pointer;
+
+}
+
+.hotelInfos {
+    margin-left: -20px;
+    width: 24pc;
+}
+
+.hotelNames {
+    margin-top: 12px;
+    margin-bottom: 0;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.hotelInfo {
+    color: #056bfd;
+    font-size: 12px;
+    gap: 15px;
+}
+
+.iconStar,
+.locationIcon {
+    width: 19px;
+    height: 19px;
+}
+
+.wrapperRateandComment {
+    margin-top: 1px;
+    padding: 1px;
+}
+
+.accommodationTypeHotel {
+    margin: 23px 0px 0 -14px;
+    font-size: 14px;
+}
+
+.themeAmenities {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    border: 1px solid #ebf1fa;
+    padding: 5px 10px;
+    font-size: 12px;
+    color: #159cd8;
+    border-radius: 30px;
+    margin: 5px 64px 0px -23px;
+}
+
+.wrapperHotel {
+    cursor: pointer;
+}
+
+::ng-deep.modal-content {
+    width: 200%;
+    left: -55%;
+    margin-top: 25%;
+}
+
+.discountsWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    position: absolute;
+    right: -27px;
+    top: 9px;
+}
+
+.discountBadge {
+    background: #4BB2AC;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 500;
+    text-align: left;
+    padding: 5px 9px 4px 9px;
+    color: #fff;
+    border-radius: 6px 0 0 6px;
+    float: right;
+
+}
+
+.normalPrices {
+    font-weight: 500;
+    font-size: 12px;
+    text-align: right;
+    text-decoration-line: line-through;
+    color: #61656e;
+    margin-bottom: unset;
+}
+
+.hotelAmount .hotelCardPriceContainer {
+    position: relative;
+    width: 170px;
+    height: 160px;
+    min-height: 70px;
+    background-color: #f6f9fd;
+    padding: 0 10px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    float: right;
+    margin-top: 10px;
+    border-radius: 6px;
+}
+
+.etsLikeSection {
+    position: relative;
+    top: -40px;
+    color: #fff;
+    background: #ED7A07;
+    width: 104px;
+    height: 25px;
+    padding: 3px 3px 3px 8px;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.earlyReservation {
+    position: absolute;
+    top: 14px;
+    font-size: 12px;
+    background: #4BB2AC;
+    width: 152px;
+    height: 30px;
+    border-radius: 0px 6px 6px 0px;
+    left: -4px;
+    color: #fff;
+    padding: 3px;
+}
+
+.earlyReservation>img {
+    width: 24px;
+    height: 24px;
+    padding: 1px;
+    margin-left: 7px;
+}
+
+.totalStay,
+.amount,
+.hotelDetailLink {
+
+    color: #1F2126;
+    font-weight: 700;
+    text-align: right;
+    margin: unset;
+}
+
+.amount {
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: unset;
+}
+
+.hotelDetailLink {
+    font-size: 13px;
+    float: right;
+    margin: unset;
+    text-decoration: none;
+    display: block;
+    font-weight: 700;
+    text-align: right;
+    margin-bottom: 0;
+    color: #056bfd;
+}
+
+.hotelDetailLink:hover {
+    cursor: pointer;
+}
+
+.arrowRight {
+    width: 15px;
+}
+
+
+.mobilFilter {
+    display: visible;
+}
+
+/* HOTELS SECTİON END*/
+
+/*PC RESPONSİVE START*/
+@media screen and (max-width: 1400px) {
+    .desktopWrapper {
+        margin: 0px
+    }
+
+    .hotelInfos {
+        margin-left: 1px;
+        width: 21pc;
+    }
+
+    .hotelImg {
+        width: 240px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .container {
+        max-width: 1100px;
+    }
+
+    .hotelInfos {
+        margin-left: 1px;
+        width: 19pc;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .container {
+        max-width: 1000px;
+    }
+
+    .hotelInfos {
+        margin-left: 1px;
+        width: 16pc;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .container {
+        max-width: 1000px;
+    }
+
+    .hotelInfos {
+        margin-left: 1px;
+        width: 16pc;
+    }
+
+    .hotelimage {
+
+        width: 222px;
+        height: 232px;
+
+    }
+
+    .hotelImg {
+        width: 222px;
+    }
+}
+
+/*PC RESPONSİVE END*/
+
+/*TABLET RESPONSİVE START*/
+@media screen and (max-width: 995px) {
+    .mobilButonSection {
+        display: visible;
+        visibility: visible;
+    }
+
+    .container {
+        max-width: 748px;
+    }
+
+    .mobilLeftSide {
+        display: none !important;
+        visibility: hidden;
+    }
+
+    .hotelImg {
+        width: 682px;
+        object-fit: cover;
+    }
+
+    .hotelimage {
+        height: 240px;
+        border-radius: 15px;
+        margin-left: 0px;
+        padding: 3px;
+        cursor: pointer;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .hotelInfos {
+        margin-left: 1px;
+        width: 43pc;
+    }
+
+    .hotelAmount {
+        width: 100%;
+    }
+
+    .discountsWrapper {
+
+        position: absolute;
+        right: auto;
+        top: 5px;
+        left: -21px;
+    }
+
+    .discountBadge {
+        text-align: left;
+        padding: 5px 9px 4px 9px;
+        color: #fff;
+        border-radius: 0px 6px 6px 0px;
+        float: left;
+    }
+
+    .discountsWrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+        position: absolute;
+        right: auto;
+        top: 11px;
+    }
+
+    .hotelAmount .hotelCardPriceContainer {
+
+        width: 100%;
+        height: 71px;
+        min-height: 70px;
+
+    }
+
+    .totalStay,
+    .amount,
+    .hotelDetailLink {
+
+        text-align: left;
+
+    }
+
+    .mobileLink {
+        display: none;
+    }
+
+    #mobilTotelStay {
+        text-align: left;
+        position: absolute;
+        left: 11px;
+    }
+
+    .prices-container {
+        position: relative;
+    }
+
+    .amount {
+        font-size: 22px;
+        font-weight: 500;
+        margin-bottom: unset;
+        position: absolute;
+        right: 0pc;
+        bottom: 22px;
+    }
+
+    .mobilFilterButtons {
+        font-size: 34px;
+    }
+
+    .mobilButonSection {
+        width: 663px;
+        height: 45px;
+        background-color: #61656e;
+        z-index: 15;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        left: 69px;
+        font-size: 12px;
+        border: none;
+        border-radius: 4px;
+        bottom: auto;
+        top: 43pc;
+    }
+
+    .buttonsMobil {
+        position: sticky;
+        top: 4px;
+        bottom: 8px;
+        z-index: 15;
+    }
+
+    .mobilFiltersButton,
+    .mobilSortingButton {
+        width: 65px;
+        border-top: none;
+        border-left: none;
+        border-bottom: none;
+        margin-right: 10px;
+        border-right: 1px #fff solid;
+        background: transparent;
+        color: #fff;
+    }
+
+    .mobilSortingButton {
+        margin-right: 0px;
+    }
+
+    .filterIcon {
+        width: 12px;
+    }
+
+    .mobilSortingSection {
+        font-size: 17px;
+    }
+
+    .mobilSort {
+        position: relative;
+        top: 29pc;
+        z-index: 3;
+        left: -22px;
+        background: transparent;
+    }
+
+    .mobilSort {
+        position: sticky;
+        z-index: 3;
+        left: -73px;
+        background: transparent;
+    }
+
+    .hotelsSorting {
+        font-size: 14px;
+        position: sticky;
+        border: none;
+    }
+
+    .sortingWrapper {
+        position: sticky;
+        border: none;
+    }
+
+    .hotelSorting {
+        text-align: center;
+        font-size: 12px;
+        background: transparent;
+        border: transparent;
+        color: transparent;
+        width: 119px;
+        position: fixed;
+        left: 366px;
+        color: transparent;
+        bottom: 77px;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .hotelSorting {
+        text-align: center;
+        font-size: 12px;
+        background: transparent;
+        border: transparent;
+        color: transparent;
+        width: 119px;
+        position: fixed;
+        left: 435px;
+        color: transparent;
+        bottom: 77px;
+    }
+}
+
+@media screen and (max-width: 884px) and (max-height:1104px) {
+    .mobilButonSection {
+        bottom: 2pc;
+        top: auto;
+    }
+}
+
+@media screen and (max-width: 834px) and (max-height:1194px) {
+    .mobilButonSection {
+        bottom: 3pc;
+        top: auto
+    }
+}
+
+@media screen and (max-width: 800px) and (max-height:1280px) {
+    .mobilButonSection {
+        bottom: 3pc;
+        top: auto
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .serachDatas {
+        display: block;
+        visibility: visible;
+        background: #F2F3F4 !important;
+        padding: 3px;
+        box-shadow: 0px 4px 19px 0px rgba(0, 0, 0, 0.1);
+    }
+
+    .wrapperBtn {
+        display: flex;
+        position: relative;
+    }
+
+    .btnToggle {
+        color: #056bfd !important;
+        border: none;
+        background: transparent;
+        position: absolute;
+        left: 15pc;
+        top: 15px;
+    }
+
+    .iconArrow {
+        color: #056bfd !important;
+        position: absolute;
+        left: 18pc;
+        padding: 4px;
+        top: 15px;
+    }
+
+
+    .wrapperSearchSetion {
+        display: block;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: #fff;
+        border-radius: 6px;
+        padding: 3px 16px;
+        border: 1px solid rgba(255, 255, 255, 0.54);
+        margin-right: 13px;
+        margin-left: 13px;
+        font-weight: 500;
+        font-size: 12px;
+        height: 65px;
+        margin-bottom: 18px;
+    }
+
+    .searchTextCaption {
+        font-weight: bolder;
+        color: black;
+        font-size: 14px;
+    }
+
+}
+
+@media screen and (max-width: 768px) and (max-height:1024px) {
+    .mobilButonSection {
+        bottom: 1pc;
+        top: auto
+    }
+}
+
+@media screen and (max-width: 600px) and (max-height:960px) {
+    .mobilButonSection {
+        bottom: 1pc;
+        top: auto;
+        width: 29pc;
+    }
+}
+
+/*TABLET RESPONSİVE END*/
+
+/* MOBİL RESPONSİVE START */
+@media screen and (max-width: 490px) {
+
+    .mobilButonSection {
+        display: visible;
+        visibility: visible
+    }
+
+    .mobilLeftSide {
+        display: none;
+        visibility: hidden
+    }
+
+    .filterMobil {
+        display: none;
+    }
+
+    .mobilWrapper {
+        margin: 0px !important;
+    }
+
+
+    .mobilCaptionHotel {
+        display: none;
+    }
+
+    .mobilHotels {
+        width: 100%;
+    }
+
+    .hotelImg {
+        position: relative;
+        overflow: visible;
+        width: 100%;
+        cursor: pointer;
+    }
+
+    .hotelimage {
+        object-fit: cover;
+        width: 374px;
+        height: 241px;
+        margin-left: -27px;
+        margin-top: -10px;
+        border-radius: 9px 9px 0px 0px;
+    }
+
+    .hotelName {
+        margin-bottom: 0;
+        font-size: 1.5rem;
+        font-weight: 700;
+        line-height: 1.5;
+    }
+
+    .hotelInfo {
+        margin-top: 3px;
+    }
+
+    .hotelAmount .hotelCardPriceContainer {
+        width: 356px;
+        max-height: 78px;
+    }
+
+    .discountsWrapper {
+        position: inherit;
+
+    }
+
+    .discountBadge {
+        margin-top: 17px;
+        border-radius: 0px 6px 6px 0px;
+        font-size: 13px;
+        margin-left: -13px;
+        padding: 3px 15px 4px 18px
+    }
+
+    .mobilPriceContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex: 1;
+    }
+
+    .hotelAmount {
+        width: 100%;
+        margin-left: 18px;
+    }
+
+    .mobileLink {
+        display: none;
+    }
+
+    #mobilTotelStay {
+        position: relative;
+        left: -16pc;
+        top: 53px;
+        font-size: 15px;
+        font-weight: bolder;
+    }
+
+    .mobilFilter {
+        display: none;
+    }
+
+    .mobilFilterButtons {
+        font-size: 34px;
+    }
+
+    .mobilButonSection {
+        width: 197px;
+        height: 28px;
+        background-color: #61656e;
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: sticky;
+        left: 105px;
+        font-size: 12px;
+        border: none;
+        border-radius: 4px;
+        bottom: auto;
+        top: 48pc;
+    }
+
+    .buttonsMobil {
+        position: sticky;
+        top: 4px;
+        bottom: 0px;
+        z-index: 1;
+    }
+
+    .mobilFiltersButton,
+    .mobilSortingButton {
+        width: 65px;
+        border-top: none;
+        border-left: none;
+        border-bottom: none;
+        margin-right: 10px;
+        border-right: 1px #fff solid;
+        background: transparent;
+        color: #fff;
+    }
+
+    .mobilSortingButton {
+        margin-right: 0px;
+    }
+
+    .filterIcon {
+        width: 12px;
+    }
+
+    .mobilSortingSection {
+        font-size: 17px;
+    }
+
+    .mobilSort {
+        position: relative;
+        top: 29pc;
+        z-index: 3;
+        left: -22px;
+        background: transparent;
+    }
+
+    .mobilSort {
+        position: sticky;
+        z-index: 3;
+        left: -73px;
+        background: transparent;
+    }
+
+    .hotelsSorting {
+        font-size: 14px;
+        position: sticky;
+        border: none;
+    }
+
+    .sortingWrapper {
+        position: sticky;
+        border: none;
+    }
+
+    .hotelSorting {
+        text-align: center;
+        font-size: 12px;
+        background: transparent;
+        border: transparent;
+        color: transparent;
+        width: 105px;
+        position: fixed;
+        top: 48pc;
+        left: 194px;
+        color: transparent;
+        height: 30px;
+    }
+
+    .amount {
+        font-size: 22px;
+        font-weight: 500;
+        margin-bottom: unset;
+        position: absolute;
+        right: 0pc;
+        bottom: -30px;
+    }
+
+    #mobilTotelStay {
+        position: relative;
+        left: -17pc;
+        top: 48px;
+        font-size: 15px;
+        font-weight: bolder;
+    }
+
+    .hotelConentWrapper {
+        padding: 0;
+    }
+
+}
+
+@media screen and (max-width: 428px) {
+    .amount {
+
+        width: 119px;
+    }
+
+    .hotelConentWrapper {
+        padding: 0;
+    }
+
+    .serachDatas {
+        padding: 23px;
+        background-color: transparent;
+        box-shadow: none;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .mobilLeftSide {
+        display: none;
+        visibility: hidden
+    }
+
+    .mobilButonSection {
+        display: visible;
+    }
+
+    .hotelimage {
+        width: 358px;
+    }
+
+    .hotelAmount .hotelCardPriceContainer {
+        width: 338px;
+
+    }
+
+    .mobilButonSection {
+
+        top: 47pc;
+    }
+
+    .mobilFilter {
+        display: none;
+    }
+
+    .mobilSort {
+        position: sticky;
+        z-index: 3;
+        left: -73px;
+        background: transparent;
+    }
+
+    .hotelsSorting {
+        font-size: 14px;
+        position: sticky;
+        border: none;
+    }
+
+    .sortingWrapper {
+        position: sticky;
+        border: none;
+    }
+
+    .hotelSorting {
+        text-align: center;
+        font-size: 12px;
+        background: transparent;
+        border: transparent;
+        color: transparent;
+        width: 105px;
+        position: fixed;
+        top: 47pc;
+        left: 195px;
+        color: transparent;
+        height: 30px;
+    }
+
+    .hotelConentWrapper {
+        padding: 0;
+    }
+
+    .amount {
+        font-size: 22px;
+        font-weight: 500;
+        margin-bottom: unset;
+        position: absolute;
+        right: -5pc;
+        bottom: -30px;
+        width: 193px;
+    }
+
+    #mobilTotelStay {
+        position: relative;
+        left: -235px;
+        top: 49px;
+        font-size: 15px;
+        font-weight: bolder;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .serachDatas {
+        padding: 19px;
+        background-color: transparent;
+        box-shadow: none;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .serachDatas {
+        padding: 12px;
+        background-color: transparent;
+        box-shadow: none;
+    }
+
+    .mobilLeftSide {
+        display: none;
+        visibility: hidden
+    }
+
+    .mobilButonSection {
+        display: visible;
+    }
+
+    .mobilFilter {
+        display: none;
+    }
+
+    .hotelimage {
+        object-fit: cover;
+        width: 333px;
+        height: 241px;
+        margin-left: -16px;
+        margin-top: -10px;
+        border-radius: 9px 9px 0px 0px;
+    }
+
+    .hotelInfos {
+        margin-left: -4px;
+        width: 100%;
+    }
+
+    .hotelAmount {
+        width: 100%;
+        margin-left: 9px;
+    }
+
+    .hotelAmount .hotelCardPriceContainer {
+        width: 318px;
+        max-height: 78px;
+    }
+
+    .hotelAmount.hotelCardPriceContainer {
+        position: relative;
+        width: 170px;
+        height: 160px;
+        min-height: 70px;
+        background-color: #f6f9fd;
+        padding: 0 6px 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        margin-top: -8px;
+        margin-left: -21px;
+        border-radius: 6px;
+        margin-bottom: 11px;
+    }
+
+    #mobilTotelStay {
+        position: relative;
+        left: -224px;
+        top: 53px;
+        font-size: 15px;
+        font-weight: bolder;
+    }
+
+    .hotelsSection>.hotel {
+        background: #fff;
+        border: 1px solid #ebf1fa;
+        padding: 5px 0px;
+        display: flex;
+        border-radius: 6px;
+    }
+
+    .discountBadge {
+        margin-left: -11px;
+        padding: 4px 10px 4px 17px;
+    }
+
+    .mobilButonSection {
+
+        top: 44pc;
+    }
+
+    .mobilSort {
+        position: sticky;
+        z-index: 3;
+        left: -73px;
+        background: transparent;
+    }
+
+    .hotelsSorting {
+        font-size: 14px;
+        position: sticky;
+        border: none;
+    }
+
+    .sortingWrapper {
+        position: sticky;
+        border: none;
+    }
+
+    .hotelSorting {
+        text-align: center;
+        font-size: 12px;
+        background: transparent;
+        border: transparent;
+        color: transparent;
+        width: 105px;
+        position: fixed;
+        top: 44pc;
+        left: 195px;
+        color: transparent;
+        height: 30px;
+    }
+
+    .buttons {
+        width: 100%;
+        height: 51px;
+        background: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        bottom: 0px;
+        left: -1px !important;
+    }
+    .wrapperSearchSetion{
+        padding: 5px 10px;
+    }
+
+}
+
+@media screen and (max-width: 375px) {
+    .mobilLeftSide {
+        display: none;
+        visibility: hidden
+    }
+
+    .mobilButonSection {
+        display: visible;
+    }
+
+    .hotelimage {
+        width: 304px;
+    }
+
+    .hotelAmount .hotelCardPriceContainer {
+        width: 300px;
+    }
+
+    .mobilButonSection {
+
+        left: 87px;
+
+        top: 41pc;
+    }
+
+    .mobilFilter {
+        display: none;
+    }
+
+    .mobilSort {
+        position: sticky;
+        z-index: 3;
+        left: -73px;
+        background: transparent;
+    }
+
+    .hotelsSorting {
+        font-size: 14px;
+        position: sticky;
+        border: none;
+    }
+
+    .sortingWrapper {
+        position: sticky;
+        border: none;
+    }
+
+    .hotelSorting {
+        text-align: center;
+        font-size: 12px;
+        background: transparent;
+        border: transparent;
+        color: transparent;
+        width: 105px;
+        position: fixed;
+        top: 41pc;
+        left: 176px;
+        color: transparent;
+        height: 30px;
+    }
+
+    #mobilTotelStay {
+        position: relative;
+        left: -202px;
+        top: 48px;
+        font-size: 15px;
+        font-weight: bolder;
+    }
+
+    .serachDatas {
+        padding: 3px;
+        background-color: transparent;
+        box-shadow: none;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .serachDatas {
+        padding: 3px;
+        background-color: transparent;
+        box-shadow: none;
+    }
+
+    .mobilLeftSide {
+        display: none;
+        visibility: hidden
+    }
+
+    .mobilButonSection {
+        display: visible;
+    }
+
+    .hotelimage {
+        width: 263px;
+    }
+
+    .hotelAmount .hotelCardPriceContainer {
+        width: 247px;
+    }
+
+    .mobilButonSection {
+        left: 65px;
+        top: 29pc;
+    }
+
+    #mobilTotelStay {
+
+        left: -159px;
+        top: 46px;
+
+    }
+
+    .hotelConentWrapper {
+        padding: 0;
+    }
+
+    .mobilFilter {
+        display: none;
+    }
+
+    .mobilSort {
+        position: sticky;
+        z-index: 3;
+        left: -73px;
+        background: transparent;
+    }
+
+    .hotelsSorting {
+        font-size: 14px;
+        position: sticky;
+        border: none;
+    }
+
+    .sortingWrapper {
+        position: sticky;
+        border: none;
+    }
+
+    .hotelSorting {
+        text-align: center;
+        font-size: 12px;
+        background: transparent;
+        border: transparent;
+        color: transparent;
+        width: 105px;
+        position: fixed;
+        top: 29pc;
+        left: 152px;
+        color: transparent;
+    }
+
+    .btnToggle {
+
+        left: 12pc;
+        top: 15px;
+    }
+
+    .iconArrow {
+
+        left: 15pc;
+        top: 14px;
+    }  
+     
+
+}
+
+/* MOBİL RESPONSİVE END */
+
+/* Search Section Responsive */
+
+
+:host ::ng-deep app-search-section {
+    @media screen and (max-width: 2020px) {
+        .bedSection {
+            display: none;
+        }
+
+        .searchHotelSection {
+            display: none;
+        }
+
+        .searchSectionWrapper {
+            margin-top: -34px;
+            border-radius: 0;
+            -webkit-backdrop-filter: none;
+            backdrop-filter: none;
+            background: #F2F3F4;
+            max-width: 2482px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 14px 5px;
+            box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.1490196078);
+            margin-bottom: 0;
+
+        }
+
+        .textCustomer {
+            margin-left: 60px;
+        }
+
+        .hotelSearchButton {
+            margin-left: 150px;
+        }
+
+        .datePicker {
+            margin-left: 11px;
+        }
+    }
+
+    @media screen and (max-width: 1520px) {
+        .bedSection {
+            display: none;
+        }
+
+        .searchHotelSection {
+            display: none;
+        }
+
+        .searchSectionWrapper {
+            margin-top: -34px;
+            border-radius: 0;
+            -webkit-backdrop-filter: none;
+            backdrop-filter: none;
+            background: #F2F3F4;
+            max-width: 1482px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 14px 5px;
+            box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.1490196078);
+            margin-bottom: 0;
+
+        }
+
+        // #searchTextId {
+        //     width: 32pc;
+        //     margin-right: 47px;
+        // }
+
+    }
+}
+
+:host ::ng-deep app-search-section {
+
+    @media screen and (max-width: 520px) {
+        .searchSectionWrapper {
+            background-color: transparent;
+            padding: 4px 5px;
+            box-shadow: none;
+        }
+
+        #searchTextId {
+            background-color: none;
+        }
+
+        .textCustomer {
+            width: 96%;
+            margin-left: 3px;
+        }
+
+        .hotelSearchButton {
+            margin-left: 3px;
+        }
+
+        .datePicker {
+            margin-left: 0px;
+        }
+    }
+
+    @media screen and (max-width: 360px) {
+        .searchSectionWrapper {
+            background-color: transparent;
+            padding: 4px 5px;
+            box-shadow: none;
+        }
+
+        #searchTextId {
+            width: 95%;
+            margin-left: 10px;
+            line-height: 19px;
+            margin-top: 17px;
+        }
+
+        .textCustomer {
+            width: 94%;
+            margin-left: 10px;
+        }
+
+        .hotelSearchButton {
+            margin-left: 3px;
+        }
+
+        .datePicker {
+            margin-left: 11px;
+            width: 95%;
+        }
+    }
+}
+
+// :host ::ng-deep app-search-section {
+
+//     @media screen and (max-width: 800px) {
+//         .searchSectionWrapper {
+//             background: #F2F3F4 !important;
+//             border: none !important;
+//             width: -webkit-fill-available;
+//             border-radius: 0;
+//             margin-top: -28px;
+//             box-shadow: none;
+//             backdrop-filter: none;
+//         }
+
+//         .bedSection {
+//             display: none;
+//         }
+
+//         #searchTextId::placeholder {
+//             color: black
+//         }
+
+//         .searchHotelSection {
+//             display: none;
+//         }
+
+//         .datePicker {
+//             margin-left: 2px;
+//             margin-top: 4px;
+//             padding: 2px;
+//             width: 99%;
+//         }
+
+//         .textCustomer {
+//             width: 87%;
+//         }
+//     }
+// }

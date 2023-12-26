@@ -1,0 +1,42 @@
+
+<div class="filtersSection">
+    <div class="captionSectionAllFilters d-flex">
+        <i class="fa-solid fa-arrow-left p-2"(click)="activeModal.dismiss('Cross click')" ></i>
+
+        <h5><b>Sonuçları Filtrele</b></h5>
+    </div>
+    <div class="commonFilters" *ngFor="let filter of filters; let i = index;">
+
+        <div [ngClass]="{'filterCaptionFirst': i === 0, 'filterCaption m-2': i !== 0}">
+            <h6><b>{{ filter.name }}</b></h6>
+        </div>
+        <div [ngClass]="{'mostPreferredFilters': i === 0, 'allFilters': i !== 0}">
+            <div class="p-2 m-1" id="filtersWrapper"*ngIf="filter.displayCount">
+         
+                <div class="checkBoxHotels"
+                *ngFor="let option of getFilteredOptions(filter.options, filter.showAllOptions, filter.displayCount); let j = index">
+                    <input type="checkbox" class="m-2 optionFilter checkbox-custom"
+                    (change)="onCheckboxChange($event, option, filter.areadef)"   />
+                    <span class="m-1 optionFilter checkbox-custom-label">{{ option.name }}</span>
+                </div>
+                <div *ngIf="i!== 0 && filter.options.length > 3">
+                    <span *ngIf="!filter.showAllOptions" (click)="filter.showAllOptions = true"
+                        class="showMore">Daha Fazla Görüntüle
+                        <span><img class="showMoreBottomIcon"
+                                src="../../../assets/common/iconsbottom.png"></span>
+                    </span>
+                    <span *ngIf="filter.showAllOptions"(click)="filter.showAllOptions = false"
+                        class="showLess">Daha Az Görüntüle
+                        <span><img class="showLessTopIcon"
+                                src="../../../assets/common/iconstop.png"></span>
+                    </span>
+                </div>
+            </div>
+        </div>
+       
+    </div>
+    <div class="buttons">
+        <button class="btnReset">Sıfırla</button>
+        <button class="btnApply" (click)="applyFilters()">Uygula</button>
+    </div>
+</div>

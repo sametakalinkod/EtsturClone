@@ -1,0 +1,248 @@
+[
+    {
+        "hotelReviewId": "76378e54-e7e0-48ab-8935-1a07b2b5ac15",
+        "reviews": [
+            {
+                "category": "Genel Puan",
+                "rating": 9.6
+            },
+            {
+                "category": "Tavsiye",
+                "rating": 9.3
+            },
+            {
+                "category": "Yemek",
+                "rating": 9
+            },
+            {
+                "category": "Yüzme",
+                "rating": 9.3
+            },
+            {
+                "category": "Konum",
+                "rating": 9.4
+            },
+            {
+                "category": "Fiyat Performans",
+                "rating": 9.9
+            },
+            {
+                "category": "Oda",
+                "rating": 9.5
+            }
+        ],
+        "familyReviews": [
+            {
+                "category": "Genel Puan",
+                "rating": 9.5
+            },
+            {
+                "category": "Tavsiye",
+                "rating": 9.5
+            },
+            {
+                "category": "Yemek",
+                "rating": 9.4
+            },
+            {
+                "category": "Yüzme",
+                "rating": 9.5
+            },
+            {
+                "category": "Konum",
+                "rating": 9.3
+            },
+            {
+                "category": "Fiyat Performans",
+                "rating": 8.7
+            },
+            {
+                "category": "Oda",
+                "rating": 9.3
+            }
+        ],
+        "couplesReviews": [
+            {
+                "category": "Fiyat Performans",
+                "rating": 8.7
+            },
+            {
+                "category": "Tavsiye",
+                "rating": 9.7
+            },
+            {
+                "category": "Konum",
+                "rating": 9.1
+            },
+            {
+                "category": "Yemek",
+                "rating": 9.4
+            },
+            {
+                "category": "Genel Puan",
+                "rating": 9.5
+            },
+            {
+                "category": "Oda",
+                "rating": 9.4
+            },
+            {
+                "category": "Yüzme",
+                "rating": 9.3
+            }
+        ],
+        "oneGuestReviews": [
+            {
+                "category": "Yüzme",
+                "rating": 9.3
+            },
+            {
+                "category": "Genel Puan",
+                "rating": 9.3
+            },
+            {
+                "category": "Oda",
+                "rating": 9.1
+            },
+            {
+                "category": "Fiyat Performans",
+                "rating": 8.3
+            },
+            {
+                "category": "Yemek",
+                "rating": 9.3
+            },
+            {
+                "category": "Tavsiye",
+                "rating": 9.5
+            }
+        ],
+        "friendsRevies": [
+            {
+                "category": "Yüzme",
+                "rating": 9.5
+            },
+            {
+                "category": "Genel Puan",
+                "rating": 9.6
+            },
+            {
+                "category": "Oda",
+                "rating": 9.4
+            },
+            {
+                "category": "Fiyat Performans",
+                "rating": 9
+            },
+            {
+                "category": "Yemek",
+                "rating": 9.7
+            },
+            {
+                "category": "Tavsiye",
+                "rating": 9.6
+            }
+        ],
+        "guestReview": [
+            {
+                "comment": "Otelin iç imkanları çok fazla güzeldi. Otelin alanı genişti. Garsonlar çok ilgili değildi çok yavaştı. Diğer bazı otellerde daha iyi personeller vardı. Yemekler hep aynıydı 6 gün boyunca aynı yemek vardı değişiklik yoktu. Fiyat performans olarak iyiydi.",
+                "ratings": [
+                    {
+                        "category": "Genel Puan",
+                        "rating": 8
+                    },
+                    {
+                        "category": "Oda",
+                        "rating": 10
+                    },
+                    {
+                        "category": "Yemek",
+                        "rating": 6
+                    },
+                    {
+                        "category": "Hizmet",
+                        "rating": 8
+                    },
+                    {
+                        "category": "Yüzme",
+                        "rating": 5
+                    },
+                    {
+                        "category": "Konum",
+                        "rating": 8
+                    },
+                    {
+                        "category": "Fiyat Performans",
+                        "rating": 10
+                    }
+                ]
+            },
+            {
+                "comment": "Otelin hizmeti güzel ve kaliteliydi. Çalışanlar saygılıydı. Tesiste güzeldi.",
+                "ratings": [
+                    {
+                        "category": "Genel Puan",
+                        "rating": 10
+                    },
+                    {
+                        "category": "Oda",
+                        "rating": 10
+                    },
+                    {
+                        "category": "Yemek",
+                        "rating": 10
+                    },
+                    {
+                        "category": "Hizmet",
+                        "rating": 10
+                    },
+                    {
+                        "category": "Yüzme",
+                        "rating": 10
+                    },
+                    {
+                        "category": "Konum",
+                        "rating": 10
+                    },
+                    {
+                        "category": "Fiyat Performans",
+                        "rating": 10
+                    }
+                ]
+            },
+            {
+                "comment": "Tesis konumu , çalışanların ilgisi ve yemekleri güzeldi.",
+                "ratings": [
+                    {
+                        "category": "Genel Puan",
+                        "rating": 10
+                    },
+                    {
+                        "category": "Oda",
+                        "rating": 10
+                    },
+                    {
+                        "category": "Yemek",
+                        "rating": 6
+                    },
+                    {
+                        "category": "Hizmet",
+                        "rating": 10
+                    },
+                    {
+                        "category": "Yüzme",
+                        "rating": 8
+                    },
+                    {
+                        "category": "Konum",
+                        "rating": 10
+                    },
+                    {
+                        "category": "Fiyat Performans",
+                        "rating": 9
+                    }
+                ]
+            }
+        ]
+    }
+]

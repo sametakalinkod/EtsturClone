@@ -1,0 +1,700 @@
+.hotelSearch {
+    z-index: 99;
+
+}
+
+.hotelSearch {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.bedSection {
+    position: relative;
+    right: 2px;
+    left: 29pc;
+    border: 1px transparent solid;
+    width: 92px;
+    padding: 5px;
+    border-radius: 15px;
+    background: #fff;
+    top: -15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer
+}
+
+.wrapper {
+    color: #056BFD;
+}
+
+.bedIcon {
+    margin-right: 12px;
+    background: #E6F0FF;
+    border-radius: 100%;
+}
+
+.searchSection {
+    flex-direction: column;
+    position: relative;
+    min-width: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    vertical-align: top;
+    width: 100%;
+    height: 100%;
+}
+
+.inputContainer {
+    height: 100%;
+}
+
+.searchSectionWrapper {
+    margin: 0 auto;
+    max-width: 1056px;
+    padding: 0 24px 24px 24px;
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.54);
+    background-blend-mode: normal, multiply;
+    border-radius: 30px;
+    box-shadow: 0px 4px 19px 0px rgba(0, 0, 0, 0.1);
+    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);
+    z-index: 5;
+    margin-top: 90px;
+    color: #000929;
+    position: relative;
+
+}
+
+.searchSection .inputSearch {
+    position: absolute;
+    height: 25px;
+    z-index: 1;
+    top: 13px;
+    left: 92px;
+}
+
+#searchTextId {
+    width: 100%;
+    padding: 22px;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: #fff;
+    border-radius: 8px;
+    border: none;
+    margin-top: 42px;
+    line-height: 32px;
+}
+
+.navPills {
+    padding: 140px 0 0 30px;
+}
+
+.navPillsBottom {
+    padding:0px 34px 106px 17px;
+}
+
+.dp-hidden {
+    width: 0;
+    margin: 0;
+    border: none;
+    padding: 0;
+}
+
+.custom-day {
+    text-align: center;
+    padding: 0.185rem 0.25rem;
+    display: inline-block;
+    height: 2rem;
+    width: 2rem;
+}
+
+.custom-day.focused {
+    background-color: #e6e6e6;
+}
+
+.custom-day.range,
+.custom-day:hover {
+    background-color: rgb(2, 117, 216);
+    color: white;
+}
+
+.custom-day.faded {
+    background-color: rgba(2, 117, 216, 0.5);
+}
+
+.form-control {
+    height: 57px;
+}
+
+.rightCalendar {
+    left: -25px;
+
+    font-size: 11px;
+    font-weight: 500;
+    padding: -2px 8px;
+    border-radius: 6px;
+}
+
+.selectedDate {
+    background-color: rgb(230, 240, 255);
+    border-radius: 8px;
+    font-weight: 900;
+    padding: 2px 7px;
+    margin-left: -12px;
+}
+
+.personSection {
+    position: relative;
+}
+
+.wrapperInput {
+    cursor: pointer
+}
+
+.textCustomer {
+    position: absolute;
+    height: auto;
+    width: 100%;
+    border-radius: 6px;
+    padding: 21px;
+    width: 7pc;
+    border-right: none;
+    border-top: none;
+    border-bottom: none;
+    background: #fff;
+    font-size: 16px;
+    margin-left: -32px;
+    line-height: 6px;
+    margin-top: 41px;
+    border: none;
+    z-index: 1;
+    padding: 0px 0px 32px 0px;
+    cursor: pointer;
+}
+.guest{
+    height: 26px;
+    border: none;
+    background: #e6f0ff;
+    border-radius: 8px;
+    font-size: 15px;
+    padding: 9px;
+    padding-top: 10px;
+    margin: 9px;
+}
+.searchIcon {
+    color: #fff;
+    width: 41px;
+}
+
+.hotelSearchButton {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    box-shadow: 0 3px 8px 0 rgba(18, 5, 41, 0.2);
+    background-color: #056BFD;
+    color: #fff;
+    margin-left: -29px;
+    border: transparent;
+    line-height: 30px;
+    padding: 18px;
+    font-size: 16px;
+    margin-left: 49px;
+    margin-top: 41px;
+    width: 76px;
+}
+
+.datePicker {
+    margin-left: -13px;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+    background: rgb(255, 255, 255);
+    border-radius: 8px;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 41px;
+    width: 20pc;
+}
+
+.inputCalendar {
+    font-weight: 700;
+    padding: 0px 8px;
+    border-radius: 6px;
+}
+
+.input-group {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: 119%;
+}
+
+.inputCalendar {
+    border-radius: 0px !important;
+    border-top: none;
+    border-bottom: none;
+    font-family: Montserrat, "Proxima Nova", sans-serif;
+    line-height: 1.4;
+    color: rgb(0, 9, 41);
+    border: none
+}
+
+.inputCalendarRight {
+    border-right: none;
+    text-align: center;
+
+}
+
+.totalNightsWrapper {
+    background: #fff;
+    margin-left: -37px;
+    border-radius: 0px 5px 5px 0px;
+    width: 20%;
+    color: #17cec4;
+    font-weight: normal;
+    text-align: center;
+    font-size: 14px;
+}
+
+.daySection {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+    font-size: 13px;
+    margin-top: -27px;
+    color: rgb(102, 107, 126);
+}
+
+.wrapperCounter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 999;
+}
+
+.showCounterSection {
+    position: absolute;
+    border-radius: 6px;
+    background-color: #fff;
+    top: 119px;
+    left: -214px;
+    width: 19pc;
+    height: 11pc;
+    padding: 10px;
+}
+
+.btnSearch {
+    color: #fff;
+    background-color: #fff;
+}
+
+.num {
+    margin:6px 3px 11px 20px;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: Montserrat, "Proxima Nova", sans-serif;
+    line-height: 1.4;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    margin-bottom: 8px;
+ 
+}
+
+.moonIcon,
+.date-total-nights {
+    color: #61656e;
+}
+
+.personInput {
+    background: #f6f9fd;
+    border: #f6f9fd;
+    height: 45px;
+    font-size: 18px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    text-align: center;
+    color: rgb(5, 107, 253);
+    width: 7pc;
+    margin-left: -18px;
+    position: relative;
+    top: -41px;
+    border-radius: 8px;
+    left: 31px;
+    z-index: 0;
+    font-weight: bolder;
+}
+
+.childInput {
+    background: #f6f9fd;
+    border: #f6f9fd;
+    height: 45px;
+    font-size: 18px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    text-align: center;
+    color: rgb(5, 107, 253);
+    width: 8pc;
+    position: relative;
+    top: -41px;
+}
+
+.btnCounter {
+    width: 40px;
+    height: 40px;
+    margin-left: 1px;
+    margin-top: 3px;
+    border: 1px solid transparent !important;
+    border-radius: 8px !important;
+    background: rgb(5, 107, 253);
+    z-index: 999;
+    position: relative;
+}
+
+.validationErrorSection {
+    background-color: red;
+    color: #fff;
+}
+
+.errrorMsg {
+    font-size: 10px;
+}
+
+.personSection {
+    display: flex;
+    position: relative;
+    cursor: pointer;
+}
+
+.personWrapper {
+    z-index: 99999;
+    display: flex;
+    position: absolute;
+    left: 10px;
+    top: 9px;
+    font-size: 12px;
+    color: #4a4a4a;
+    height: fit-content;
+}
+
+.childWrapper {
+    position: absolute;
+    display: flex;
+    z-index: 99999;
+    left: 43px;
+    top: 10px;
+    font-size: 12px;
+    color: #61656e;
+    height: fit-content;
+}
+.counterSection{
+    padding-top: 4px;
+    font-size: 12px;
+    padding-left: 1px;
+}
+.personIcon,
+.chilIcon {
+    width: 16px;
+    height: 15px;
+}
+
+.plusIcon{
+    width: 35px;
+}
+.plusSection{
+    left: 93px;
+    top: -88px;
+}
+.childAgeCaption{
+    position: absolute;
+    left: 16px;
+    bottom: 61px;
+
+}
+.childAgeWrapper{
+    display: flex;
+    position: relative;
+    left: -9pc;
+    bottom: 3pc;
+
+}
+.childAge{
+    padding: 5px;
+    border: 1px grey solid;
+    border-radius: 8px;
+    margin: 5px;
+}
+.searchHotelSection{
+    display: flex;
+}
+.mostSearchHotels{
+    font-size: 13px;
+    margin-top: 12px;
+    padding-top: 12px;
+}
+.rightArrow {
+    color: #056bfd;
+    margin: 8px
+}
+.searchBottomSection{
+    color: #056bfd;
+ 
+    font-size: 14px;
+    margin: 7px;
+    padding-top: 12px;
+    cursor: pointer;
+}
+.searchBottomSection>span{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.searchBottomSection:hover{
+    color: #056cfda8;
+}
+.searchHotelMobil{
+    display: none;
+    visibility: hidden
+}
+.mobileSectionFirst,.mobileSectionSecond{
+    display: flex;
+}
+.mobileWrapper{
+    display: flex;
+    margin-left: -50px;
+}
+.mobileSectionSecond{
+    margin-left: -60px;
+}
+.termalHotel{
+    margin-left: -56px;
+}
+
+@media (max-width:1000px){
+    .searchSectionWrapper{
+        width: fit-content;
+    }
+    .textCustomer{
+        width: 93%;
+    }
+    .searchHotelSection{
+        display: block;
+    }
+    .mobileWrapper{
+        display: flex;
+        margin-left: 0px;
+    }
+    .datePicker {
+        margin-left: 0px;
+        width: 100%;
+    }
+    .textCustomer{
+        margin-left: 0px;
+    }
+    .bedSection{
+        left: 19pc;
+    }
+    .hotelSearchButton{
+        width: 100%;
+        height: 100%;
+        margin-left: 0px;
+        margin-top: 134px;
+        width: 100%;
+    }
+    .mostSearchHotels{
+        width: 145px;
+    }
+    .mobileSectionSecond,.termalHotel{
+        margin-left: 0px;
+    }
+    .skiHotel{
+        padding-left: 32px;
+    }
+    .wrapperSliderSection{
+        width: 45pc;
+        left: 2pc;
+    }
+}
+
+@media (max-width:768px){
+    .searchSectionWrapper{
+        width: fit-content;
+    }
+    .textCustomer{
+        width: 93%;
+    }
+    .searchHotelSection{
+        display: block;
+    }
+    .mobileWrapper{
+        display: flex;
+        margin-left: 0px;
+    }
+    .datePicker {
+        margin-left: 0px;
+        width: 100%;
+    }
+    .textCustomer{
+        margin-left: 0px;
+    }
+    .bedSection{
+        left: 19pc;
+    }
+    .hotelSearchButton{
+        width: 100%;
+        height: 100%;
+        margin-left: 0px;
+        margin-top: 134px;
+        width: 100%;
+    }
+    .mostSearchHotels{
+        width: 145px;
+    }
+    .mobileSectionSecond,.termalHotel{
+        margin-left: 0px;
+    }
+    .skiHotel{
+        padding-left: 32px;
+    }
+  
+}
+@media (max-width:500px){
+    .showCounterSection{
+        left: 0;
+        width: 18pc;
+        top: 66px;
+    }
+    .btnCounter{
+        width: 36px;
+    }
+    .searchSectionWrapper{
+        margin-top:12px;
+        width: 352px;
+        
+    }
+    
+    .bedSection{
+        left: 7pc;
+    }
+    #searchTextId{
+        width: 100%;
+        margin-top: 12px;
+        line-height: 19px;
+    }
+    .datePicker{
+        margin-left: 2px;
+        margin-top: 4px;
+        padding: 2px;
+        width: 100%;
+    }
+    .inputCalendar{
+        padding: 6px 8px;
+        margin-left: -7px;
+        font-size: 16px;
+    }
+    .rightCalendar{
+        border-left: 1px #06000080 solid !important;
+    }
+  
+    .selectedDate{
+        font-size: 13px;
+    }
+    .textCustomer{
+        margin-left: 4px;
+        line-height: 6px;
+        margin-top: 5px;
+        padding: 17px;
+        width: 86%;
+        height: 58px;
+    }
+    .guest{
+        margin: -10px;
+    }
+    .personWrapper{
+        left: -5px;
+        top:12px
+    }
+    .childAgeWrapper{
+        left: 33px;
+        top: 14px;
+    }
+
+    .hotelSearchButton{
+        padding: 15px;
+        font-size: 16px;
+        margin-left: 5px;
+        margin-top: 69px;
+        width: 100%;
+    }
+    .searchHotelMobil{
+        display: block;
+        visibility: visible;
+        color:#ffff
+    }
+    .searchIcon{
+        display: none;
+    }
+    .searchBottomSection{
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-size: 11px;
+    }
+
+    .mobileWrapper{
+        display: block;
+        margin-left: 0;    
+    }
+    .termalHotel,.mobileSectionSecond{
+        margin-left: 0;
+    }
+    .childAgeWrapper {
+        left: -9em;
+        top: -3em;
+    }
+}
+@media (min-width: 600px) {
+    .mobile-wave {
+        visibility: visible;
+    }
+}
+
+@media (max-width:320px){
+    .searchSectionWrapper {
+        width: 296px;
+    }
+
+    .selectedDate {
+        font-size: 12px;
+    }
+
+    .textCustomer {
+        width: 83%;
+    }
+    .bedSection{
+        left: 5pc;
+    }
+}
+
+:host ::ng-deep{
+    @media (max-width:800px){
+        .ngb-dp-months {
+            display: grid;
+        }
+    }
+}

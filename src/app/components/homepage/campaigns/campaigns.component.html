@@ -1,0 +1,120 @@
+<div class="campaingsSection">
+    <div class="campaingSection slider-container">
+        <div class="scrollMobile" (wheel)="onWheel($event)">
+            <ng-container *ngFor="let campaingSlider of campaingsSlider; let i = index">
+
+                <div class="campaignWrapper ">
+
+                    <a href="#" class="cardCampaigns">
+
+                        <div class="wrapperImg">
+
+                            <img class="campaingSlider" id="imgSection" [src]="campaingSlider.img"
+                                (mouseenter)="setActiveIndex(i)" (mouseleave)="resetActiveIndex()">
+
+                        </div>
+
+                        <div class="mobilWrapper">
+                            <div [ngClass]="{'campaignTextWrapper': isActiveIndex === i, 'hiddenContent': isActiveIndex !== i}"
+                                (mouseenter)="setActiveIndex(i)">
+                                <strong class="campaingCaption" (mouseenter)="setActiveIndex(i)">
+                                    {{campaingSlider.caption}}
+                                </strong>
+                                <p class="campaingText" (mouseenter)="setActiveIndex(i)">
+                                    {{campaingSlider.text}}
+                                </p>
+                            </div>
+                        </div>
+
+
+                    </a>
+
+                    <div class="mobileBottomSectionHidden"
+                        [ngClass]="{'bottomSection': isActiveIndex === i, 'showBottomSection': isActiveIndex !== i}">
+                        <p class="mobileBottomCaption" [ngClass]="{'bottomCaption': isActiveIndex === i}">
+                            {{campaingSlider.caption}}</p>
+                        <div class="bottomLine"></div>
+                    </div>
+                    <div class="mobileBottomSection">
+                        <p class="mobileBottomCaption">{{campaingSlider.caption}}</p>
+                        <div class="bottomLine"></div>
+                    </div>
+
+
+                </div>
+
+
+            </ng-container>
+        </div>
+    </div>
+    <div class="campaing">
+        <div class="showAllCampaign">
+            Tüm Kampanyaları Gör
+        </div>
+    </div>
+
+    <div class="wrapperSliderSection">
+        <section id="slider">
+            <input type="radio" name="slider" id="s1">
+            <input type="radio" name="slider" id="s2">
+            <input type="radio" name="slider" id="s3"checked >
+            <input type="radio" name="slider" id="s4">
+            <input type="radio" name="slider" id="s5">
+            <label for="s1" id="slide1">
+                <img src="https://i.ibb.co/StmL7wp/camp-Img14.webp" class="imgCamp">
+            </label>
+            <label for="s2" id="slide2">
+                <img src="https://i.ibb.co/9yc0fFp/campImg5.webp" class="imgCamp">
+            </label>
+            <label for="s3" id="slide3">
+                <img src="https://i.ibb.co/3rm8R76/campImg1.webp" class="imgCamp">
+            </label>
+            <label for="s4" id="slide4">
+                <img src="https://i.ibb.co/YZLjCPr/camp-Img10.webp" class="imgCamp">
+            </label>
+            <label for="s5" id="slide5"> 
+                <img src="https://i.ibb.co/2tyW3WT/campImg2.webp" class="imgCamp">
+            </label>
+        </section>
+    </div>
+   
+
+    <div class="wrapperCampaingAdvance">
+
+        <div class="advangeCampaign">
+            <div class="section">
+                <div class="imgChangeCampaing">
+                    <img src="../../../../assets/common/campaingImg1.jpg" class="campaingImg">
+                </div>
+                <div class="campaignsCaption">
+                    <h3>Krelimin Palace</h3>
+                    <p>
+                        <strong> Kremlin Palace</strong>’ta muhteşem bir yılbaşı tatiline ne dersin?
+                    </p>
+                    <p class="btnChance mobilBtnChance1">
+                        Fırsatı Yakala!
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="advangeCampaign">
+            <div class="section">
+                <div class="imgChangeCampaing">
+                    <img src="../../../../assets/common/campaingImg2.webp" class="campaingImg">
+                </div>
+                <div class="campaignsCaption">
+                    <h3>Etstur Hediye Kart</h3>
+                    <p>
+                        Etstur Hediye Kart ile özel hissettirmek istediğin<br>
+                        herkese, hayallerindeki gibi bir tatil
+                        hediye edebilirsin!
+                    </p>
+                    <p class="btnChance mobilBtnChance2">
+                        Hediye Kartı Satın Al
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

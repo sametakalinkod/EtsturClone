@@ -1,0 +1,275 @@
+/*  FOOTER LİNKS START*/
+.footerLinks {
+    padding: 35px 0;
+    background-color: #333A54;
+
+}
+
+.wrapperFooter {
+    padding: 30px;
+    width: 84%;
+    margin-left: 10%;
+}
+
+ul>li {
+    list-style: none;
+}
+
+ul>li>a {
+    text-decoration: none;
+}
+
+.footerTitle {
+    margin-left: -15px;
+    position: relative;
+    color: #fff;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    padding: 15px;
+}
+
+.footerListWrapper {
+    padding: 0;
+    display: block;
+    font-weight: 400;
+    line-height: 1.71;
+    color: #fff;
+    letter-spacing: normal;
+    font-size: 14px;
+    font-stretch: normal;
+    font-style: normal;
+}
+
+.footerListWrapper li a {
+    color: #fff;
+}
+
+/*  FOOTER LİNKS END*/
+
+/*FOOTER BRANDS START*/
+.footerCopyright {
+    background: #f6f9fd;
+    padding: 15px 0 35px;
+    color: #61656e;
+    font-size: 12px;
+    line-height: 1.5;
+    overflow: hidden;
+    padding-bottom: 65px;
+}
+
+.footerCopyright p {
+    font-size: 12px;
+}
+
+.wrapper {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+/* 
+.footerCopyright .wrapper {
+    display: flex;
+} */
+.footerLogo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footerTextWrapper {
+    margin-right: 64px;
+}
+
+.logoFooterSection {
+    padding-top: 12px;
+    padding-bottom: 12px
+}
+
+.wrapperBottomFooterImg {
+    display: flex;
+    margin-left: 16px;
+}
+
+.payType {
+    width: auto !important;
+    height: 100% !important;
+    max-width: 501px;
+    padding: 15px;
+}
+
+.ıconFooter {
+    padding-right: 23px;
+    width: 122px;
+}
+
+.footerLinks {
+    border-top: 2px #fff dotted;
+}
+
+.downIcon,
+.downArrowIcon,
+.footerListMobile,
+.footerListWrapperMobile,
+.wrapperLogoIconsMobileWrapper {
+    display: none;
+    visibility: hidden;
+}
+
+/*FOOTER BRANDS END*/
+
+@media(max-width:1920px){
+    .wrapperFooter{
+        margin-left: 20%;
+    }
+}
+@media (max-width:1520px){
+    .wrapperFooter{
+        margin-left: 10%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+
+    .downIcon,
+    .downArrowIcon,
+    .footerListMobile,
+    .footerListWrapperMobile {
+        display: block;
+        visibility: visible;
+    }
+
+    .footerList,
+    .footerListWrapper,.wrapperLogos,.playTypeMobile {
+        display: none;
+        visibility: hidden;
+    }
+
+    .footerLinks {
+        font-size: 12px;
+    }
+
+    .footerListWrapperMobile {
+        padding: 0;
+        display: block;
+        font-weight: 400;
+        line-height: 1;
+        color: #fff;
+        letter-spacing: normal;
+        font-size: 12px;
+        font-stretch: normal;
+        font-style: normal;
+    }
+
+    .footerListWrapperMobile li a,
+    .downArrowIcon {
+        color: #fff;
+
+    }
+
+    .footerTitle {
+        font-size: 14px;
+    }
+
+    .footerLinks {
+        border-top: 1px white solid;
+    }
+
+    .wrapperFooter {
+        padding: 0;
+        width: 100%;
+        margin-left: 0
+    }
+
+    .button {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .item {
+        border-bottom: 1px white solid;
+        padding: 10px;
+        height: auto;
+    }
+
+    .downIconClickUp {
+        transform: rotate(360deg);
+
+    }
+
+    .downIconClickDown {
+        transform: rotate(180deg);
+
+    }
+
+    .footerLinks {
+        padding: 0;
+    }
+
+    .wrapperLogosMobile {
+        background-color: #333A54;
+    }
+
+    .footerIconWrapper {
+        display: none;
+    }
+
+    .wrapperLogoIconsMobileWrapper {
+        display: block;
+        visibility: visible;
+        background-color: #333A54;
+        padding: 10px;
+        margin-top: -16px;
+    }
+
+    .payTypeMobile {
+        max-width: 370px;
+    }
+
+    .storeWrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #333A54;
+        padding-top: 23px;
+    }
+
+    .playstoreMobile {
+        padding-right: 5px;
+    }
+
+    .logoFooterSection {
+        display: grid;
+    }
+
+    .mobileEtsP {
+        margin-top: 12px
+    }
+ 
+    .footerTextWrapper {
+        margin-right: 0;
+        padding: 15px;
+    }
+    .wrapperBottomFooterImgMobile, .wrapperBottomFooterImg, .footerIconWrapper {
+        display: flex;
+        visibility: visible;
+        align-items: center;
+        justify-content: center;
+        width: 29em;
+    }
+    .wrapper{
+        padding:0
+    }
+}
+
+@media (max-width:320px){
+    .playstoreMobile,.appstoreMobile{
+        width: 147px;
+    }
+    .payTypeMobile{
+        max-width: 293px;
+    }
+}

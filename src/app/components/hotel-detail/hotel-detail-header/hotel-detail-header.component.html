@@ -1,0 +1,209 @@
+
+<section class="headerWrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+
+                <div class="breadcrumb">
+
+                    <!--burası dinamik gelicek, revize edilmesi lazım-->
+
+                    Etstur> Antalya Otelleri> Belek Otelleri
+                </div>
+                <div class="hotelDetailWrapper">
+                    <div class="hotelCaption">
+                        <h1 class="hotelName">
+                            <b>{{ hotel?.name }}</b>
+                        </h1>
+                        <span class="location">
+                            <i class="fa-solid fa-location-dot icon m-1"></i>
+                            <span>{{hotel?.location}}</span>
+                        </span>
+                    </div>
+                    <div class="hotelIcons d-flex align-items-center justify-content-between">
+                        <div class="etsInfoIconWrapper">
+                            <div class="etsLikeSection ">
+                                <i class="fa-solid fa-circle-check icon m-1"></i>
+                                <span>{{hotel?.etsRecommend}}</span>
+                            </div>
+                            <div class="awardIcon">
+                                <i class="fa-solid fa-award icon m-1"></i>
+                                <span>{{hotel?.awardWinningFacility}}</span>
+                            </div>
+                        </div>
+                        <div class="likeSection">
+
+                            <div class="likeIcon">
+                                <i class="fa-regular fa-heart icon m-1"></i>
+                                <span>Beğendiklerim</span>
+                            </div>
+
+                            <div class="share">
+                                <img src="../../../../assets/common/share.png">
+                                <span>Paylaş</span>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-lg-8">
+                <div class="hotelBottomLine">
+                    <div class="hotelImgInfo">
+                        <div class="mapSection">
+                            <img src="../../../../assets/common/map.png" class="mapIcon">
+                            <span class="mapView" *ngIf="mapActive" (click)="mapView()">Galeri Görünümü</span>
+                            <span class="mapView" *ngIf="!mapActive" (click)="mapView()">Harita Görünümü</span>
+                        </div>
+                        <span class="" *ngIf="mapActive">
+                            <iframe [src]="sanitizedLocationIFrame" class="iframe" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+                        </span>
+
+                        <img *ngIf="!mapActive" [src]="hotel?.img" class="hotelMainImg">
+                    </div>
+                </div>
+
+                <div class="amenitiesIconSection ">
+                    <div class="mobilAmenities">
+                        <div class="babyBottle d-felx">
+                            <img src="../../../../assets/common/babybottle.png" class="amenitiesIcon" alt="babybottle">
+                            <span *ngIf="hotel?.amenities.includes('Bebek Dostu')" class="amenitiesName"> Bebek
+                                Dostu</span>
+                        </div>
+                        <div class="d-flex">
+                            <img src="../../../../assets/common/baby.png" class="amenitiesIcon" alt="baby">
+                            <span *ngIf="hotel?.amenities.includes('Çocuk Dostu')" class="amenitiesName">Çocuk
+                                Dostu</span>
+                        </div>
+                    </div>
+                    <div class="mobilAmenities">
+                        <div class="d-flex">
+                            <img src="../../../../assets/common/heartplus.png" class="amenitiesIcon" alt="heartplus">
+                            <span *ngIf="hotel?.amenities.includes('Özel Sağlık Talebi')" class="amenitiesName">Özel
+                                Sağlık
+                                Talebi</span>
+                        </div>
+                        <div class="d-flex">
+                            <img src="../../../../assets/common/wheelchair.png" class="amenitiesIcon" alt="wheelchair">
+                            <span *ngIf="hotel?.amenities.includes('T.Sandalyeye Uygun')"
+                                class="amenitiesName">T.Sandalyeye
+                                Uygun</span>
+                        </div>
+                    </div>
+                    <div class="mobilAmenities">
+                        <div class="d-flex">
+                            <i class="fa-regular fa-heart icon m-1 amenitiesIconHeart"></i>
+                            <span (click)="openHoneymoonModal()">
+                                <i class="fa-solid fa-circle-exclamation iconCircle m-1"></i>
+                            </span>
+                            <span *ngIf="hotel?.amenities.includes('Balayı Oteli')" class="amenitiesName">Balayı
+                                Oteli</span>
+                        </div>
+                        <div class="amenitiesSection">
+                            <span class="text-primary text-sm moreAmenities"> + 11 Özellik</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="opportunitySection col-lg-4 col-12">
+                <div class="opportunity">
+                    <div class="hotelOpportunity">
+                        <div class="hotelRate">
+                            <div class="rate">
+                                <span class="rateNum"> {{hotel?.rate}}</span>
+                            </div>
+                        </div>
+                        <div class="hotelRecommendationSection">
+                            <span class="recommendation">
+                                <span class="hotelRecommendation">
+                                    <strong>
+                                        {{hotel?.recommendation}}
+                                    </strong>
+                                </span>
+                            </span>
+                            <span class="recommendationRate">
+                                % 96 Tavsiye Ediyor.
+                                <span class="recommendationComments">
+                                    {{hotel?.comments}}
+                                </span>
+                                <i class="fa-solid fa-arrow-right recommendationCommentsIcon"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="discountOpportunity">
+                    <h3 class="discount"> İndirim ve Fırsatlar</h3>
+                    <div class="discountModalSection d-flex">
+                        <span class="discountModal">
+                            <div class="d-flex">
+                                <p>Uzun Dönem Konaklamalara Özel İndirim</p>
+                                <span (click)="openDiscountModal()">
+                                    <i class="fa-solid fa-circle-exclamation iconCircle m-1"></i>
+                                </span>
+                            </div>
+
+                            <div class="modalSectionForDiscount" (click)="openDiscountModal()">
+                                <p>Tüm Kampanyaları Gör
+                                    <span>
+                                        ({{hotel?.longTermAccDiscount ? 1 : 0}})
+                                    </span>
+                                </p>
+                            </div>
+                        </span>
+                    </div>
+                </div>
+                <div class="hoyenmoonModalSection" (click)="openHoneymoonModal()">
+
+                    <img src="../../../../assets/common/twoHearts.png" class="twohearts" alt="twoHearts">
+                    <span class="hoteymoonModalInfo">Bu otelde balayına özel ayrıcalıklar ve fırsatlar var!
+                        <span class="text-primary text-sm">Detaylı bilgi</span>
+                        <i class="fa-solid fa-arrow-right honeymoonRightArrow"></i>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="hotelDetail">
+    <div class="wrapperHotelDetail">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-2 sections">
+                    <h6 class="section">ODALAR</h6>
+                </div>
+                <div class="col-3 sections">
+                    <h6 class="section">TESİS BİLGİLERİ</h6>
+                </div>
+                <div class="col-3 sections">
+                    <h6 class="section">ÇEVRE VE KONUM</h6>
+                </div>
+                <div class="col-2 sections">
+                    <h6 class="section">YORUMLAR</h6>
+                </div>
+                <div class="col-2">
+                    <div class="roomDetail">
+                        <div class="row">
+                            <div class="col-10" >
+                                <span>{{room[0].roomName}} En İyi Fiyat 
+                                    <p class="amount">{{ room[0].discount ? (calculeDiscountPrices(room) | number: '1.0-0') : (calculateTotalAmount(room) | number: '1.0-0') }} TL </p>
+                                </span>
+                            </div>
+                            <div class="col-2">
+                                <div class="seeRoom">
+                                    <h6>ODAYI GÖR</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

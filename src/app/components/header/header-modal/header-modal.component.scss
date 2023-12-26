@@ -1,0 +1,157 @@
+::ng-deep.modal-content {
+    width: 105% !important;
+    left: -9px !important;
+    top: -8px !important;
+}
+
+.header {
+    display: none;
+}
+
+.navbar-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 1px solid rgb(217, 218, 223);
+}
+
+.crossIcon {
+    font-size: 23px;
+    margin-right: 2px;
+}
+
+.hamburgerSection {
+    padding: 15px 0;
+}
+
+.iconBarsMobile {
+    font-size: 24px;
+    margin-left: -15px;
+}
+
+.etsLogo>.logo {
+    width: 171px;
+    height: 23px;
+    margin-left: -48px;
+    margin-top: -5px;
+}
+
+.signinContainerMobile {
+    margin-right: -20px;
+}
+
+.checkedUserMobile {
+    padding: 3px;
+    width: 27px;
+}
+
+.account {
+    font-size: 15px;
+    color: #056BFD;
+    font-weight: bolder;
+}
+
+.accountSection {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.signinContainer {
+    background: rgb(230, 240, 255);
+    margin: auto;
+    border-radius: 30px;
+    margin-top: 25px;
+    margin-bottom: 12px;
+    font-size: 15px;
+    display: flex;
+    padding: 9px 65px;
+
+}
+
+.singInMobile,
+.addUserMobile {
+    padding: 6px 13px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #056BFD;
+    font-size: 15px;
+}
+
+.userAddMobile {
+    width: 20px;
+}
+
+.wrapperContainer {
+    margin: 0px;
+    font-size: 16px;
+    font-weight: bolder;
+    font-family: Montserrat, "Proxima Nova", sans-serif;
+    line-height: 1.4;
+    display: block;
+    padding: 0px 33px;
+}
+
+.borderBottomWrapper {
+    border-bottom: 1px solid rgb(217, 218, 223);
+    padding: 20px 9px;
+}
+
+.bottomSection {
+    padding: 12px;
+}
+
+.hotelWrapper,
+.tourWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bottomSectionWrapper {
+    margin-top: 20px;
+    margin-bottom: 20px
+}
+
+.wrapperSection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.commentIcon,
+.likeIcon,
+.agencyIcon,
+.callCenterIcon {
+    width: 20px;
+    margin-right: 7px;
+}
+
+.topSection,
+.bottomSection {
+    background-color: rgb(246, 249, 253);
+    padding: 9px;
+    margin: 3px;
+    border-radius: 8px;
+}
+
+
+@media (max-width:320px) {
+    .etsLogo>.logo {
+        width: 128px;
+
+    }
+
+    .signinContainer {
+        padding: 9px 32px;
+    }
+
+    .crossIcon {
+        font-size: 20px;
+        margin-right: 9px;
+        margin-top: 4px;
+    }
+}

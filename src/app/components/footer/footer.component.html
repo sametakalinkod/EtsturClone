@@ -1,0 +1,122 @@
+<div class="footerLinks">
+    <div class="wrapperFooter container">
+        <div class="footer">
+            <div class="row w-100 m-0">
+                <div class="item col-lg-2 col-12" *ngFor="let items of footerInfos; let i = index">
+                    <div class="heading">
+                        <div role="button" class="button" (click)="toggleItems(items)">
+                            <h4 class="footerTitle">{{items.name}}<i class="accordionArrow"></i></h4>
+                            <div [ngClass]="{'downIcon':items.isVisible}">
+                                <i *ngIf="items.isVisible" [ngClass]="{'downIconClickDown':items.isVisible}"
+                                    class="fa-solid fa-chevron-down downArrowIcon"></i>
+                                <i *ngIf="!items.isVisible" [ngClass]="{'downIconClickUp':!items.isVisible}"
+                                    class="fa-solid fa-chevron-down downArrowIcon"></i>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div id="kesfet" class="footerListMobile" *ngIf="items.isVisible">
+                        <ul class="footerListWrapperMobile" *ngFor="let item of items.options">
+                            <li>{{item}}</li>
+                        </ul>
+                    </div>
+                    <div id="kesfet" class="footerList">
+                        <ul class="footerListWrapper" *ngFor="let item of items.options">
+                            <li>{{item}}</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="footerBottomWrapper">
+
+    <div class="footerCopyright">
+        <div class="wrapper">
+            <div class=" wrapperLogoIconsMobileWrapper">
+                <div class="storeWrapper">
+
+                    <img src="../../../assets/homepage/playstore-footer.svg" class="playstoreMobile">
+
+                    <img src="../../../assets/homepage/appstore-footer.svg" class="appstoreMobile">
+
+                </div>
+                <img class="payType payTypeMobile" alt="Ödeme Yöntemleri İkonları"
+                    src="https://images.etstur.com/assets/web/payment/pay-types-new.png">
+
+            </div>
+            <div class="footerTextWrapper">
+                <div id="footerText" class="text">
+
+                    <div class="logoFooterSection">
+                        <img src="../../../assets/homepage/ets-logo-footer.svg" class="footerLogoIcon">
+                        <span class="mobileEtsP">Ets Ersoy Turizm Seyahat Acentası Belge No: 2242 </span>
+                    </div>
+                    <p>Copyright © 2023 Ets Ersoy Turistik Servisleri A.Ş. Tüm hakları saklıdır.
+                        <a class="privacy-links">
+                            Kullanım Sözleşmesi</a>
+                        <span class="line"> | </span>
+                        <a class="privacy-links">
+                            Gizlilik Sözleşmesi</a>
+                        <span class="line"> | </span>
+                        <a class="privacy-links">
+                            Kişisel Verilerin Korunması ve İşlenmesi Politikası </a>
+                    </p>
+                    <p class="truncated">Sayfada gösterilen tüm otel konaklama fiyatları, aradığınız tarih aralığı için
+                        Bonus Card ile yapılacak tek ödemede geçerli olan başlangıç fiyatlarıdır. Tüm fiyatlar, ilgili
+                        <!-- üründe kontenjan olması durumunda geçerlidir. İndirimli fiyatlar bazı durumlarda diğer kredi
+                        kartları ile yapılacak tek ödemeler için de geçerli olabilir. Rezervasyon sırasında belirtilen
+                        tesis fiyatları, sadece TC vatandaşları için uygulanabilir. Misafirlerden birinin TC haricinde
+                        farklı bir ülke vatandaşı olması durumunda, tesis fiyat farkı talep edebilir.</p> -->
+                        <a href="javascript:;" class="show-more-text" data-show-more="Devamını Oku"
+                            data-show-less="Metni Gizle">
+                            Devamını Oku
+                        </a>
+                        <!-- <p>
+                        Etstur’un kampanya ve fırsatlarıyla ilgili bilgilendirmeler için verdiğiniz iletişim
+                        bilgilerinde değişiklik yapmak istiyorsanız; www.etstur.com’a üye girişi yaparak ya da Etstur
+                        mobil uygulamasına üye girişi yaparak kişisel bilgiler kısmından dilediğiniz değişiklikleri
+                        kaydedebilirsiniz. Kampanyalar ile ilgili bilgilendirme almak istemiyorsanız; farklı mecralar
+                        için şu yöntemleri izleyebilirsiniz.
+                        Etstur’dan SMS almak istemiyorsanız <b>RET ETSTUR</b> yazıp <b>5650</b>'a gönderebilirsiniz.
+                        Etstur’dan ticari elektronik posta almak istemiyorsanız <a
+                            href="mailto:ileti@etstur.com">ileti@etstur.com</a> ' a mail yoluyla talebinizi iletebilir,
+                        size ulaşan mailde alt bölümde bulunan tıklanabilir alandan verdiğiniz izni iptal edebilir ya da
+                        <a href="tel:4440387">4440387</a> ' yi arayabilirsiniz. Bilgisayarınız, cep telefonunuz ya da
+                        tabletiniz aracılığıyla web sitesi üzerinden push bildirimlerini almamak için internet
+                        tarayıcınızın ayarlar bölümünden bildirim izinlerinin kaldırılmasını sağlayabilirsiniz. Etstur
+                        mobil aplikasyonundan bildirim almamak için ise cihazınızdaki ayarlar bölümünden, uygulamanın
+                        bildirim ayarlarını değiştirerek bildirim alımına engel olabilirsiniz.
+                    </p> -->
+
+
+                </div>
+
+            </div>
+            <div class="footerIconWrapper">
+                <div class="footerLogo footerLogoMobile">
+                    <div class="wrapperLogos wrapperLogosMobile">
+                        <img src="../../../assets/homepage/playstore-footer.svg" class="playstore">
+                        <img src="../../../assets/homepage/appstore-footer.svg"  class="appstore">
+                    </div>
+                    <ul class="payType">
+                        <li>
+                            <img class="payType playTypeMobile" alt="Ödeme Yöntemleri İkonları"
+                                src="https://images.etstur.com/assets/web/payment/pay-types-new.png">
+                        </li>
+                        <li class="wrapperBottomFooterImg wrapperBottomFooterImgMobile">
+                            <img src="../../../assets/homepage/carbon-footer.svg" class="ıconFooter">
+                            <img src="../../../assets/homepage/etbis.svg" class="ıconFooter">
+                            <img src="../../../assets/homepage/tursab-footer.svg" class="ıconFooter">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

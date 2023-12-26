@@ -1,0 +1,116 @@
+<div class="container">
+    <div class="roomWrapper">
+        <div class="row roomCard" *ngFor="let room of this.rooms">
+            <div class="col-6">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="roomImg">
+                            <img class="roomMainImg" [src]="room?.roomImages">
+                        </div>
+                    </div>
+                    <div class="col-6 py-2">
+                        <div class="roomNameWrapper">
+                            <b class="roomName">{{room.roomName}}</b>
+                        </div>
+                        <div class="roomInfo" (click)="roomInfoModal(room)">
+                            <p class="text-primary text-sm roomInfoModal">Tüm Özellikler ve Fotoğraflar</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="row">
+                    <div class="col-7 d-block specialWrapper">
+                        <div class="hotelTyoeWrapper d-flex">
+                            <div class="hotelType">
+                                <i class="fa-solid fa-utensils iconFork"></i>
+                            </div>
+                            <span class="hotelAccommodationType">{{hotel?.accommodationType}}</span>
+                        </div>
+
+                        <div class="modalAmountTable" (click)="modalAmountTable(room)">
+                            <p class="amountTable">Kartlara Göre Fiyat Tablosu</p>
+                        </div>
+                    </div>
+                    <div class="col-4 roomSelection">
+                        <div class="hotelAmount">
+
+                            <div class="hotelCardPriceContainer">
+
+
+                                <div class="priceContent">
+                                    <div class="totalStaySingleContainer">
+
+                                        <p class="totalStay">{{ nightCount }} Gece</p>
+
+
+                                        <p class="discountBadge" *ngIf="room.discount">
+                                            <span class="discount">
+                                                %{{room.discount}}
+                                            </span>
+
+                                        </p>
+
+                                        <p class="normalPrices" *ngIf="room.discount">
+                                            {{ calculateTotalAmount(room) | number: '1.0-0' }} TL
+                                        </p>
+                                    </div>
+
+                                    <div class="prices-container">
+
+                                        <p class="amount">{{ room.discount ? (calculeDiscountPrices(room) |
+                                            number: '1.0-0') : (calculateTotalAmount(room) | number: '1.0-0') }} TL
+                                        </p>
+
+                                    </div>
+                                    <a  *ngIf="hotel" class="hotelDetailLink text-primary text-sm"
+                                        [queryParams]="{ searchData: searchData }"
+                                        [routerLink]="'/hotel-detail/' + hotel.hotelId">
+                                        <b>
+                                            Odayı Seç
+                                        </b>
+                                        <i class="fa-solid fa-arrow-right arrowRight"></i>
+
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="mobilRoomSection" *ngFor="let room of this.rooms;  let first = first" (click)="openMobileRoomsModal(rooms,hotelId)">
+    <div class="row modalRoom"  *ngIf="first">
+        <div class="col-12 ">
+            <a class="mobilLinkSection">
+                <strong class="roomsMobile">Odalar</strong>
+                <div class="roomMenu">
+                    <span>Tüm Odaları Gör</span> <i class="fa-solid fa-arrow-right arrowRightMobile"></i>
+                </div>
+            </a>
+
+        </div>
+
+        <div class="col-12">
+            <div class="roomMobileContent">
+                <div class="roomMobileImg">
+                    <img class="img" [src]="room?.roomImages">
+                </div>
+                <div class="roomMobileText">
+                    <p class="roomName">
+                        {{room.roomName}}
+                    </p>
+
+                    <span class="priceText">En iyi fiyat</span>
+                    <p class="roomAmountMobile">{{ room.discount ? (calculeDiscountPrices(room) |
+                        number: '1.0-0') : (calculateTotalAmount(room) | number: '1.0-0') }} TL
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

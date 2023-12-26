@@ -1,0 +1,39 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300&family=Poppins:wght@300;400;600;800&display=swap');
+
+*, body{
+    font-family: 'Montserrat';
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.modal-body p{
+    font-size: 14px;
+}
+.modal-header{
+    border-bottom:none
+}
+.modal-header .btn-close {
+    padding: calc(var(--bs-modal-header-padding-y) * 0.5) calc(var(--bs-modal-header-padding-x) * 0.5);
+    margin: calc(-2.5 * var(--bs-modal-header-padding-y)) calc(-2.5 * var(--bs-modal-header-padding-x)) calc(0.5 * var(--bs-modal-header-padding-y)) auto;
+    border: 2px transparent solid;
+    background-color: #eaf1fa;
+    color: #61656e;
+    padding: 0!important;
+    width: 24px;
+    height: 24px;
+    background: #eaf1fa;
+    border-radius: 20px;
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 28px;
+}
+.closeBtn{
+    font-size: 30px;
+    margin: -7px -1px -3px 1px;
+    display: block;
+    color: #61656e;
+}

@@ -1,0 +1,305 @@
+:host ::ng-deep app-search-section {
+
+    @media screen and (max-width: 1920px) {
+        .bedSection {
+            display: none;
+        }
+
+        .searchHotelSection {
+            display: none;
+        }
+
+        .searchSectionWrapper {
+            margin-top: -34px;
+            border-radius: 0;
+            -webkit-backdrop-filter: none;
+            backdrop-filter: none;
+            background: #F2F3F4;
+            max-width: 1482px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 14px 5px;
+            box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.1490196078);
+            margin-bottom: 0;
+
+        }
+
+        #searchTextId {
+            width: 32pc;
+            margin-right: 47px;
+        }
+
+
+    }
+}
+
+.serachDatas {
+    display: none;
+    visibility: hidden;
+}
+
+@media screen and (max-width: 800px) {
+
+
+    .wrapperBtn {
+        display: flex;
+        position: relative;
+    }
+
+    .btnToggle {
+        color: #056bfd !important;
+        border: none;
+        background: transparent;
+        position: absolute;
+        left: 15pc;
+    }
+
+    .iconArrow {
+        color: #056bfd !important;
+        position: absolute;
+        left: 18pc;
+        padding: 4px;
+    }
+
+    .serachDatas {
+        display: block;
+        visibility: visible;
+        background: #F2F3F4 !important;
+        padding: 12px;
+        box-shadow: 0px 4px 19px 0px rgba(0, 0, 0, 0.1);
+    }
+
+    .wrapperSearchSetion {
+        display: block;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: #fff;
+        border-radius: 6px;
+        padding: 3px 16px;
+        border: 1px solid rgba(255, 255, 255, 0.54);
+        margin-right: 13px;
+        margin-left: 13px;
+        font-weight: 500;
+        font-size: 12px;
+        height: 65px;
+
+    }
+
+    .searchTextCaption {
+        font-weight: bolder;
+        color: black;
+        font-size: 14px;
+    }
+
+
+}
+
+:host ::ng-deep app-search-section {
+
+    @media screen and (max-width: 800px) {
+        .searchSectionWrapper {
+            background: #F2F3F4 !important;
+            border: none !important;
+            width: -webkit-fill-available;
+            border-radius: 0;
+            margin-top: -28px;
+            box-shadow: none;
+            backdrop-filter: none;
+        }
+
+        .bedSection {
+            display: none;
+        }
+
+        #searchTextId::placeholder {
+            color: black
+        }
+
+        .searchHotelSection {
+            display: none;
+        }
+
+        .datePicker {
+            margin-left: 2px;
+            margin-top: 4px;
+            padding: 2px;
+            width: 99%;
+        }
+
+        .textCustomer {
+            width: 87%;
+        }
+    }
+}
+
+:host ::ng-deep app-search-section {
+    @media screen and (max-width: 600px) {
+        #searchTextId {
+            width:100%;
+
+        }
+
+        .datePicker {
+            width: 100%;
+        }
+
+        .mobileWrapperSearch {
+            margin-left: 9px;
+        }
+
+        .hotelSearchButton {
+            width: 89%;
+        }
+
+    }
+    @media  (max-width:428px) {
+
+     
+        #searchTextId {
+            width: 92%;
+            margin-left: 6px;
+
+        }
+        .searchSectionWrapper {
+            padding: 0
+        }
+        .textCustomer{
+            width:89%;
+        }
+    
+
+        .hotelSearchButton {
+            width: 94%;
+        }
+
+        .datePicker {
+            width: 93%;
+            margin-left: 4px;
+        }
+
+    }
+    @media  (max-width:414px) {
+
+        .hotelSearchButton {
+            width: 89%;
+        }
+        #searchTextId {
+            width:100%;
+
+        }
+        .searchSectionWrapper {
+            padding: 0
+        }
+        .textCustomer{
+            width:89%;
+        }
+        .mobileWrapperSearch {
+            margin-left: 9px;
+            width: 96%;
+        }
+
+        .hotelSearchButton {
+            width:100%;
+        }
+    }
+    @media (max-width:390px){
+        #searchTextId {
+            width:100%;
+
+        }
+        .datePicker {
+            width: 97%;
+            margin-left: 4px;
+  
+        }
+        .textCustomer{
+            width:87%;
+        }
+
+    }
+    @media (max-width:375px){
+        .searchSectionWrapper{
+            margin-top:0;
+            padding: 0;
+
+        }
+        .hotelSearchButton {
+            width:100%;
+        }
+        .textCustomer{
+            width: 92%;
+            margin-left: 7px;
+        }
+        .mobileWrapperSearch {
+            margin-left: 0px;
+            width: 99%;
+            margin-top: -21px;
+            background: transparent;
+        }
+        .datePicker {
+            width: 100%;
+            margin-left: 7px;
+  
+        }
+    }
+    @media screen and (max-width: 320px) {
+        .hotelSearchButton {
+            width: 89%;
+        }
+        #searchTextId {
+            width:100%;
+
+        }
+        .searchSectionWrapper {
+            padding: 0
+        }
+        .mobileWrapperSearch {
+            margin-left: 9px;
+            width: 96%;
+        }
+
+        .hotelSearchButton {
+            width:100%;
+        }
+    }
+  
+ 
+
+   
+ 
+  
+}
+@media (max-width:375px){
+    .serachDatas{
+        padding: 0px;
+    }
+    .btnToggle{
+      
+        left: 12pc;
+        top: 14px;
+    }
+    .iconArrow{
+ 
+        left: 15pc;
+        padding: 4px;
+        top: 12px;
+    }
+
+}
+@media (max-width:320px){
+    .serachDatas{
+        padding: 0px;
+    }
+    .btnToggle{
+      
+        left: 12pc;
+        top: 14px;
+    }
+    .iconArrow{
+ 
+        left: 15pc;
+        padding: 4px;
+        top: 12px;
+    }
+}

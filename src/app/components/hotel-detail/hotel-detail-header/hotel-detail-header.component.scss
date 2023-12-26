@@ -1,0 +1,1018 @@
+.headerWrapper {
+    background: #f6f9fd;
+    border-top: 1px solid #ebf1fa;
+}
+
+.hotelDetail {
+    background: #f6f9fd;
+    border-top: 1px solid #f6f9fd;
+}
+
+.container {
+    width: 75%;
+}
+
+.breadcrumb {
+    background: 0 0;
+    color: #9ca1ae;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.hotelBottomLine {
+    padding: 30px 0;
+    border-bottom: 1px solid #ededed;
+}
+.iframe{
+    width: 44em;
+    height: 450px;
+}
+.hotelCaption {
+    margin-bottom: 10px;
+}
+
+.hotelName {
+    font-weight: 500;
+    font-size: 32px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #1f2126;
+}
+
+.location {
+    font-weight: 400;
+    font-size: 16px;
+    color: #1f2126;
+}
+
+.etsInfoIconWrapper {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    z-index: 15;
+    margin: 14px 0 6px;
+}
+
+.etsLikeSection,
+.awardIcon,
+.likeIcon,
+.share {
+    background: #fff;
+    border: 1px solid #dbe0e6;
+    border-radius: 6px;
+    padding: 5px;
+    margin-right: 8px;
+    position: relative;
+    transition: all .2s;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+.opportunitySection {
+    margin-top: 30px;
+}
+
+.likeSection {
+    display: flex;
+    height: 35px;
+    float: right;
+
+}
+
+.icon {
+    color: #61656e;
+}
+
+.mapSection {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: #fff;
+    border: 1px solid #dbe0e6;
+    border-radius: 6px;
+    padding: 5px;
+    font-size: 12px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: #1f2126;
+    z-index: 1;
+    width: 145px;
+}
+
+.mapIcon {
+    width: 22px;
+    position: absolute;
+    z-index: 9;
+}
+
+.mapView {
+    margin-left: 22px;
+}
+
+.hotelImgInfo {
+    height: 487px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 6px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.hotelMainImg {
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    -ms-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    border-radius: 6px;
+    height: 100%;
+    object-fit: cover;
+}
+
+.map {
+    width: 100%;
+    border-radius: 6px;
+    height: 487px;
+}
+
+.opportunity {
+    background: #fff;
+    border: 1px solid #ebf1fa;
+    border-radius: 6px;
+    padding: 10px 10px 0;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.hotelOpportunity {
+    display: flex;
+    width: 100%;
+    float: right;
+    margin: 0;
+    padding: 0;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    background: 0 0;
+
+}
+
+.hotelRate {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 34px;
+    color: #fff;
+    background: url(https://images.etstur.com/assets/web/badges/badges-bg/hotel-rating-bg.svg);
+    background-repeat: no-repeat;
+    display: flex;
+    height: 61px;
+    width: 78px;
+    padding-left: 8px;
+
+}
+
+.rate {
+    margin-top: 12px;
+
+}
+
+.recommendation {
+    display: block;
+}
+
+.hotelRecommendation {
+    font-weight: 700;
+    font-size: 22px;
+    color: #1f2126;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+}
+
+.recommendationRate {
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: right;
+    color: #17cec4;
+}
+
+.recommendationComments {
+    color: #056bfd;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.recommendationCommentsIcon {
+    color: #056bfd;
+    font-size: 12px;
+    margin-top: 12px;
+}
+/* .amenitiesIconSection{
+    position: absolute;
+    bottom: -36em !important;
+    border-radius: 6px;
+    overflow: visible;
+    width: 22pc;
+    height: fit-content;
+} */
+.discountOpportunity {
+    background: #fff;
+    border: 1px solid #ebf1fa;
+    border-radius: 6px;
+    padding: 10px;
+    margin: 0 0 10px;
+    height: 150px;
+}
+
+.discount {
+    font-weight: bolder;
+    font-size: 14px;
+    color: #1f2126;
+    padding: 15px 0 10px;
+    margin: 0;
+}
+
+.mobilAmenities {
+    display: flex;
+   
+}
+
+.discountModalSection {
+    background: linear-gradient(180deg, rgba(235, 241, 250, 0) 35.79%, #EBF1FA 134.75%);
+    border: 1px solid #ebf1fa;
+    border-radius: 6px;
+    padding: 10px;
+    margin-bottom: 10px;
+
+}
+
+.discountModal {
+    display: block;
+    font-weight: 500;
+    font-size: 13px;
+    color: #1f2126;
+    line-height: 21px;
+    cursor: pointer;
+    height: 16px;
+}
+
+.iconCircle {
+    color: #056bfd;
+    display: inline-block;
+    font-size: 10px;
+}
+
+.modalSectionForDiscount {
+    cursor: pointer;
+    height: 34px;
+    font-weight: 700;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #056bfd;
+    border: 1px solid #056bfd;
+    border-radius: 5px;
+    width: 220px;
+    text-align: center;
+    margin-left: 26px;
+    padding: 6px 5px 4px 5px;
+    margin: 3px 6px 1px 30px;
+}
+
+.hoyenmoonModalSection {
+    border: 1px solid #ebf1fa;
+    border-radius: 6px;
+    padding: 6px 11px 19px 14px;
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.twohearts {
+    color: #f5366d;
+    height: 34px;
+    display: flex;
+    margin-right: 10px;
+    align-items: center;
+    margin-top: 12px;
+}
+
+.hoteymoonModalInfo {
+    display: block;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 17px;
+    color: #1f2126;
+    cursor: pointer;
+    height: 16px;
+    padding: 6px 5px 4px 5px;
+}
+
+.honeymoonRightArrow {
+    color: #056bfd;
+    margin: 8px
+}
+
+.amenitiesName {
+    padding: 4px;
+    font-size: 12px;
+    margin: 0;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    -webkit-line-clamp: 4;
+    color: #1f2126;
+    width: 90px;
+}
+
+.amenitiesIcon {
+    width: 24px;
+}
+
+.amenitiesIconHeart {
+    width: 12px;
+}
+
+.amenitiesSection {
+    font-size: 13px;
+    cursor: pointer;
+    color: #61656e;
+    padding-right: 5px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-right: 0;
+}
+.amenitiesIconSection{
+    display: flex;
+    align-items: center;
+    margin-bottom:0px;
+    width: 100%;
+    justify-content: center;
+}
+.moreAmenities {
+    display: block;
+    color: #056bfd;
+    font-weight: 400;
+    font-size: 13px;
+    white-space: nowrap;
+    background: #fff;
+    border: 1px solid #eaebec;
+    border-radius: 6px;
+    padding: 5px;
+}
+
+.wrapperHotelDetail {
+    background-color: #ebf1fa;
+}
+
+.wrapperHotelDetail>.container {
+    margin-top: 55px;
+    margin-bottom: 32px;
+    height: 100px;
+    padding: 35px;
+}
+
+.sections {
+    font-size: 16px;
+    display: flex;
+    height: fit-content;
+}
+
+.section {
+    position: relative;
+    font-size: 16px;
+    font-weight: 700;
+    height: 12px;
+}
+
+.section:hover,
+.sections:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
+::ng-deep.modal-content {
+    width: 200%;
+    left: -55%;
+    margin-top: 25%;
+}
+
+@media screen and (min-width: 1920px) {
+    .container {
+        width: 58%;
+    }
+}
+
+/* TABLET RESPONSİVE START 
+@media screen and (max-width: 900px) {
+    .amenitiesIconSection{
+        position: absolute;
+        bottom: 8em !important;
+        border-radius: 6px;
+        overflow: visible;
+        width: 22pc;
+    }
+
+    .mobilAmenities {
+        display: -webkit-box;
+        margin-top: -92pc;
+    }
+
+    .wrapperHotelDetail{
+        background-color: #ebf1fa;
+        display: none;
+    }  .container {
+        width: 100%;
+    }
+
+   
+}
+
+@media screen and (max-width: 800px) {
+    .container {
+        width: 100%;
+    }
+
+    .breadcrumb {
+        display: none;
+    }
+
+    .hotelDetailWrapper {
+        position: relative;
+    }
+
+    .hotelName {
+        font-size: 20px;
+    }
+
+    .etsLikeSection,
+    .awardIcon,
+    .likeIcon,
+    .share {
+        background: #fff;
+        border: 1px solid #dbe0e6;
+        border-radius: 6px;
+        padding: 3px 0px 4px 0px;
+        position: relative;
+        transition: all .2s;
+        text-transform: uppercase;
+        font-size: 12px;
+        float: right;
+        left: 109px;
+        width: 125px;
+        margin-right: 2px;
+    }
+
+    .mapSection {
+        display: none;
+    }
+
+    .hotelMainImg {
+        height: 60%;
+        top: 7pc;
+    }
+
+    .hotelImgInfo {
+        height: 466px;
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        align-items: flex-end;
+        top: -8pc;
+        border-bottom: 1px solid #eaebec;
+        border-radius: none;
+        border-left: none;
+        border-top: none;
+
+    }
+
+    .hotelIcons {
+        position: relative;
+    }
+
+    .etsInfoIconWrapper {
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+        z-index: 15;
+        margin: 14px 0 6px;
+        left: -4px !important;
+        top: 1pc;
+    }
+
+    .hotelCaption {
+        margin-bottom: 10px;
+        position: absolute;
+        top: 19pc;
+    }
+
+    .likeSection {
+        display: none;
+    }
+
+    .amenitiesIconSection {
+        position: absolute;
+        bottom: -29em !important;
+        border-radius: 6px;
+        overflow: visible;
+        width: 22pc;
+    }
+
+    .opportunitySection {
+        margin-top: -52px;
+    }
+
+    .hotelDetail {
+        display: none;
+        visibility: hidden
+    }
+
+    .mobilAmenities {
+        display: block;
+        margin-top: -18pc;
+    }
+
+}
+
+/* @media screen and (max-width: 768px) and (max-height:1024px){
+    .container {
+        width: 100%;
+    }
+
+    .breadcrumb {
+        display: none;
+    }
+
+    .hotelDetailWrapper {
+        position: relative;
+    }
+
+    .hotelName {
+        font-size: 20px;
+    }
+
+    .etsLikeSection, .awardIcon, .likeIcon, .share {
+        background: #fff;
+        border: 1px solid #dbe0e6;
+        border-radius: 6px;
+        padding: 3px 0px 4px 0px;
+        position: relative;
+        transition: all .2s;
+        text-transform: uppercase;
+        font-size: 12px;
+        float: right;
+        left: 109px;
+        width: 125px;
+        left: 35em;
+    }
+
+    .mapSection {
+        display: none;
+    }
+
+    .hotelMainImg {
+        height: 60%;
+        top: 7pc;
+    }
+
+    .hotelImgInfo {
+        height: 466px;
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        align-items: flex-end;
+        top: -8pc;
+        border-bottom: 1px solid #eaebec;
+        border-radius: none;
+        border-left: none;
+        border-top: none;
+
+    }
+
+    .hotelIcons {
+        position: relative;
+    }
+    .etsInfoIconWrapper {
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+        z-index: 15;
+        margin: 14px 0 6px;
+        left: -4px !important;
+        top: 1pc;
+    }
+    .hotelCaption {
+        margin-bottom: 10px;
+        position: absolute;
+        top: 19pc;
+    }
+
+    .likeSection {
+        display: none;
+    }
+
+
+
+    .hotelDetail {
+        display: none;
+        visibility: hidden
+    }
+
+    .mobilAmenities {
+        display: flex;
+        margin-top: -17pc;
+    }
+    .opportunitySection {
+        margin-top: -114px
+    }
+} */
+/* TABLET RESPONSİVE END */
+
+/* MOBİL RESPONSİVE START */
+
+@media screen and (max-width: 428px) {
+    .amenitiesIconSection {
+        position: absolute;
+        bottom: -3pc !important;
+    }
+
+    .mobilAmenities {
+        display: block;
+
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    .container {
+        width: 100%;
+    }
+
+    .mobilAmenities {
+        display: block;
+  
+    }
+
+    .breadcrumb {
+        display: none;
+    }
+
+    .hotelDetailWrapper {
+        position: relative;
+    }
+
+    .hotelName {
+        font-size: 20px;
+    }
+
+    .etsLikeSection,
+    .awardIcon,
+    .likeIcon,
+    .share {
+        background: #fff;
+        border: 1px solid #dbe0e6;
+        border-radius: 6px;
+        padding: 3px 0px 4px 0px;
+        position: relative;
+        transition: all .2s;
+        text-transform: uppercase;
+        font-size: 12px;
+        float: right;
+        left: 109px;
+        width: 125px;
+        margin-right: 2px;
+    }
+
+    .mapSection {
+        display: none;
+    }
+
+    .hotelMainImg {
+        height: 60%;
+        top: 7pc;
+    }
+
+    .hotelImgInfo {
+        height: 466px;
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        align-items: flex-end;
+        top: -8pc;
+        border-bottom: 1px solid #eaebec;
+        border-radius: none;
+        border-left: none;
+        border-top: none;
+
+    }
+
+    .hotelIcons {
+        position: relative;
+    }
+
+    .etsInfoIconWrapper {
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+        z-index: 15;
+        margin: 14px 0 6px;
+        left: -1px !important;
+        top: 1pc;
+    }
+
+    .hotelCaption {
+        margin-bottom: 10px;
+        position: absolute;
+        top: 19pc;
+    }
+
+    .likeSection {
+        display: none;
+    }
+
+
+
+    .opportunitySection {
+        margin-top: -52px;
+    }
+
+    .hotelDetail {
+        display: none !important;
+        visibility: hidden !important
+    }
+}
+
+@media screen and (max-width: 428px) {
+  
+
+    .mobilAmenities {
+        display: block;
+ 
+    }
+
+    .etsInfoIconWrapper {
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+        z-index: 15;
+        margin: 14px 0 6px;
+        left: 33px !important;
+        top: 1pc;
+    }
+
+}
+
+@media screen and (max-width: 428px)and (max-height: 926px) {
+  
+
+    .mobilAmenities {
+        display: block;
+       
+    }
+
+    .etsInfoIconWrapper {
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+        z-index: 15;
+        margin: 14px 0 6px;
+        left: 33px !important;
+        top: 1pc;
+    }
+  
+
+}
+
+@media screen and (max-width: 414px) {
+  
+    .mobilAmenities {
+        display: block;
+      
+    }
+
+    .etsInfoIconWrapper {
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+        z-index: 15;
+        margin: 14px 0 6px;
+        left: 28px !important;
+        top: 1pc;
+    }
+
+}
+
+@media screen and (max-width: 390px) {
+    .container {
+        width: 100%;
+    }
+
+    .breadcrumb {
+        display: none;
+    }
+
+    .hotelDetailWrapper {
+        position: relative;
+    }
+
+    .hotelName {
+        font-size: 20px;
+    }
+    .amenitiesIconSection{
+      
+        bottom: -22pc !important;
+    }
+    .etsLikeSection,
+    .awardIcon,
+    .likeIcon,
+    .share {
+        background: #fff;
+        border: 1px solid #dbe0e6;
+        border-radius: 6px;
+        padding: 3px 0px 4px 0px;
+        position: relative;
+        transition: all .2s;
+        text-transform: uppercase;
+        font-size: 12px;
+        float: right;
+        left: 109px;
+        width: 125px;
+        margin-right: 2px;
+    }
+
+    .mapSection {
+        display: none;
+    }
+
+    .hotelMainImg {
+        height: 60%;
+        top: 7pc;
+    }
+
+    .hotelImgInfo {
+        height: 466px;
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        align-items: flex-end;
+        top: -8pc;
+        border-bottom: 1px solid #eaebec;
+        border-radius: none;
+        border-left: none;
+        border-top: none;
+
+    }
+
+    .hotelIcons {
+        position: relative;
+    }
+
+    .etsInfoIconWrapper {
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+        z-index: 15;
+        margin: 14px 0 6px;
+        left: -4px !important;
+        top: 1pc;
+    }
+
+    .hotelCaption {
+        margin-bottom: 10px;
+        position: absolute;
+        top: 19pc;
+    }
+
+    .likeSection {
+        display: none;
+    }
+
+   
+
+    .opportunitySection {
+        margin-top: -52px;
+    }
+
+    .hotelDetail {
+        display: none;
+        visibility: hidden
+    }
+
+    .mobilAmenities {
+        display: block;
+    }
+
+}
+
+@media screen and (max-width: 375px) {
+ 
+    .mobilAmenities {
+        display: block;
+    }
+
+}
+
+@media screen and (max-width: 375px) and (max-height:812px) {
+ 
+    .mobilAmenities {
+        display: block;
+    }
+
+    .etsLikeSection,
+    .awardIcon,
+    .likeIcon,
+    .share {
+        width: 120px;
+        margin-right: 2px;
+    }
+
+}
+
+@media screen and (max-width: 360px) {
+    .mobilAmenities {
+        display: block;
+    }
+
+    .etsInfoIconWrapper {
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+        z-index: 15;
+        margin: 14px 0 6px;
+        left: -21px !important;
+        top: 1pc;
+    }
+}
+
+@media screen and (max-width: 320px) {
+ 
+
+    .mobilAmenities {
+        display: block;
+    }
+
+    .etsInfoIconWrapper {
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+        z-index: 15;
+        margin: 14px 0 6px;
+        left: -39px !important;
+        top: 1pc;
+    }
+
+    .etsLikeSection,
+    .awardIcon,
+    .likeIcon,
+    .share {
+        background: #fff;
+        border: 1px solid #dbe0e6;
+        border-radius: 6px;
+        padding: 3px 0px 4px 0px;
+        position: relative;
+        transition: all .2s;
+        text-transform: uppercase;
+        font-size: 11px;
+        float: right;
+        left: 109px;
+        width: 110px;
+        margin-right: -34px;
+        margin: 1px;
+    }
+
+    .discountModal {
+        font-size: 11px;
+    }
+
+    .modalSectionForDiscount {
+        cursor: pointer;
+        height: 34px;
+        font-weight: 700;
+        font-size: 11px;
+        text-transform: uppercase;
+        color: #056bfd;
+        border: 1px solid #056bfd;
+        border-radius: 5px;
+        width: 177px;
+        text-align: center;
+        margin-left: 26px;
+        padding: 5px 5px 4px 5px;
+        margin: -2px -3px 6px 39px;
+    }
+
+}
+
+/* MOBİL RESPONSİVE END */

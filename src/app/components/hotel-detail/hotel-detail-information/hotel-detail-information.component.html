@@ -1,0 +1,525 @@
+<div class="hotelFacilityInfo">
+    <div class="container">
+
+        <div class="captionFacility">
+            <h2 class="captionInfo">Tesis Bilgileri</h2>
+        </div>
+
+        <div class="seasonalInfoWrapper">
+
+
+            <div class="seasonalInfo">
+                <div class="winterSeason" (click)="winterSeason()" [ngClass]="{'winterActive': winterAmenities}"
+                    [class.active]="winterAmenities">
+                    <b class="captionWinter">Kış Sezonu</b>
+                    <small class="seasonWinter">01.11.2023 - 31.03.2024</small>
+                </div>
+                <div class="summerSeason" (click)="summerSeason()" [ngClass]="{'summerActive': summerAmenities}"
+                    [class.active]="summerAmenities">
+                    <b class="captionSummer">Yaz Sezonu</b>
+                    <small class="seasonSummer">01.11.2023 - 31.03.2024</small>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col-8">
+
+                <div class="wrapper">
+
+                    <img class="hotelMainImage" [src]="hotel?.img">
+
+                    <div class=" amenitiesSection">
+
+                        <div class="captionSection">
+                            <i class="fa-regular fa-building building"></i>
+                            <span>KONSEPT</span>
+                        </div>
+
+                        <div class="hotelAmenities">
+
+                            <ul *ngIf="hotel?.amenities || hotel?.summerAmenities" class="leftSide">
+                                <li *ngFor="let features of hotel.amenities?.slice(0, 6)" class="features">
+                                    <span *ngIf="winterAmenities">
+                                        {{ features }}
+                                    </span>
+                                </li>
+                                <li *ngFor="let summerFeatures of hotel.summerAmenities?.slice(0, 6)" class="features">
+                                    <span *ngIf="summerAmenities">
+                                        {{ summerFeatures }}
+                                    </span>
+                                </li>
+                            </ul>
+
+                            <ul *ngIf="hotel?.amenities || hotel?.summerAmenities" class="leftSide">
+                                <li *ngFor="let features of hotel.amenities?.slice(6)" class="features">
+                                    <span *ngIf="winterAmenities">
+                                        {{ features }}
+                                    </span>
+                                </li>
+                                <li *ngFor="let summerFeatures of hotel.summerAmenities?.slice(6)" class="features">
+                                    <span *ngIf="summerAmenities">
+                                        {{ summerFeatures }}
+                                    </span>
+
+                                </li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-4">
+
+                <carousel [itemsPerSlide]="1" [showIndicators]="true" [interval]="767500">
+
+                    <slide *ngFor="let award of hotel?.awardImages;">
+
+                        <img [src]="award" class="award">
+
+                    </slide>
+
+                </carousel>
+
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="captionAmenities m-3">
+                <h5 class="py-3 captionHotel">Tesis Olanakları</h5>
+            </div>
+            <div class="seasonAmenitiesSection">
+                <div class="hotelAmenitiesSection wrapperAmenities">
+                    <div class="serviceBell d-flex">
+                        <img src="../../../../assets/common/serviceBell.png" class="mobileServiceBellIcon">
+                        <h6 class="amenityCaption">OTEL OLANAKLARI</h6>
+                    </div>
+                    <div class="hotelAmenitiesInfo">
+
+
+                        <ul *ngIf="summerAmenities" class="amenityUl">
+                            <li *ngFor="let amenitiesSum of hotel?.amenitiesSummer" class="amenity">
+                                <span>
+                                    {{amenitiesSum}}
+                                </span>
+                            </li>
+
+                        </ul>
+
+                        <ul *ngIf="winterAmenities" class="amenityUl">
+                            <li *ngFor="let amenitiesWin of hotel?.hotelAmenitiesWinter" class="amenity">
+                                <span>
+                                    {{amenitiesWin}}
+                                </span>
+                            </li>
+
+                        </ul>
+
+
+                    </div>
+                </div>
+                <div class="sportSection wrapperAmenities py-2">
+                    <div class="sportIcon d-flex">
+                        <i class="fa-solid fa-basketball basketballIcon "></i>
+                        <p class="amenityCaption">SPOR</p>
+                    </div>
+                    <div class="sportAmenities">
+
+                        <ul *ngIf="summerAmenities" class="amenityUl">
+                            <li *ngFor="let summerAmenity of hotel?.sportSummerAmenities" class="amenity">
+                                <span>
+                                    {{summerAmenity}}
+                                </span>
+                            </li>
+
+                        </ul>
+
+                        <ul *ngIf="winterAmenities" class="amenityUl">
+                            <li *ngFor="let sporWinter of hotel?.sportWinter" class="amenity">
+                                <span>
+                                    {{sporWinter}}
+                                </span>
+                            </li>
+
+                        </ul>
+
+
+                    </div>
+                </div>
+
+                <div class="babyAmenitiesSection wrapperAmenities">
+                    <div class="baby d-flex">
+                        <img src="../../../../assets/common/baby.png" class="amenitiesIcon babyIcon" alt="baby">
+                        <h6 class="amenityCaption">ÇOCUK / BEBEK</h6>
+                    </div>
+                    <div class="babyAmenities">
+                        <ul *ngIf="summerAmenities" class="amenityUl">
+                            <li *ngFor="let babySum of hotel?.babySummerAmenities" class="amenity">
+                                <span>
+                                    {{babySum}}
+                                </span>
+                            </li>
+
+                        </ul>
+                        <ul *ngIf="winterAmenities" class="amenityUl">
+
+                            <li *ngFor="let babyWin of hotel?.babyWinterAmenities" class="amenity">
+                                <span>
+                                    {{babyWin}}
+                                </span>
+                            </li>
+
+                        </ul>
+
+                    </div>
+                </div>
+                <div class="spaAmenitiesSection wrapperAmenities">
+                    <div class="spaWellness d-flex">
+                        <img src="../../../../assets/common/spaWellnes.png" class="spaWellnesIcon" alt="spaWellnes">
+                        <h6 class="amenityCaption">SPA / WELLNESS</h6>
+                    </div>
+                    <div class="spaAmenities">
+                        <ul *ngIf="summerAmenities" class="amenityUl">
+                            <li *ngFor="let spaSum of hotel?.spaWellnessSummer" class="amenity">
+                                <span>
+                                    {{spaSum}}
+                                </span>
+                            </li>
+
+                        </ul>
+                        <ul *ngIf="winterAmenities" class="amenityUl">
+                            <li *ngFor="let spaWin of hotel?.spaWellnessWinter" class="amenity">
+                                <span>
+                                    {{spaWin}}
+                                </span>
+                            </li>
+
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+
+            <!-- Genel Tanıtım Kısmı -->
+
+            <div class="row m-3" *ngFor="let selected of selectedHotels">
+
+                <div class="generalInfoWrapper">
+                    <h4 class="generalInfoTitle mt-3">
+                        <strong>Genel Tanıtım</strong>
+                    </h4>
+                    <div class="content-container" [ngClass]="{'expanded': selected.hotelInfo.showMore}">
+                        <ul class="generalInfo">
+                            <span [ngClass]="{'wrapperGeneralInfo': !selected.hotelInfo.showMore}">
+                                <li *ngFor="let selectedGeneralInfo of selected.hotelInfo" class="selectedGeneralInfo">
+                                    <p class="contentInfo" [ngClass]="{'expanded': selected.hotelInfo.showMore}">
+                                        {{ selectedGeneralInfo }}
+                                    </p>
+                                </li>
+                            </span>
+                        </ul>
+                    </div>
+                    <button (click)="toggleContentSingle(selected.hotelInfo)" class="toggleButton">
+                        <i class="fa-solid {{ selected.hotelInfo.showMore ? 'fa-minus' : 'fa-plus plusButton' }}"></i>
+                        {{ selected.hotelInfo.showMore ? 'Daha Az Görüntüle' : 'Daha Fazla Görüntüle' }}
+                    </button>
+
+                </div>
+
+
+                <!-- Yeme İçme Kısmı-->
+
+                <div class="foodDrinkWrapper">
+                    <h4 class="generalInfoTitle mt-3">
+                        <strong>Yeme / İçme</strong>
+                    </h4>
+
+                    <div *ngIf="winterAmenities">
+                        <div class="content-container" [ngClass]="{'expanded': selected.foodDrinkWinter.showMore}">
+                            <ul class="generalInfo">
+                                <span>
+                                    <li *ngFor="let foodDrinkWin of selected.foodDrinkWinter"
+                                        [ngClass]="{'wrapperGeneralInfo': !selected.foodDrinkWinter.showMore}"
+                                        class="selectedGeneralInfo">
+                                        <p class="contentInfo"
+                                            [ngClass]="{'expanded': selected.foodDrinkWinter.showMore}">
+                                            {{ foodDrinkWin }}
+                                        </p>
+                                    </li>
+                                </span>
+                            </ul>
+                        </div>
+                    </div>
+
+
+
+                    <div *ngIf="summerAmenities">
+                        <div class="content-container" [ngClass]="{'expanded': selected.foodDrinkSummer.showMore}">
+                            <ul class="generalInfo">
+                                <span>
+                                    <li *ngFor="let foodDrinkSum of selected.foodDrinkSummer"
+                                        [ngClass]="{'wrapperGeneralInfo': !selected.foodDrinkSummer.showMore}"
+                                        class="selectedGeneralInfo">
+                                        <p class="contentInfo"
+                                            [ngClass]="{'expanded': selected.foodDrinkSummer.showMore}">
+                                            {{ foodDrinkSum }}
+                                        </p>
+                                    </li>
+                                </span>
+
+                            </ul>
+                        </div>
+                    </div>
+
+                    <button (click)="toggleContent(selected.foodDrinkWinter, selected.foodDrinkSummer)"
+                        class="toggleButton">
+                        <i
+                            class="fa-solid {{ (selected.foodDrinkWinter.showMore) || (selected.foodDrinkSummer.showMore) ? 'fa-minus' : 'fa-plus plusButton' }}"></i>
+                        {{ (selected.foodDrinkWinter.showMore) ? 'Daha Az Görüntüle' :
+                        (selected.foodDrinkSummer.showMore) ? 'Daha Az Görüntüle ' : 'Daha Fazla Görüntüle' }}
+                    </button>
+
+                    <!-- <button (click)="toggleContent(selected.foodDrinkWinter)" class="toggleButton">
+                        <i class="fa-solid {{ selected.foodDrinkWinter.showMore ? 'fa-minus' : 'fa-plus plusButton' }}"></i>
+                        {{ selected.foodDrinkWinter.showMore ? 'Daha Az Görüntüle' : 'Daha Fazla Görüntüle' }}
+                    </button> -->
+
+                </div>
+
+                <!-- Konum Kısmı-->
+                <div class="location">
+                    <h4 class="generalInfoTitle mt-3">
+                        <strong>Konum</strong>
+                    </h4>
+                    <div class="content-container" [ngClass]="{'expanded': selected.hotelLocation.showMore}">
+                        <ul class="generalInfo">
+                            <span [ngClass]="{'wrapperGeneralInfo': !selected.hotelLocation.showMore}">
+                                <li class="selectedGeneralInfo" *ngFor="let locationHotel of selected.hotelLocation">
+                                    <p class="contentInfo" [ngClass]="{'expanded': selected.hotelLocation.showMore}">
+                                        {{ locationHotel }}
+                                    </p>
+                                </li>
+                            </span>
+                        </ul>
+                    </div>
+                    <button (click)="toggleContentSingle(selected.hotelLocation)" class="toggleButton">
+                        <i
+                            class="fa-solid {{ selected.hotelLocation.showMore ? 'fa-minus' : 'fa-plus plusButton' }}"></i>
+                        {{ selected.hotelLocation.showMore ? 'Daha Az Görüntüle' : 'Daha Fazla Görüntüle' }}
+                    </button>
+                </div>
+
+
+                <!-- Diğer Olanaklar Kısmı-->
+
+                <div class="otherAmenitiesWrapper"
+                    *ngIf="selected.otherAmenitiesWinter || selected.otherAmenitiesSummer">
+                    <h4 class="generalInfoTitle mt-3">
+                        <strong>Diğer Olanaklar</strong>
+                    </h4>
+                    <div *ngIf="winterAmenities" class="content-container"
+                        [ngClass]="{'expanded': selected.otherAmenitiesWinter.showMore}">
+                        <ul class="generalInfo">
+                            <span [ngClass]="{'wrapperGeneralInfo': !selected.otherAmenitiesWinter.showMore}">
+                                <li *ngFor="let amenitiesWinter of selected.otherAmenitiesWinter"
+                                    class="selectedGeneralInfo">
+                                    <p class="contentInfo"
+                                        [ngClass]="{'expanded': selected.otherAmenitiesWinter.showMore}">
+                                        {{ amenitiesWinter }}
+                                    </p>
+                                </li>
+                            </span>
+
+                        </ul>
+                    </div>
+                    <div *ngIf="summerAmenities" class="content-container"
+                        [ngClass]="{'expanded': selected.otherAmenitiesSummer.showMore}">
+                        <ul class="generalInfo">
+                            <span>
+                                <li *ngFor="let amenitiesSummerSection of selected.otherAmenitiesSummer"
+                                    [ngClass]="{'wrapperGeneralInfo': !selected.otherAmenitiesSummer.showMore}"
+                                    class="selectedGeneralInfo">
+                                    <p class="contentInfo"
+                                        [ngClass]="{'expanded': selected.otherAmenitiesSummer.showMore}">
+                                        {{ amenitiesSummerSection }}
+                                    </p>
+                                </li>
+                            </span>
+
+                        </ul>
+                    </div>
+                    <button (click)="toggleContent(selected.otherAmenitiesWinter, selected.otherAmenitiesSummer)"
+                        class="toggleButton">
+                        <i
+                            class="fa-solid {{ (selected.otherAmenitiesWinter.showMore) || (selected.otherAmenitiesSummer.showMore) ? 'fa-minus' : 'fa-plus plusButton' }}"></i>
+                        {{ (selected.otherAmenitiesWinter.showMore) ? 'Daha Az Görüntüle' :
+                        (selected.otherAmenitiesSummer.showMore) ? 'Daha Az Görüntüle' : 'Daha Fazla Görüntüle' }}
+                    </button>
+
+                </div>
+
+                <!-- Balayı Kısmı-->
+
+                <div class="eventWrapper" *ngIf="selected.hotelHoneymoonWinter || selected.hotelHoneymoonSummer">
+                    <h4 class="generalInfoTitle mt-3">
+                        <strong>Balayı</strong>
+                    </h4>
+                    <div *ngIf="winterAmenities" class="content-container"
+                        [ngClass]="{'expanded': selected.hotelHoneymoonWinter.showMore}">
+                        <ul class="generalInfo">
+                            <span [ngClass]="{'wrapperGeneralInfo': !selected.hotelHoneymoonWinter.showMore}">
+                                <li *ngFor="let honeymoonWin of selected.hotelHoneymoonWinter"
+                                    class="selectedGeneralInfo">
+                                    <p class="contentInfo"
+                                        [ngClass]="{'expanded': selected.hotelHoneymoonWinter.showMore}">
+                                        {{ honeymoonWin }}
+                                    </p>
+                                </li>
+                            </span>
+
+                        </ul>
+                    </div>
+                    <div *ngIf="summerAmenities" class="content-container"
+                        [ngClass]="{'expanded': selected.hotelHoneymoonSummer.showMore}">
+                        <ul class="generalInfo">
+                            <span [ngClass]="{'wrapperGeneralInfo': !selected.hotelHoneymoonSummer.showMore}">
+                                <li *ngFor="let honeymoonSum of selected.hotelHoneymoonSummer"
+                                    class="selectedGeneralInfo">
+                                    <p class="contentInfo"
+                                        [ngClass]="{'expanded': selected.hotelHoneymoonSummer.showMore}">
+                                        {{ honeymoonSum }}
+                                    </p>
+                                </li>
+                            </span>
+
+                        </ul>
+                    </div>
+                    <!-- <button (click)="toggleContent(selected.hotelHoneymoonSummer || selected.hotelHoneymoonWinter )" class="toggleButton">
+                        <i class="fa-solid {{ (selected.hotelHoneymoonSummer.showMore) || (selected.hotelHoneymoonWinter.showMore)  ? 'fa-minus' : 'fa-plus plusButton' }}"></i>
+                        {{ (selected.hotelHoneymoonSummer.showMore) || (selected.hotelHoneymoonWinter.showMore) ? 'Daha Az Görüntüle' : 'Daha Fazla Görüntüle' }}
+                    </button> -->
+
+
+                    <button (click)="toggleContent(selected.hotelHoneymoonWinter, selected.hotelHoneymoonSummer)"
+                        class="toggleButton">
+                        <i
+                            class="fa-solid {{ (selected.hotelHoneymoonWinter.showMore) || (selected.hotelHoneymoonSummer.showMore) ? 'fa-minus' : 'fa-plus plusButton' }}"></i>
+                        {{ (selected.hotelHoneymoonWinter.showMore) ? 'Daha Az Görüntüle' :
+                        (selected.hotelHoneymoonSummer.showMore) ? 'Daha Az Görüntüle' : 'Daha Fazla Görüntüle' }}
+                    </button>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+        <div class="row m-3">
+            <div class="importanInformationSection">
+                <h4 class="titleİmportantInfo">Önemli Bilgiler</h4>
+                <div class="row">
+                    <div class="col-4" *ngFor="let hotel of selectedHotels">
+                        <div class="wrapperInfo">
+                            <div class="checkinTime">
+                                <p>Giriş Saati</p>
+                                <span *ngIf="hotel.mainHotelInfo">
+                                    {{ hotel.mainHotelInfo.checkInTime }}
+                                </span>
+                            </div>
+                            <div class="checkoutTime">
+                                <p>Çıkış Saati</p>
+                                <span *ngIf="hotel.mainHotelInfo">
+                                    {{ hotel.mainHotelInfo.checkOutTime }}
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-8" *ngIf="summerAmenities || winterAmenities">
+                        <div class="importantInfoContent">
+                            <div *ngIf="summerAmenities">
+                                <div class="" *ngFor="let hotel of selectedHotels">
+
+                                    <ul *ngFor="let summerInfo of hotel.importtanHotelInfoSummer ">
+                                        <li class="info"> {{summerInfo}}</li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                            <div *ngIf="winterAmenities">
+                                <div class="" *ngFor="let hotel of selectedHotels">
+
+                                    <ul *ngFor="let winterInfo of hotel.importtanHotelInfoWinter ">
+                                        <li class="info"> {{winterInfo}}</li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<div class="mobilAmenitiesWrapper" *ngFor="let amenities of selectedHotels"
+    (click)="mobileHotelInformationModal(amenities,hotel)">
+    <div class="mobilAmenity">
+        <div class="mobilAmenitiesCaption">
+            <span class="caption">
+                TESİS BİLGİLERİ
+            </span>
+            <b class="allAmenities"> TÜM BİLGİLERİ GÖR
+                <span>
+                    <i class="fa-solid fa-arrow-right arrowRightMobile"></i>
+                </span>
+            </b>
+        </div>
+        <div class="mobileAmenitiesContainer">
+            <div class="d-flex">
+                <div class="mobilHotelAmenities">
+                    <div class="serviceBell d-flex">
+                        <img src="../../../../assets/common/serviceBell.png" class="serviceBellIcon">
+                        <h6 class="mobileAmenityCaption">OTEL OLANAKLARI</h6>
+                    </div>
+                </div>
+
+                <div class="mobileSports">
+                    <div class="sportIcon d-flex">
+                        <i class="fa-solid fa-basketball mobileBasketballIcon "></i>
+                        <p class="mobileAmenityCaption">SPOR</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="d-flex">
+
+                <div class="mobileBaby">
+                    <div class="baby d-flex">
+                        <img src="../../../../assets/common/baby.png" class="amenitiesIcon mobileBabyIcon" alt="baby">
+                        <h6 class="mobileAmenityCaption">ÇOCUK / BEBEK</h6>
+                    </div>
+                </div>
+                <div class="mobileSpaWellness">
+                    <div class="spaWellness d-flex">
+                        <img src="../../../../assets/common/spaWellnes.png" class="mobileSpaWellnesIcon"
+                            alt="spaWellnes">
+                        <h6 class="mobileAmenityCaption">SPA / WELLNESS</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
